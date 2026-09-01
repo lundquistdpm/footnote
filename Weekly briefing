@@ -1,0 +1,25 @@
+name: Weekly briefing
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'  # 5:00 AM Central (Daylight Time) every Monday — see README for the Standard Time adjustment
+  workflow_dispatch: {}     # lets you also trigger it manually from the Actions tab
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install anthropic
+      - run: python agent.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-output
+          path: |
+            dist/index.html
+            dist/linkedin_draft.txt
