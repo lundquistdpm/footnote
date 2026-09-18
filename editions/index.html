@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Every edition of The Footnote, a briefing for podiatric physicians and surgeons.">
+<meta property="og:title" content="The Footnote: all editions">
+<meta property="og:description" content="Every edition of The Footnote, a briefing for podiatric physicians and surgeons.">
+<meta property="og:type" content="website">
+<title>The Footnote Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EFF1EA; --paper-raised:#F8F9F4; --ink:#172620; --ink-soft:#4B5750; --rule:#D6D2C1;
+    --clinical:#2F6E5B; --compliance:#35577A; --business:#A6742C; --products:#6B7A3F;
+    --community:#8C5A6B; --research:#5B4B8A; --alert:#B23A2E; --fill:#e2e6dc; --max:1180px;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+      --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+      --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+    --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+    --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:clamp(16px,3vw,28px);}
+  h1,h2,h3{font-family:var(--serif);margin:0;font-weight:600;text-wrap:balance;}
+
+  .masthead{border-bottom:1px solid var(--rule);}
+  .masthead-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap;}
+  .word{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:-0.01em;display:flex;align-items:center;gap:9px;}
+  .brand-mark{width:22px;height:auto;flex-shrink:0;}
+  .brand-mark .a{fill:var(--ink);} .brand-mark .b{fill:var(--ink-soft);}
+  .edition{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);}
+  .beat-nav{display:flex;gap:26px;padding-block:12px;overflow-x:auto;}
+  .beat-nav button{background:none;border:none;font-family:var(--sans);font-size:14px;color:var(--ink-soft);cursor:pointer;padding:4px 0;border-bottom:2px solid transparent;white-space:nowrap;}
+  .beat-nav button.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:500;}
+  .issue-strip{padding-block:11px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-soft);}
+
+  /* Conference banner */
+  .dispatch{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;padding-block:14px;border-bottom:1px solid var(--rule);font-size:13px;color:var(--ink-soft);}
+  .dispatch .live{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--alert);}
+  .dispatch b{color:var(--ink);font-weight:500;}
+
+  .lead{padding-block:36px 40px;border-bottom:1px solid var(--rule);max-width:780px;}
+  .tag{display:inline-flex;align-items:center;font-size:12.5px;font-weight:500;padding-left:11px;position:relative;}
+  .tag::before{content:"";position:absolute;left:0;top:1px;bottom:1px;width:3px;background:currentColor;}
+  .tag.clinical{color:var(--clinical);} .tag.compliance{color:var(--compliance);} .tag.business{color:var(--business);}
+  .tag.products{color:var(--products);} .tag.community{color:var(--community);} .tag.research{color:var(--research);}
+  .lead h1{font-size:clamp(27px,4vw,36px);line-height:1.15;margin:14px 0 14px;letter-spacing:-0.01em;}
+  .lead .dek{font-size:16.5px;line-height:1.6;color:var(--ink-soft);margin:0 0 14px;max-width:68ch;}
+  .watch{margin:18px 0;border-top:1px solid var(--rule);}
+  .watch-row{display:grid;grid-template-columns:128px 1fr;gap:16px;padding-block:11px;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.5;}
+  .watch-row .when{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:3px;font-variant-numeric:tabular-nums;}
+  .why{background:var(--paper-raised);border:1px solid var(--rule);padding:12px 14px;font-size:14px;line-height:1.55;border-radius:2px;margin-top:10px;}
+  .why b{font-family:var(--serif);font-style:italic;font-weight:600;}
+  .byline{margin-top:14px;font-size:13px;color:var(--ink-soft);}
+  .byline a,.meta a{border-bottom:1px solid var(--rule);}
+  .byline a:hover,.meta a:hover{border-bottom-color:var(--ink-soft);}
+
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;padding-block:40px 60px;align-items:start;}
+  .section{margin-bottom:44px;}
+  .section-head{margin-bottom:6px;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+  .section-head h2{font-size:19px;}
+  .story{padding-block:20px;border-bottom:1px solid var(--rule);}
+  .section .story:last-child{border-bottom:none;padding-bottom:0;}
+  .story h3{font-size:18.5px;line-height:1.3;margin:8px 0 6px;}
+  .story .dek{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0 0 6px;max-width:68ch;}
+  .story .meta{font-size:12.5px;color:var(--ink-soft);margin-top:8px;}
+  .figs{display:flex;flex-wrap:wrap;gap:6px 22px;margin:10px 0 4px;}
+  .fig{display:flex;flex-direction:column;}
+  .fig b{font-family:var(--serif);font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .fig span{font-size:12px;color:var(--ink-soft);}
+  .disclose{font-size:12.5px;color:var(--ink-soft);font-style:italic;margin-top:6px;}
+
+  .rail-card{background:var(--paper-raised);border:1px solid var(--rule);padding:22px;margin-bottom:22px;border-radius:2px;}
+  .rail-card h3{font-size:16px;margin-bottom:12px;}
+  .rail-eyebrow{font-size:12px;color:var(--compliance);font-weight:500;margin-bottom:6px;}
+  .rail-card p{font-size:14px;line-height:1.55;margin:0 0 10px;}
+  .rail-card .soft{color:var(--ink-soft);font-size:13px;}
+  .cal{margin:0;padding:0;list-style:none;}
+  .cal li{display:grid;grid-template-columns:60px 1fr;gap:10px;padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .cal li:last-child{border-bottom:none;}
+  .cal .d{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:2px;}
+  .rail-cta{display:inline-block;font-size:13px;font-weight:500;padding:8px 14px;border:1px solid var(--ink);border-radius:2px;}
+
+  .foot-nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 18px;font-size:13.5px;}
+  .foot-nav a{border-bottom:1px solid var(--rule);font-weight:500;}
+  .foot-nav a:hover{border-bottom-color:var(--ink-soft);}
+  footer{border-top:1px solid var(--rule);padding-block:36px;}
+  .foot-word{font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .foot-word .brand-mark{width:17px;}
+  .foot-tag{font-size:13px;color:var(--ink-soft);max-width:420px;line-height:1.55;margin:0 0 14px;}
+  .foot-bottom{font-size:12px;color:var(--ink-soft);padding-top:16px;border-top:1px solid var(--rule);}
+
+  @media (max-width:920px){ .layout{grid-template-columns:1fr;gap:20px;} }
+  @media (max-width:560px){ .watch-row{grid-template-columns:1fr;gap:2px;} }
+  .arch{padding-block:36px 56px;max-width:780px;}
+  .arch h1{font-size:clamp(27px,4vw,34px);margin-bottom:8px;}
+  .arch .intro{color:var(--ink-soft);font-size:15px;line-height:1.55;margin:0 0 26px;max-width:62ch;}
+  .ed{display:grid;grid-template-columns:92px 1fr;gap:18px;padding-block:18px;border-top:1px solid var(--rule);}
+  .ed:last-child{border-bottom:1px solid var(--rule);}
+  .ed .num{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);padding-top:5px;}
+  .ed h2{font-size:20px;line-height:1.3;margin-bottom:4px;}
+  .ed h2 a:hover{text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px;}
+  .ed .date{font-size:13px;color:var(--ink-soft);margin-bottom:6px;}
+  .ed p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;}
+  @media (max-width:560px){ .ed{grid-template-columns:1fr;gap:4px;} }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-bar">
+    <a class="word" href="../"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</a>
+    <div class="edition">Archive</div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="arch">
+    <h1>Past editions</h1>
+    <p class="intro">Every issue of The Footnote, newest first. Each one keeps its own permanent link.</p>
+    <!-- Add each new edition at the top of this list -->
+    <article class="ed">
+      <span class="num">No. 2</span>
+      <div>
+        <h2><a href="002/">Seattle edition: AOFAS and IFFAS</a></h2>
+        <div class="date">September 17, 2026</div>
+        <p>The joint AOFAS/IFFAS meeting, the proposed Modifier 25 cut, GLP-1 use and ankle fracture healing, and one-year MIS versus open Lapidus outcomes.</p>
+      </div>
+    </article>
+    <article class="ed">
+      <span class="num">No. 1</span>
+      <div>
+        <h2><a href="001/">The Podiatry LinkedIn Power List</a></h2>
+        <div class="date">September 17, 2026</div>
+        <p>The podiatrists worth following on LinkedIn, ranked on public follower counts where they exist and verifiable signal where they don't.</p>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Archive"><a href="../">Latest edition</a></nav>
+    <div class="foot-bottom">© 2026 The Footnote.</div>
+  </div>
+</footer>
+</body>
+</html>
