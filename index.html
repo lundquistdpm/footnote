@@ -108,6 +108,19 @@
 
   @media (max-width:920px){ .layout{grid-template-columns:1fr;gap:20px;} }
   @media (max-width:560px){ .watch-row{grid-template-columns:1fr;gap:2px;} }
+
+  /* Newsletter signup (Kajabi form, restyled to match) */
+  .signup .rail-eyebrow{color:var(--clinical);}
+  .signup #kajabi-form{margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;max-width:none !important;}
+  .signup #kajabi-form .kajabi-form__title,.signup #kajabi-form .kajabi-form__subtitle{display:none !important;}
+  .signup #kajabi-form form{display:flex !important;flex-direction:column;gap:10px;margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form .kajabi-form__content,.signup #kajabi-form .kajabi-form__form-item{margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form input[type=email]{width:100% !important;box-sizing:border-box;height:auto !important;font:15px/1.4 var(--sans) !important;color:var(--ink) !important;background:var(--paper) !important;border:1px solid var(--rule) !important;border-radius:2px !important;padding:10px 12px !important;margin:0 !important;box-shadow:none !important;}
+  .signup #kajabi-form input[type=email]:focus{outline:2px solid var(--ink);outline-offset:1px;}
+  .signup #kajabi-form .kajabi-form__btn{width:100% !important;display:block;font:500 14px/1 var(--sans) !important;letter-spacing:0 !important;text-transform:none !important;color:var(--paper) !important;background:var(--ink) !important;border:1px solid var(--ink) !important;border-radius:2px !important;padding:12px 14px !important;margin:0 !important;cursor:pointer;box-shadow:none !important;}
+  .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
+  .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
+  .signup-band{max-width:780px;margin:0 0 56px;}
 </style>
 </head>
 <body>
@@ -254,6 +267,13 @@
     </main>
 
     <aside>
+      <div class="rail-card signup" id="subscribe">
+        <div class="rail-eyebrow">Free, every week</div>
+        <h3>Get The Footnote by email</h3>
+        <p class="soft">Surgical research, policy and practice news for podiatry, each with the line on why it matters. One email a week. Unsubscribe anytime.</p>
+        <script src="https://www.clinicianpreneur.com/forms/2149726324/embed.js"></script>
+      </div>
+
       <div class="rail-card">
         <div class="rail-eyebrow">Seattle calendar</div>
         <h3>Where the meeting goes next</h3>
