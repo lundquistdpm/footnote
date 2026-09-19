@@ -119,6 +119,19 @@
   .ed .date{font-size:13px;color:var(--ink-soft);margin-bottom:6px;}
   .ed p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;}
   @media (max-width:560px){ .ed{grid-template-columns:1fr;gap:4px;} }
+
+  /* Newsletter signup (Kajabi form, restyled to match) */
+  .signup .rail-eyebrow{color:var(--clinical);}
+  .signup #kajabi-form{margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;max-width:none !important;}
+  .signup #kajabi-form .kajabi-form__title,.signup #kajabi-form .kajabi-form__subtitle{display:none !important;}
+  .signup #kajabi-form form{display:flex !important;flex-direction:column;gap:10px;margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form .kajabi-form__content,.signup #kajabi-form .kajabi-form__form-item{margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form input[type=email]{width:100% !important;box-sizing:border-box;height:auto !important;font:15px/1.4 var(--sans) !important;color:var(--ink) !important;background:var(--paper) !important;border:1px solid var(--rule) !important;border-radius:2px !important;padding:10px 12px !important;margin:0 !important;box-shadow:none !important;}
+  .signup #kajabi-form input[type=email]:focus{outline:2px solid var(--ink);outline-offset:1px;}
+  .signup #kajabi-form .kajabi-form__btn{width:100% !important;display:block;font:500 14px/1 var(--sans) !important;letter-spacing:0 !important;text-transform:none !important;color:var(--paper) !important;background:var(--ink) !important;border:1px solid var(--ink) !important;border-radius:2px !important;padding:12px 14px !important;margin:0 !important;cursor:pointer;box-shadow:none !important;}
+  .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
+  .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
+  .signup-band{max-width:780px;margin:0 0 56px;}
 </style>
 </head>
 <body>
@@ -149,6 +162,12 @@
         <p>The podiatrists worth following on LinkedIn, ranked on public follower counts where they exist and verifiable signal where they don't.</p>
       </div>
     </article>
+  </section>
+  <section class="rail-card signup signup-band" id="subscribe">
+    <div class="rail-eyebrow">Free, every week</div>
+    <h3>Get the next edition by email</h3>
+    <p class="soft">Surgical research, policy and practice news for podiatry, each with the line on why it matters. One email a week. Unsubscribe anytime.</p>
+    <script src="https://www.clinicianpreneur.com/forms/2149726324/embed.js"></script>
   </section>
 </main>
 <footer>
