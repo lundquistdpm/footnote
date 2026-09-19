@@ -1,0 +1,47 @@
+name: Publish scheduled editions
+
+on:
+  schedule:
+    # 6:00 AM Central Daylight Time every Monday, with hourly retries until 9 AM
+    # in case GitHub's scheduler runs late. After Nov 1 (Standard Time) these
+    # fire an hour earlier locally; change 11-14 to 12-15 then.
+    - cron: '0 11-14 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish-scheduled
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Publish anything that is due
+        run: python scripts/publish_due.py
+      - name: Commit and push
+        id: commit
+        run: |
+          git config user.name "footnote-publisher"
+          git config user.email "footnote-publisher@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing due."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Publish scheduled edition"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request failed; the push may still trigger it."
