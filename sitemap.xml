@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lundquistdpm.github.io/footnote/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://lundquistdpm.github.io/footnote/assets/og-default.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lundquistdpm.github.io/footnote/editions/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://lundquistdpm.github.io/footnote/assets/og-archive.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lundquistdpm.github.io/footnote/editions/003/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lundquistdpm.github.io/footnote/editions/002/</loc>

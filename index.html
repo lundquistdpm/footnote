@@ -147,148 +147,269 @@
   .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
   .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
   .signup-band{max-width:780px;margin:0 0 56px;}
+  .masthead a.word{color:inherit;}
+  .lead .dek + .dek{margin-top:-2px;}
+  .gates{list-style:none;margin:0;padding:0;}
+  .gates li{padding:8px 0;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .gates li:last-child{border-bottom:none;}
+  .gates b{font-family:var(--serif);font-weight:600;}
+  .script{font-family:var(--serif);font-style:italic;font-size:15px !important;line-height:1.5 !important;}
+  .closer{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.4;margin:0;padding-top:22px;border-top:1px solid var(--rule);max-width:44ch;}
 </style>
 </head>
 <body>
 
+
 <header class="masthead">
   <div class="wrap masthead-bar">
-    <div class="word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
-    <div class="edition">No. 2 · Seattle edition</div>
+    <a class="word" href="./"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</a>
+    <div class="edition">No. 3 · AI fluency edition</div>
   </div>
   <div class="wrap">
-    <nav class="beat-nav" id="beatNav" aria-label="Filter by beat">
-      <button class="active" data-filter="all">All beats</button>
-      <button data-filter="clinical">Clinical &amp; surgical</button>
-      <button data-filter="research">Surgical research</button>
-      <button data-filter="compliance">Policy &amp; compliance</button>
-      <button data-filter="business">Practice &amp; business</button>
-      <button data-filter="products">Products</button>
-      <button data-filter="community">Voices</button>
+    <nav class="beat-nav" id="beatNav" aria-label="Filter by gate">
+      <button class="active" data-filter="all">Everything</button>
+      <button data-filter="community">The numbers</button>
+      <button data-filter="clinical">Delegate</button>
+      <button data-filter="research">Verify</button>
+      <button data-filter="compliance">Disclose</button>
+      <button data-filter="business">Own</button>
+      <button data-filter="products">Foot &amp; ankle AI</button>
     </nav>
   </div>
-  <div class="wrap issue-strip">Thursday, September 17, 2026. Nine stories across six beats, researched and summarized for DPMs running a practice.</div>
+  <div class="wrap issue-strip">Monday, September 21, 2026. A special edition on what podiatrists need to know about AI, organized around four gates: delegate, verify, disclose, own. Every figure links to its source.</div>
 </header>
 
 <div class="wrap">
   <div class="dispatch">
-    <span class="live">On site this week</span>
-    <span><b>AOFAS Annual Meeting + IFFAS 9th Biennial</b></span>
-    <span>Seattle Convention Center, Sept 16 to 19</span>
-    <span>Up to 66.5 CME/CE credits, virtual registration open</span>
+    <span class="live">Special edition</span>
+    <span><b>Companion to "AI Fluency for Healthcare"</b></span>
+    <span>Andrew Lundquist, DPM, MBA · Tennessee, 2026</span>
+    <span>Disclosures in the sidebar</span>
   </div>
 
-  <section class="lead story-item" data-cat="clinical">
-    <span class="tag clinical">Clinical &amp; surgical · Conference</span>
-    <h1>The orthopaedic foot and ankle world is in Seattle this week, and the program reads like a podiatric surgeon's case log</h1>
-    <p class="dek">AOFAS and the International Federation of Foot and Ankle Societies are meeting jointly for four days, with AOFAS science running Wednesday through Friday morning and IFFAS taking over through Saturday. Strip away the society branding and the agenda is minimally invasive hallux valgus, Lapidus variants, total ankle planning, Charcot salvage, and GLP-1 patients on the table. The questions dominating an orthopaedic meeting are the same ones filling our clinics.</p>
-    <div class="watch" aria-label="Sessions worth following">
-      <div class="watch-row"><span class="when">Thu 7:00 AM</span><span>Paper Session 1A on injectables and outcomes, including corticosteroid injection timing and GLP-1 receptor agonist associations.</span></div>
-      <div class="watch-row"><span class="when">Thu 8:45 AM</span><span>Symposium 6, Practice Management: AI utilization, private practice survival, in-clinic procedures and ambulatory surgery centers.</span></div>
-      <div class="watch-row"><span class="when">Thu 5:00 PM</span><span>Symposium 10 on MIS learning curve and complications, alongside Symposium 11 on 3D-printed implants, total talus and wearable sensors.</span></div>
-      <div class="watch-row"><span class="when">Fri 8:45 AM</span><span>Paper Session 5A on first TMT arthrodesis with early weightbearing and minimally invasive approaches.</span></div>
-      <div class="watch-row"><span class="when">Sat 11:45 AM</span><span>IFFAS Paper Session 3A on minimally invasive hallux valgus, including sex differences in early recovery.</span></div>
+  <section class="lead story-item" data-cat="community">
+    <span class="tag community">Editor's essay</span>
+    <h1>Four in five physicians already use AI. The skill that separates them is knowing what to hand off and what to sign.</h1>
+    <p class="dek">I once asked Mark Cuban how he would practice medicine. He spent about thirty seconds on the clinical answer and the rest of the conversation on marketing, communication and reach. That is where he saw the leverage. It took me a while to understand why. Clinical reasoning is being commoditized faster than any of us trained for. What is not getting cheaper is trust, and trust is built by the clinician who can explain exactly how a tool was used, check what it produced, and put a name on the result.</p>
+    <p class="dek">The adoption question is settled. The AMA's 2026 survey found more than 80% of physicians using AI professionally, double the 2023 share, and the average physician now uses it for 2.3 tasks. The open question is fluency: which work goes to the machine, how the output gets checked, what the patient is told, and who owns the note, the code and the outcome. This edition is organized around those four gates.</p>
+    <div class="figs">
+      <div class="fig"><b>81%</b><span>of physicians use AI at work (AMA, 2026)</span></div>
+      <div class="fig"><b>38%</b><span>the same figure in 2023</span></div>
+      <div class="fig"><b>2.3</b><span>use cases per physician, up from 1.1</span></div>
+      <div class="fig"><b>69%</b><span>of AI users use it daily (Doximity, 2026)</span></div>
     </div>
-    <div class="why"><b>Why it matters.</b> The ASC and in-office procedure conversation in Symposium 6 lands the same summer CMS proposed cutting same-day E/M payment in half. Surgical practices on both sides of the DPM/MD line are being pushed toward the same economics.</div>
-    <div class="byline">Source: <a href="https://www.aofas.org/annual-meeting/program/in-person-meeting-program-2026">AOFAS 2026 in-person meeting program</a> · Keynote Wednesday: Gary W. Stewart, MD, "Who Gets to Innovate?"</div>
+    <div class="why"><b>Why it matters.</b> Banking has already turned this into a hiring bar. According to the Financial Times, UBS will require graduates joining its Global Banking and Markets division in 2027 to show in interviews how they use AI, and Citi mandated AI prompt training for about 175,000 employees last year. Medicine is still treating fluency as optional, and the ACGME only proposed naming AI in residency requirements on September 8.</div>
+    <div class="byline">Sources: <a href="https://www.ama-assn.org/practice-management/digital-health/more-80-physicians-use-ai-professionally-ama-survey">AMA 2026 Physician Survey on Augmented Intelligence</a> · <a href="https://www.doximity.com/reports/state-of-ai-medicine-report/2026">Doximity 2026 State of AI in Medicine</a> · <a href="https://thenextweb.com/news/ubs-ai-skills-junior-bankers-2027-graduate-hiring">The Next Web on the FT's UBS report</a> · <a href="https://fortune.com/2025/10/01/citi-ai-prompt-training-mandate-employees-reskilling-workforce-business/">Fortune on Citi</a> · <a href="https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cprresidency_rc_09082026.pdf">ACGME proposed Common Program Requirements</a></div>
   </section>
 
   <div class="layout">
     <main>
       <section class="section">
-        <div class="section-head"><h2>Surgical research</h2></div>
+        <div class="section-head"><h2>The numbers</h2></div>
 
-        <article class="story story-item" data-cat="research">
-          <span class="tag research">Surgical research</span>
-          <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42358523/">GLP-1 use tied to more hardware failure and nonunion after ankle fracture fixation, not more infection</a></h3>
-          <p class="dek">A propensity-matched retrospective cohort in Foot &amp; Ankle Orthopaedics (June 2026) followed roughly 1,200 to 1,400 GLP-1 receptor agonist users through ankle ORIF. Hardware failure was elevated from 3 months and stayed elevated through 12 months; nonunion and malunion rose at 6 and 12 months. Infection showed no association. The authors call the findings hypothesis-generating because of residual imbalance between groups.</p>
-          <div class="why"><b>Why it matters.</b> The risk signal points at bone, not wound. That shifts the preop conversation from "hold the drug for anesthesia" to fixation choice, weightbearing pace and follow-up films. AOFAS has a paper session on the same question this morning.</div>
-          <div class="meta">Monteiro SK et al., <a href="https://pubmed.ncbi.nlm.nih.gov/42358523/">Foot &amp; Ankle Orthopaedics, via PubMed</a></div>
-        </article>
-
-        <article class="story story-item" data-cat="research">
-          <span class="tag research">Surgical research</span>
-          <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42473753/">MIS and open Lapidus land in the same place at one year</a></h3>
-          <p class="dek">Hospital for Special Surgery compared 66 minimally invasive and 74 open Lapidus procedures for moderate to severe hallux valgus. Both groups improved meaningfully on every PROMIS domain with no significant difference between them. Open correction edged ahead on some angles, MIS corrected Meary's angle more on weightbearing CT, and complications (nonunion, recurrence, infection, hardware removal) were comparable.</p>
-          <div class="why"><b>Why it matters.</b> A single-center Level III study will not settle the MIS debate, but it removes "patients do better" as an argument in either direction at one year. The choice comes back to the surgeon's reproducibility and the deformity in front of them.</div>
-          <div class="meta">Ward L, Ellis S et al., <a href="https://pubmed.ncbi.nlm.nih.gov/42473753/">Foot &amp; Ankle International, July 2026</a></div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-head"><h2>Clinical &amp; surgical</h2></div>
-
-        <article class="story story-item" data-cat="clinical">
-          <span class="tag clinical">Clinical &amp; surgical · AOFAS podium</span>
-          <h3><a href="https://www.globenewswire.com/news-release/2026/09/17/3364415/0/en/treace-announces-results-of-three-clinical-studies-including-the-milestone-5-year-align3d-study-demonstrating-sustained-positive-outcomes-of-the-lapiplasty-procedure.html">Five-year ALIGN3D data put triplanar Lapidus recurrence under 1 percent by the strict definition</a></h3>
-          <p class="dek">The prospective multicenter ALIGN3D study (173 enrolled, 137 at five years, 13 surgeons at 7 sites) reported radiographic recurrence of 0.8% at an HVA threshold above 20 degrees and 5.3% above 15 degrees, with boot weightbearing at a mean 8.4 days. Daniel Farber, MD presents Friday. Two companion studies also report: MTA3D interim two-year data on combined metatarsus adductus and hallux valgus correction (Mark Easley, MD, today at 4:00 PM) and a 12-month SpeedPlate poster from Jody McAleer, DPM showing 96.6% union.</p>
+        <article class="story story-item" data-cat="community">
+          <span class="tag community">The numbers · Time</span>
+          <h3><a href="https://www.acpjournals.org/doi/10.7326/M16-0961">AI is not competing with your clinical judgment. It is competing with your clipboard.</a></h3>
+          <p class="dek">The benchmark time-and-motion study still frames the problem. Across 57 ambulatory physicians in four specialties, Sinsky and colleagues found 27% of the day went to direct face time with patients and 49% to EHR and desk work. Even inside the exam room, 37% of time went to the computer, and physicians who kept diaries reported one to two hours of after-hours work each night. It has not improved. A 2024 follow-up at an academic system found total EHR time up 7.8% and inbox time up 24% between 2019 and 2023.</p>
           <div class="figs">
-            <div class="fig"><b>0.8%</b><span>recurrence, HVA &gt; 20°</span></div>
-            <div class="fig"><b>5.3%</b><span>recurrence, HVA &gt; 15°</span></div>
-            <div class="fig"><b>8.4 days</b><span>mean to weightbearing</span></div>
-            <div class="fig"><b>137 / 173</b><span>patients at 5 years</span></div>
+            <div class="fig"><b>27%</b><span>of the day face to face</span></div>
+            <div class="fig"><b>49%</b><span>on EHR and desk work</span></div>
+            <div class="fig"><b>37%</b><span>of exam-room time on the EHR</span></div>
+            <div class="fig"><b>+24%</b><span>inbox time, 2019 to 2023</span></div>
           </div>
-          <div class="why"><b>Why it matters.</b> Five-year prospective numbers are rare in bunion surgery, and the two recurrence thresholds are worth quoting together. Pair them with the HSS comparison above before citing either in a consult.</div>
-          <p class="disclose">Figures are from a manufacturer press release for company-sponsored post-market studies; peer-reviewed publication will follow.</p>
-          <div class="meta">Source: <a href="https://www.globenewswire.com/news-release/2026/09/17/3364415/0/en/treace-announces-results-of-three-clinical-studies-including-the-milestone-5-year-align3d-study-demonstrating-sustained-positive-outcomes-of-the-lapiplasty-procedure.html">Treace Medical Concepts via GlobeNewswire, Sept 17</a></div>
-        </article>
-
-        <article class="story story-item" data-cat="clinical">
-          <span class="tag clinical">Clinical &amp; surgical</span>
-          <h3><a href="https://www.prnewswire.com/news-releases/stryker-showcases-foot--ankle-innovation-at-aofas-2026-with-prophecy-surgical-planning-for-incompass-and-hoffmann-lrf-smarthex-302879728.html">Stryker brings Prophecy patient-specific planning to its Incompass total ankle</a></h3>
-          <p class="dek">Stryker says Prophecy has supported more than 100,000 ankle cases over 14 years. At AOFAS it is extending the platform to Incompass, its newest total ankle system, with 3D visualization and both resect-through and pin-through options. The company also introduced Hoffmann LRF smartHEX, a hexapod limb reconstruction platform with a patient-facing app tied to the surgeon's correction schedule.</p>
-          <div class="why"><b>Why it matters.</b> Patient-specific guides are becoming table stakes for TAA, and the patient app on a hexapod frame addresses the least-loved part of frame care: strut adjustments done at home.</div>
-          <div class="meta">Source: <a href="https://www.prnewswire.com/news-releases/stryker-showcases-foot--ankle-innovation-at-aofas-2026-with-prophecy-surgical-planning-for-incompass-and-hoffmann-lrf-smarthex-302879728.html">Stryker via PR Newswire</a></div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-head"><h2>Policy &amp; compliance</h2></div>
-
-        <article class="story story-item" data-cat="compliance">
-          <span class="tag compliance">Policy &amp; compliance</span>
-          <h3><a href="https://www.ama-assn.org/practice-management/medicare-medicaid/2027-proposed-medicare-fee-schedule-what-physicians-need-know">Comments are closed on the Modifier 25 cut. The final rule is due around November 1.</a></h3>
-          <p class="dek">CMS's 2027 fee schedule proposal would pay the highest-valued service at 100% and every other same-day E/M or procedure at 50% when an E/M is billed with a 0-, 10- or 90-day global procedure. The non-APM conversion factor would fall 1.68% to $32.84 as a temporary 2.5% bump expires. Comments were due September 14. APMA filed comments and joined the Same Day Care Coalition opposing the cut; the AMA organized a sign-on letter from nearly every state and specialty society.</p>
-          <div class="why"><b>Why it matters.</b> Few specialties pair an E/M with a minor procedure as often as podiatry. The useful work now is pulling last year's Modifier 25 claims and pricing the exposure before January, not after.</div>
-          <div class="meta">Sources: <a href="https://www.ama-assn.org/practice-management/medicare-medicaid/2027-proposed-medicare-fee-schedule-what-physicians-need-know">AMA</a> · <a href="https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule">CMS fact sheet</a> · <a href="https://www.apma.org/">APMA</a></div>
-        </article>
-
-        <article class="story story-item" data-cat="compliance">
-          <span class="tag compliance">Policy &amp; compliance</span>
-          <h3><a href="https://hme-business.com/dme-macs-propose-lcd-for-topical-oxygen-to-treat-diabetic-foot-ulcers/">DME MACs move toward covering topical oxygen for stalled diabetic foot ulcers</a></h3>
-          <p class="dek">A proposed LCD published July 24 would cover topical oxygen for DFUs that shrink less than 50% after four consecutive weeks of optimized standard care, with HbA1c thresholds, documented adequate perfusion, an in-person visit to start and monthly visits after. Comments closed September 5. APMA submitted comments.</p>
-          <div class="why"><b>Why it matters.</b> The four-week, 50% rule mirrors how most wound clinics already decide to escalate. Practices that document area measurements consistently are the ones that will be able to use it.</div>
-          <div class="meta">Source: <a href="https://hme-business.com/dme-macs-propose-lcd-for-topical-oxygen-to-treat-diabetic-foot-ulcers/">HME Business</a></div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-head"><h2>Products</h2></div>
-        <article class="story story-item" data-cat="products">
-          <span class="tag products">Products &amp; devices</span>
-          <h3><a href="https://www.globenewswire.com/news-release/2026/09/15/3362722/0/en/treace-highlights-product-innovations-and-clinical-data-across-its-expanding-foot-ankle-portfolio-at-the-2026-aofas-annual-meeting.html">The bunion company is becoming a foot and ankle company</a></h3>
-          <p class="dek">Treace's AOFAS booth goes well past Lapiplasty: the Lapiplasty Lightning system with SpeedTMT implants, a Tailorplasty MIS tailor's bunion system, SuperBite fully threaded compression screws, a HyperPlate XM dynamic compression plate, CartiBlaster powered joint prep, VitaFuse bioactive glass graft, and a Treace X-ray app for radiographic measurement.</p>
-          <div class="why"><b>Why it matters.</b> Expect the same rep who covers your Lapidus cases to start pitching midfoot and hindfoot fusion kits. Worth knowing before your next value analysis meeting.</div>
-          <div class="meta">Source: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362722/0/en/treace-highlights-product-innovations-and-clinical-data-across-its-expanding-foot-ankle-portfolio-at-the-2026-aofas-annual-meeting.html">Treace via GlobeNewswire, Sept 15</a></div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-head"><h2>Practice &amp; business · Voices</h2></div>
-        <article class="story story-item" data-cat="business">
-          <span class="tag business">Practice &amp; business</span>
-          <h3><a href="https://www.aofas.org/annual-meeting/program/in-person-meeting-program-2026">An orthopaedic society puts "private practice survival" on its main program</a></h3>
-          <p class="dek">AOFAS Symposium 6, "Practice Management: The Future of Foot and Ankle Orthopaedics," covers AI utilization, private practice survival, in-clinic procedures and ambulatory surgery centers. The same morning, Kaitlin C. Neary, MD gives a keynote titled "Beyond Survival Mode: Designing a Sustainable Life in Surgery."</p>
-          <div class="why"><b>Why it matters.</b> When two of a surgical meeting's headline slots are about survival, the pressure on independent practice is no longer a podiatry-only story.</div>
-          <div class="meta">Source: <a href="https://www.aofas.org/annual-meeting/program/in-person-meeting-program-2026">AOFAS 2026 program</a></div>
+          <div class="why"><b>Why it matters.</b> The documentation, letters, prior authorizations and inbox are exactly the tasks the AMA survey says physicians hand to AI first: research summaries (39%), care plans and notes (30%), and billing and visit documentation (28%). Start the conversation there, not with diagnosis.</div>
+          <div class="meta">Sinsky C et al., <a href="https://www.acpjournals.org/doi/10.7326/M16-0961">Annals of Internal Medicine, 2016</a> · Arndt BG, Sinsky CA et al., <a href="https://www.annfammed.org/content/22/1/12">Annals of Family Medicine, 2024</a> · <a href="https://www.ama-assn.org/system/files/physician-ai-sentiment-report.pdf">AMA 2026 report (PDF)</a></div>
         </article>
 
         <article class="story story-item" data-cat="community">
-          <span class="tag community">Voices</span>
-          <h3><a href="https://www.acfas.org/professional-resources/latest-news">Twelve foot and ankle fellowships move up with ACFAS</a></h3>
-          <p class="dek">ACFAS advanced seven fellowship programs to full Recognized Status, including programs in Connecticut, Pennsylvania, California, Oregon and Indiana, and granted Conditional Status to five new programs launching in Ohio, Texas, California and Nevada.</p>
-          <div class="meta">Source: <a href="https://www.acfas.org/professional-resources/latest-news">ACFAS, August 2026</a></div>
+          <span class="tag community">The numbers · Patients</span>
+          <h3><a href="https://www.kff.org/health-information-trust/poll-1-in-3-adults-are-turning-to-ai-chatbots-for-health-information-equaling-the-share-who-use-social-media-for-health/">One in three adults asked a chatbot about their health this year, and many never followed up with a doctor</a></h3>
+          <p class="dek">A KFF poll fielded in March found 32% of U.S. adults used an AI chatbot for health information in the past year. Among those using it for physical health, 42% did not follow up with a clinician, and 41% of all users uploaded personal medical information. OpenAI says more than 230 million people ask ChatGPT health questions every week and launched a consumer ChatGPT Health product in January that connects to medical records.</p>
+          <div class="why"><b>Why it matters.</b> Your patients arrive having already asked. The visit has to deliver more than a chatbot subscription does: examination, judgment, a plan they trust and someone accountable for it.</div>
+          <div class="meta">Sources: <a href="https://www.kff.org/health-information-trust/poll-1-in-3-adults-are-turning-to-ai-chatbots-for-health-information-equaling-the-share-who-use-social-media-for-health/">KFF Health Information and Trust poll, March 2026</a> · <a href="https://openai.com/index/introducing-chatgpt-health/">OpenAI, January 2026</a> (company-reported figure)</div>
         </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Gate 1 · Delegate</h2></div>
+
+        <article class="story story-item" data-cat="clinical">
+          <span class="tag clinical">Delegate · Ambient scribes</span>
+          <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41920565/">The ambient scribe evidence is in, and it is smaller and more real than the marketing</a></h3>
+          <p class="dek">Two randomized trials published in the past year both found benefit, none of it dramatic. At UCLA (238 physicians, about 72,000 encounters), Nabla cut documentation time per note by 9.5% against usual care, Microsoft DAX did not reach significance, and burnout improved roughly 7% in both arms. A UW Health stepped-wedge trial of Abridge found burnout down about 20% and 30 fewer minutes of work outside work. The largest real-world study, in JAMA this April, followed about 1,800 adopters across five academic systems: 16 fewer documentation minutes per eight hours of patient time, about half a visit more per week, and no significant change in after-hours EHR time. Only 32% of adopters used the scribe in at least half their visits.</p>
+          <div class="figs">
+            <div class="fig"><b>−16 min</b><span>documentation per 8 clinic hours</span></div>
+            <div class="fig"><b>51.9% → 38.8%</b><span>burnout, six-system Abridge study</span></div>
+            <div class="fig"><b>&lt;10%</b><span>of patients declined (UCLA)</span></div>
+            <div class="fig"><b>$100 to $600</b><span>per clinician per month</span></div>
+          </div>
+          <div class="why"><b>Why it matters.</b> The gain goes to clinicians who actually use it on most visits. In our own eight-week pilot with seven clinicians, burnout scores fell from 69% to 43%, and half were still using the tool three months later. That is a small, uncontrolled internal pilot, and it matches the literature: the tool works when it becomes a habit, and adoption is the hard part.</div>
+          <p class="disclose">Disclosure: the editor serves as Clinical Director at Nabla Technologies, one of the products in the UCLA trial. The pilot figures are internal and unpublished.</p>
+          <div class="meta">Rotenstein LS, Mishuris RG et al., <a href="https://pubmed.ncbi.nlm.nih.gov/41920565/">JAMA, April 2026</a> · <a href="https://www.uclahealth.org/news/release/ucla-study-finds-ai-scribes-may-reduce-documentation-time">UCLA trial, NEJM AI, Nov 2025</a> · Afshar M et al., <a href="https://ai.nejm.org/doi/abs/10.1056/AIoa2500945">NEJM AI, Dec 2025</a> · Olson KD et al., <a href="https://www.ama-assn.org/practice-management/physician-health/how-much-can-ambient-ai-scribes-help-cut-doctor-burnout">JAMA Network Open, Oct 2025</a> · Pricing: <a href="https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambient-ai-scales-across-health-systems-as-burnout-data-emerges/">Becker's</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="clinical">
+          <span class="tag clinical">Delegate · Guardrail</span>
+          <h3><a href="https://www.hipaajournal.com/is-chatgpt-hipaa-compliant/">The consumer chatbot on your phone is not a place for patient information</a></h3>
+          <p class="dek">Free and personal tiers of ChatGPT, Claude and Gemini do not come with a business associate agreement, and OpenAI says it will not sign one for its consumer ChatGPT Health feature. The healthcare versions launched this year do: OpenAI for Healthcare (January 8) offers a BAA for ChatGPT for Healthcare and its API, Anthropic covers Claude Enterprise plans, and Google's Workspace BAA covers only the Gemini features on its HIPAA-included list. Texas now also requires electronic health records to be stored in the United States as of January 1, 2026.</p>
+          <div class="why"><b>Why it matters.</b> The safe line is simple. De-identified prompts (a rehab protocol template, a prior-authorization letter skeleton, a patient handout on Charcot foot at a sixth-grade reading level) belong in any tool. Anything with a name, a date of birth or a chart detail belongs only in a tool your practice has a BAA with.</div>
+          <div class="meta">Sources: <a href="https://openai.com/index/openai-for-healthcare/">OpenAI for Healthcare</a> · <a href="https://support.claude.com/en/articles/13296973-hipaa-ready-enterprise-plans">Claude HIPAA-ready plans</a> · <a href="https://knowledge.workspace.google.com/admin/compliance/hipaa-compliance-with-google-workspace-and-cloud-identity">Google Workspace HIPAA</a> · <a href="https://www.tmlt.org/resource/new-ai-disclosure-requirements-for-physicians-passed-into-texas-law">TMLT on Texas SB 1188</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="clinical">
+          <span class="tag clinical">Delegate · Agents</span>
+          <h3>A chatbot answers. An agent works the whole problem.</h3>
+          <p class="dek">Most clinicians have only used the first kind. A chatbot needs a prompt at every step. An agent is given a goal and runs the workflow: check eligibility, draft the prior authorization letter from your last twenty approved ones, route the referral, and follow up if the payer has not answered in 48 hours. Tools that let a clinician describe a workflow in plain language and get a working version back are now good enough that a prior-auth builder or a post-op instruction generator tuned to your own protocol is an afternoon project, not an IT ticket.</p>
+          <div class="why"><b>Why it matters.</b> The delegation line does not move just because the tool got more capable. Hand off what is repetitive, rule-based and reversible. Keep judgment calls, irreversible decisions and anything where a wrong answer causes harm. An agent that drafts is not an agent that decides.</div>
+          <div class="meta">From the lecture "AI Fluency for Healthcare." The editor uses Claude personally and has no financial relationship with Anthropic.</div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Gate 2 · Verify</h2></div>
+
+        <article class="story story-item" data-cat="research">
+          <span class="tag research">Verify · Diagnostic reasoning</span>
+          <h3><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2825395">In two Stanford-led trials, doctors with GPT-4 did no better than GPT-4 alone</a></h3>
+          <p class="dek">In a randomized trial of 50 physicians working through diagnostic vignettes, those given GPT-4 scored a median 76% against 74% for those using conventional resources, a difference that was not significant. GPT-4 working alone scored 92%. A follow-up in Nature Medicine with 92 physicians on management reasoning found GPT-4 assistance did help, by 6.5 points, but physicians with the model still did no better than the model by itself. A March 2026 study found a better-designed workflow, with the AI giving a first or second opinion, closed much of that gap.</p>
+          <div class="why"><b>Why it matters.</b> These were curated vignettes, not real patients, and the samples were small. The lesson is still clear: the clinician's value is shifting from generating the answer to knowing when the answer is wrong. That is a harder skill, not a smaller one, and most of us were never taught it.</div>
+          <div class="meta">Goh E et al., <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2825395">JAMA Network Open, Oct 2024</a> · Goh E et al., <a href="https://www.nature.com/articles/s41591-024-03456-y">Nature Medicine, Feb 2025</a> · <a href="https://www.nature.com/articles/s41746-026-02545-1">npj Digital Medicine, Mar 2026</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="research">
+          <span class="tag research">Verify · Automation bias</span>
+          <h3><a href="https://pubs.rsna.org/doi/full/10.1148/radiol.222176">When the AI is wrong, experienced clinicians follow it too</a></h3>
+          <p class="dek">In a mammography study, very experienced radiologists read at 82% accuracy on their own. When shown deliberately incorrect AI suggestions, they fell to 46%, and less experienced readers fell to about 20%. In a 2025 trial, 44 physicians trained in AI literacy received GPT-4o advice with errors planted in half the cases, and their accuracy dropped 14 points when the advice was wrong. Separately, an observational study at four Polish centers found endoscopists' adenoma detection without AI fell from 28.4% to 22.4% after AI assistance became routine.</p>
+          <div class="figs">
+            <div class="fig"><b>82% → 46%</b><span>expert accuracy with wrong AI</span></div>
+            <div class="fig"><b>−14 pts</b><span>physician accuracy with flawed advice</span></div>
+            <div class="fig"><b>28.4% → 22.4%</b><span>unaided adenoma detection</span></div>
+          </div>
+          <div class="why"><b>Why it matters.</b> Training alone does not protect against this. A written checklist applied every time does better than good intentions, and the skill you delegate is the skill you stop practicing. The AMA survey found 88% of physicians share that concern about skill loss.</div>
+          <div class="meta">Dratsch T et al., <a href="https://pubs.rsna.org/doi/full/10.1148/radiol.222176">Radiology, 2023</a> · Qazi et al., <a href="https://ai.nejm.org/doi/full/10.1056/AIoa2501001">NEJM AI</a> · Budzyń K et al., <a href="https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00133-5/abstract">Lancet Gastroenterology &amp; Hepatology, Aug 2025</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="research">
+          <span class="tag research">Verify · Citations</span>
+          <h3><a href="https://doi.org/10.7759/cureus.113654">Even the newest models invent references, and the orthopaedic data is recent</a></h3>
+          <p class="dek">When ChatGPT-5 was asked to support 70 recommendations from AAOS clinical practice guidelines, it produced 2,736 references. About 7% were fabricated outright, only 49% were fully correct, and PubMed IDs were wrong 37% of the time. That is an improvement on 2023, when a Cureus study found 47% of ChatGPT-3.5's medical references did not exist. It is not good enough for a letter to a payer or a slide at a society meeting.</p>
+          <div class="figs">
+            <div class="fig"><b>7.1%</b><span>of references fabricated (ChatGPT-5)</span></div>
+            <div class="fig"><b>49%</b><span>fully correct</span></div>
+            <div class="fig"><b>47%</b><span>fabricated in 2023 (GPT-3.5)</span></div>
+          </div>
+          <div class="why"><b>Why it matters.</b> The four-question check from the lecture takes about ninety seconds: it cites something you can find, it matches current guidelines, you would sign the sentence as written, and it sounds like you and not a template. If the source cannot be found, the output is a draft, not a fact.</div>
+          <div class="meta">Lum ZC, <a href="https://doi.org/10.7759/cureus.113654">Cureus, July 2026</a> · Bhattacharyya M et al., <a href="https://pubmed.ncbi.nlm.nih.gov/37337480/">Cureus, May 2023</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="research">
+          <span class="tag research">Verify · Scribe errors</span>
+          <h3><a href="https://medinform.jmir.org/2026/1/e86474">One in twenty AI scribe notes carried an error serious enough to matter</a></h3>
+          <p class="dek">UC Davis audited 356 of 7,545 notes generated by 31 physicians. Omissions appeared in 18%, hallucinated content in 11.5% and wrongly included material in 9.3%. Most errors were mild to moderate, but 5.3% of notes contained an error rated as posing serious risk. In a simulated test of five commercial platforms, notes averaged a 26% error rate. The most common real-world failures at UCLA were omissions and misattributed pronouns.</p>
+          <div class="why"><b>Why it matters.</b> The review is the job. Turn off auto-accept, read the assessment and plan every time, and pay particular attention to laterality, which foot, which toe and which procedure. A scribe that saves four minutes and puts the wrong side in the op note costs far more than four minutes.</div>
+          <div class="meta">UC Davis Health, <a href="https://medinform.jmir.org/2026/1/e86474">JMIR Medical Informatics, Apr 2026</a> · Anderson et al., <a href="https://ohsu.elsevierpure.com/en/publications/evaluating-the-quality-and-safety-of-ambient-digital-scribe-platf/">Mayo Clinic Proceedings: Digital Health, Dec 2025</a> · Dai, Kvedar, Polsky, <a href="https://www.nature.com/articles/s41746-025-02272-z">npj Digital Medicine, Dec 2025</a></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Gate 3 · Disclose</h2></div>
+
+        <article class="story story-item" data-cat="compliance">
+          <span class="tag compliance">Disclose · Patients</span>
+          <h3><a href="https://www.pewresearch.org/short-reads/2026/08/25/americans-want-transparency-when-ai-is-used-in-their-healthcare/">72% of Americans want to be told when AI is part of their care, and almost half do not know if it already is</a></h3>
+          <p class="dek">Pew surveyed 3,488 adults in June. The share who want to be told was highest for scans and diagnosis (81% each) and was still 72% for note-taking. Forty-six percent were not sure whether AI had been used in their care. The wording matters: in a Duke study of AI-drafted portal replies, patients rated the drafts slightly higher than human-written ones, and their preferred disclosure was "written by Dr. T with the support of automated tools." A separate JAMA Network Open study found any mention of AI in a physician's advertising slightly lowered ratings of trust and empathy.</p>
+          <div class="why"><b>Why it matters.</b> Disclosure works as positioning, not confession. One sentence covers it: "I use an AI tool to help write up our visit today, so I can spend more time looking at you instead of my screen. I review everything before it becomes part of your record." It takes about eleven seconds.</div>
+          <div class="meta">Sources: <a href="https://www.pewresearch.org/short-reads/2026/08/25/americans-want-transparency-when-ai-is-used-in-their-healthcare/">Pew Research Center, Aug 25, 2026</a> · Cavalier JS et al., <a href="https://pubmed.ncbi.nlm.nih.gov/40067301/">JAMA Network Open, Mar 2025</a> · Reis M et al., <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836557">JAMA Network Open, Jul 2025</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="compliance">
+          <span class="tag compliance">Disclose · State law</span>
+          <h3><a href="https://www.tmlt.org/resource/new-ai-disclosure-requirements-for-physicians-passed-into-texas-law">Disclosure is already the law in Texas and California, and more states are coming</a></h3>
+          <p class="dek">Texas has the strictest rules for clinicians. SB 1188 (effective September 2025) requires practitioners who use AI in diagnosis or treatment to stay within scope, review AI-created records and disclose the use to patients. TRAIGA, in effect since January 1, requires that disclosure by the date of service. California's AB 3030 requires a disclaimer on AI-generated patient clinical communications unless a licensed provider reviews them first. Utah requires disclosure in high-risk interactions. Colorado replaced its stalled AI Act with a notice-based law that takes effect January 1, 2027. A December 2025 executive order seeks federal preemption, but Congress has not acted, so state laws still apply.</p>
+          <div class="why"><b>Why it matters.</b> Clinicians outside these states should read them as a preview. The practical steps are the same everywhere: note in the record that AI-assisted documentation was used and reviewed, know your practice's policy, and decide in advance who reviews AI output and what happens when it is wrong.</div>
+          <div class="meta">Sources: <a href="https://www.tmlt.org/resource/new-ai-disclosure-requirements-for-physicians-passed-into-texas-law">TMLT</a> · <a href="https://www.afslaw.com/perspectives/alerts/california-requires-disclaimers-health-care-providers-ai-generated-patient">ArentFox Schiff on AB 3030</a> · <a href="https://www.davispolk.com/insights/client-update/utah-scales-back-reach-generative-ai-consumer-protection-law">Davis Polk on Utah</a> · <a href="https://www.mcdermottlaw.com/insights/colorado-ai-law-in-flux-comprehensive-replacement-bill-signed-after-federal-court-blocks-predecessors-enforcement/">McDermott on Colorado</a> · <a href="https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare">Holland &amp; Knight 2026 tracker</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="compliance">
+          <span class="tag compliance">Disclose · Our profession</span>
+          <h3><a href="https://www.apma.org/about-apma/news/news-releases/2026/apma-pushes-for-responsible-artificial-intelligence-application-in-health-care/">APMA's position: AI should support, not replace, physician judgment</a></h3>
+          <p class="dek">APMA adopted a formal AI position statement in March and filed comments with HHS. It calls for disclosure when AI is used in coverage decisions, opposes opaque algorithms that drive denials and downcoding, and asks that podiatric physicians be included in AI design and regulation. It raised AI claims review directly with Aetna on March 30, alongside skin substitutes and modifier 25. The Joint Commission and the Coalition for Health AI issued voluntary guidance last September that also asks organizations to tell patients about AI use, and the Federation of State Medical Boards has said since 2024 that the physician remains accountable for AI-informed decisions.</p>
+          <div class="why"><b>Why it matters.</b> The professional consensus lines up with the patient data: tell people, keep a human in the loop, and document the reasoning when you accept or reject an AI recommendation.</div>
+          <div class="meta">Sources: <a href="https://www.apma.org/about-apma/news/news-releases/2026/apma-pushes-for-responsible-artificial-intelligence-application-in-health-care/">APMA, Mar 2026</a> · <a href="https://www.apma.org/about-apma/news/news-releases/2026/apma-meets-with-aetna-on-ai-skin-substitutes-and-coverage-issues/">APMA and Aetna</a> · <a href="https://www.jointcommission.org/en-us/knowledge-library/news/2025-09-jc-and-chai-release-initial-guidance-to-support-responsible-ai-adoption">Joint Commission and CHAI</a> · <a href="https://telehealth.org/news/medical-boards-new-ai-guidelines/">FSMB guidance summary</a></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Gate 4 · Own</h2></div>
+
+        <article class="story story-item" data-cat="business">
+          <span class="tag business">Own · Coding</span>
+          <h3><a href="https://www.trillianthealth.com/market-research/studies/outpatient-coding-intensity-increases-as-hospitals-adopt-ai-enabled-scribing">Scribes are pushing E/M levels up, and payers are pushing back</a></h3>
+          <p class="dek">At the five systems in the April JAMA study, scribe adoption added about $167 a month in E/M revenue per clinician. Trilliant Health found the share of established visits billed at 99214 or 99215 rose 7 to 12 points at six systems as AI scribing spread. Blue Cross Blue Shield Association estimates AI-enabled coding added about $2.3 billion in spending. Cigna began automatically downcoding level 4 and 5 E/M claims last October. Podiatry is already under a spotlight: OIG found 44 of 100 sampled podiatrist E/M claims noncompliant, with modifier 25 at issue.</p>
+          <div class="why"><b>Why it matters.</b> A more complete note can justify a higher level. It can also generate codes the visit did not support. The scribe suggests, and you sign. If a code would not survive an audit of the note, it should not leave the building.</div>
+          <div class="meta">Sources: <a href="https://www.statnews.com/2026/04/01/ai-ambient-scribes-modest-time-savings-clinical-documentation/">STAT on the JAMA study</a> · <a href="https://www.trillianthealth.com/market-research/studies/outpatient-coding-intensity-increases-as-hospitals-adopt-ai-enabled-scribing">Trilliant Health, Mar 2026</a> · <a href="https://www.bcbs.com/about-us/association-news/new-bcbsa-research-on-ai-hospital-billing-driving-higher-health-care-costs">BCBSA</a> · <a href="https://www.aafp.org/pubs/fpm/blogs/gettingpaid/entry/cigna-downcoding-em.html">AAFP on Cigna</a> · <a href="https://www.apma.org/about-apma/news/news-releases/2025/apma-statement-regarding-oig-report-on-podiatrists-evaluation-and-management-claims/">APMA on the OIG report</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="business">
+          <span class="tag business">Own · Payers</span>
+          <h3><a href="https://www.cms.gov/priorities/innovation/files/document/wiser-model-frequently-asked-questions">Medicare's AI prior-authorization pilot covers skin substitutes for lower-extremity wounds</a></h3>
+          <p class="dek">CMS's WISeR model began January 1 in traditional Medicare in New Jersey, Ohio, Oklahoma, Texas, Arizona and Washington, with a different AI vendor in each state. Its 14 service categories include skin substitutes for lower-extremity chronic wounds (in states with an active coverage policy), electrical nerve stimulators and epidural steroid injections. The House Appropriations Committee voted in June to defund it, the Senate declined to repeal it in July, and records obtained by STAT last week describe a rushed launch and delayed decisions.</p>
+          <div class="why"><b>Why it matters.</b> Wound care podiatrists in those six states are already negotiating with an algorithm. Denials are still made in your patient's name, so document medical necessity as if a machine will read it first, because it will.</div>
+          <div class="meta">Sources: <a href="https://www.cms.gov/priorities/innovation/files/document/wiser-model-frequently-asked-questions">CMS WISeR FAQ</a> · <a href="https://www.bakertilly.com/insights/medicare-wiser-model">Baker Tilly service list</a> · <a href="https://www.healthcaredive.com/news/senate-republicans-block-medicare-ai-prior-authorization-pilot-repeal-wiser/825523/">Healthcare Dive</a> · <a href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care/">STAT, Sept 15</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="business">
+          <span class="tag business">Own · Liability and leadership</span>
+          <h3><a href="https://www.medicaleconomics.com/view/the-new-malpractice-frontier-who-s-liable-when-ai-gets-it-wrong-">No AI malpractice verdict yet, and the physician still holds the pen</a></h3>
+          <p class="dek">No U.S. malpractice verdict has turned on AI so far. The Doctors Company says it has no AI exclusions and has seen few AI-specific claims, and the consistent advice from carriers and boards is to vet tools, document the AI's role and your own reasoning, and have a disclosure protocol. Most clinical AI pilots that fail do so because of leadership, not technology. Adoption stalls when the organization does not reward it, clinicians are not trained, or the tool does not fit the workflow.</p>
+          <div class="why"><b>Why it matters.</b> Delegate the task and never the responsibility. In most practices nobody owns AI policy yet, and the clinician who volunteers to own it is the one who shapes how it gets used.</div>
+          <div class="meta">Sources: <a href="https://www.medicaleconomics.com/view/the-new-malpractice-frontier-who-s-liable-when-ai-gets-it-wrong-">Medical Economics</a> · <a href="https://www.ama-assn.org/press-center/ama-press-releases/ama-adopts-new-policy-aimed-ensuring-transparency-ai-tools">AMA policy on AI transparency</a></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Foot &amp; ankle AI</h2></div>
+
+        <article class="story story-item" data-cat="products">
+          <span class="tag products">Foot &amp; ankle AI · Imaging</span>
+          <h3><a href="https://www.nature.com/articles/s41598-026-42100-2">AI measures hallux valgus angles as well as surgeons in a fraction of a second, but fracture detection is less settled</a></h3>
+          <p class="dek">A deep-learning model trained on 2,468 weightbearing radiographs matched surgeons on HVA (ICC 0.90) and IMA (ICC 0.89) and had fewer IMA outliers, at 0.13 seconds per image. For fractures, a 14-study meta-analysis pooled 93% sensitivity and 94.5% specificity. In a single-center head-to-head published last month, however, a commercial FDA-cleared tool reached 74% sensitivity on 701 foot and ankle exams against 84% for musculoskeletal radiologists, and struggled most with Chopart and Lisfranc injuries.</p>
+          <div class="figs">
+            <div class="fig"><b>0.90</b><span>ICC for HVA vs surgeons</span></div>
+            <div class="fig"><b>0.13 s</b><span>per radiograph</span></div>
+            <div class="fig"><b>74% vs 84%</b><span>fracture sensitivity, AI vs MSK radiologists</span></div>
+          </div>
+          <div class="why"><b>Why it matters.</b> Angle measurement is repetitive, rule-based and easy to check, which makes it a good task to delegate. Missing a Lisfranc injury is irreversible, so that read stays with you.</div>
+          <div class="meta">Wang Q et al., <a href="https://www.nature.com/articles/s41598-026-42100-2">Scientific Reports, Mar 2026</a> · Pahlevan-Fallahy MT et al., Skeletal Radiology, 2025, DOI 10.1007/s00256-025-05078-y · Ferreira Branco D et al., Diagnostics, Aug 2026, DOI 10.3390/diagnostics16162507</div>
+        </article>
+
+        <article class="story story-item" data-cat="products">
+          <span class="tag products">Foot &amp; ankle AI · Diabetic foot</span>
+          <h3><a href="https://diabetesjournals.org/care/article/46/8/1464/151481/">Diabetic foot AI is promising in the lab and mixed in outcomes</a></h3>
+          <p class="dek">A UK smartphone model detected diabetic foot ulcers with 91.6% sensitivity in real NHS clinics using inexpensive Android phones. Remote temperature monitoring predicted ulcers weeks early in its original validation, but a VA evaluation of 924 veterans found no reduction in amputation or hospitalization. Spectral AI's DeepView received FDA De Novo authorization in May for burns only, and its diabetic foot program is still in study.</p>
+          <div class="why"><b>Why it matters.</b> Detection is not the same as outcomes. Ask vendors for amputation and healing data, not only accuracy figures.</div>
+          <div class="meta">Cassidy B et al., <a href="https://www.sciencedirect.com/science/article/pii/S0168822723007143">Diabetes Research and Clinical Practice, 2023</a> · Littman AJ et al., <a href="https://diabetesjournals.org/care/article/46/8/1464/151481/">Diabetes Care, 2023</a> · <a href="https://www.globenewswire.com/news-release/2026/05/26/3300941/">Spectral AI, May 2026</a></div>
+        </article>
+
+        <article class="story story-item" data-cat="products">
+          <span class="tag products">Foot &amp; ankle AI · Patient education</span>
+          <h3><a href="https://doi.org/10.1016/j.fas.2026.06.006">Chatbot answers about bunion surgery read at a college level</a></h3>
+          <p class="dek">A June study in Foot and Ankle Surgery compared ChatGPT 5.2 and Gemini on ten common patient questions about minimally invasive bunion surgery. Quality scores were similar, readability was college level for both, and neither was very actionable. An AOFAS abstract found AI-written patient education averaged a grade 13.3 reading level against 9.5 for surgeon-written material, with lower quality and actionability. A Foot &amp; Ankle Specialist study found GPT-4 gave little or no surgical detail in 80% of responses on 15 foot and ankle conditions.</p>
+          <div class="why"><b>Why it matters.</b> This is the easiest problem to fix and the best argument for owning your voice. Give the model your own handout and a target reading level, then edit the result. Default chatbot output is what your patients are already reading, and yours can be better.</div>
+          <div class="meta">Yüksel B et al., <a href="https://doi.org/10.1016/j.fas.2026.06.006">Foot and Ankle Surgery, Jun 2026</a> · Saggar R et al., Foot &amp; Ankle Orthopaedics abstract, Dec 2025 · Lewis AJ et al., Foot &amp; Ankle Specialist, Jun 2026, DOI 10.1177/19386400261456922</div>
+        </article>
+
+        <article class="story story-item" data-cat="products">
+          <span class="tag products">Foot &amp; ankle AI · Regulation</span>
+          <h3><a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request">FDA has authorized more than 1,400 AI devices, and generative AI rules are still open for comment</a></h3>
+          <p class="dek">The FDA's AI-enabled device list passed 1,400 in March after a record 331 authorizations in 2025. In January it loosened its clinical decision support guidance for tools that give a single recommendation a clinician can independently review. In August it published a discussion paper on regulating generative AI devices, with comments due October 19. There is still no formal FDA framework for large language model clinical tools.</p>
+          <div class="why"><b>Why it matters.</b> Most of the AI a podiatrist uses day to day, including chatbots, scribes and letter drafters, sits outside FDA review. That puts the verification burden on the person signing the note.</div>
+          <div class="meta">Sources: <a href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices">FDA AI-enabled device list</a> · <a href="https://www.medtechdive.com/news/ai-medtech-track-new-devices-fda/748397/">MedTech Dive tracker</a> · <a href="https://www.ropesgray.com/en/insights/alerts/2026/01/fda-adapts-with-the-times-on-digital-health-updated-guidances-on-general-wellness-products">Ropes &amp; Gray on the CDS guidance</a> · <a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request">FDA discussion paper</a></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <p class="closer">Fluency is not a skill anyone can outsource. The podiatrist who can explain how and why they use AI is showing patients the judgment they came in for.</p>
       </section>
     </main>
 
@@ -301,14 +422,61 @@
       </div>
 
       <div class="rail-card">
-        <div class="rail-eyebrow">Seattle calendar</div>
-        <h3>Where the meeting goes next</h3>
-        <ul class="cal">
-          <li><span class="d">Thu</span><span>Paper sessions on PCFD, Charcot risk, syndesmosis and Achilles; MIS and 3D-printing symposia close the day.</span></li>
-          <li><span class="d">Fri AM</span><span>Kenneth A. Johnson Symposium on posterior malleolar fractures with Lyndon W. Mason, MRCS.</span></li>
-          <li><span class="d">Fri PM</span><span>IFFAS opens: cartilage lesions, neglected Achilles, flexible PCFD, Charcot, hallux valgus, TAA tips.</span></li>
-          <li><span class="d">Sat</span><span>Revision hallux valgus, cavovarus, insertional Achilles, failed TAA and foot fracture updates.</span></li>
+        <div class="rail-eyebrow">The framework</div>
+        <h3>The Four Gates</h3>
+        <ul class="gates">
+          <li><b>Delegate.</b> Hand off the repetitive and reversible.</li>
+          <li><b>Verify.</b> Catch the wrong answer before it reaches a patient.</li>
+          <li><b>Disclose.</b> Tell patients and institutions, plainly.</li>
+          <li><b>Own.</b> AI writes the draft. You sign it.</li>
         </ul>
+      </div>
+
+      <div class="rail-card">
+        <div class="rail-eyebrow">Gate 2</div>
+        <h3>The 90-second check</h3>
+        <ul class="gates">
+          <li>It cites something you can actually find.</li>
+          <li>It matches current guidelines, not the model's training cutoff.</li>
+          <li>You would sign the sentence as written.</li>
+          <li>It sounds like you, not a template.</li>
+        </ul>
+      </div>
+
+      <div class="rail-card">
+        <div class="rail-eyebrow">Gate 3</div>
+        <h3>Say it in eleven seconds</h3>
+        <p class="script">"I use an AI tool to help write up our visit today, so I can spend more time looking at you instead of my screen. I review everything before it becomes part of your record."</p>
+        <p class="soft">For hesitant patients: "I always review what it produces before anything goes in your chart."</p>
+      </div>
+
+      <div class="rail-card">
+        <div class="rail-eyebrow">From the lecture</div>
+        <h3>A 90-day fluency plan</h3>
+        <ul class="cal">
+          <li><span class="d">01</span><span>Delegate one task this month. One task, one tool, one workflow.</span></li>
+          <li><span class="d">02</span><span>Write your verification checklist down.</span></li>
+          <li><span class="d">03</span><span>Say your disclosure sentence out loud before your next clinic day.</span></li>
+          <li><span class="d">04</span><span>Build one small tool: a template, a generator or a checklist, reviewed before it goes out.</span></li>
+          <li><span class="d">05</span><span>Tell one colleague exactly how and why you use AI.</span></li>
+        </ul>
+      </div>
+
+      <div class="rail-card">
+        <div class="rail-eyebrow">Calendar</div>
+        <h3>Dates to know</h3>
+        <ul class="cal">
+          <li><span class="d">Oct 19</span><span>Comments due on FDA's generative AI device discussion paper.</span></li>
+          <li><span class="d">Fall</span><span>AAMC final report on AI competencies across medical training.</span></li>
+          <li><span class="d">Jan 1, 2027</span><span>Colorado SB 26-189 takes effect. CMS electronic prior authorization API required for MA and Medicaid plans.</span></li>
+          <li><span class="d">Jul 2028</span><span>Proposed effective date for ACGME requirements naming AI.</span></li>
+        </ul>
+      </div>
+
+      <div class="rail-card">
+        <div class="rail-eyebrow">Disclosures</div>
+        <h3>Where the editor stands</h3>
+        <p class="soft">Andrew Lundquist, DPM, MBA is Chief Medical Officer at Mankato Clinic, Clinical Director at Nabla Technologies (an ambient AI scribe company discussed above) and Chief Innovation Officer at Stratum Med. He uses Claude personally and has no financial relationship with Anthropic.</p>
       </div>
 
     </aside>
@@ -320,7 +488,7 @@
     <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
     <p class="foot-tag">A briefing on reimbursement, clinical evidence and practice management for podiatric physicians and surgeons. Every summary is original and every figure links to its source.</p>
     <nav class="foot-nav" aria-label="Archive"><a href="editions/">Past editions</a></nav>
-    <div class="foot-bottom">© 2026 The Footnote. Edition No. 2, published September 17, 2026.</div>
+    <div class="foot-bottom">© 2026 The Footnote. Edition No. 3, published September 21, 2026.</div>
   </div>
 </footer>
 
