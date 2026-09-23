@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://lundquistdpm.github.io/footnote/"
+SITE = "https://footnote.report/"
 MARKER = "<!-- Add each new edition at the top of this list -->"
 
 
