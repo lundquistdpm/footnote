@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>How an AI Agent Builds a Podiatry Newsletter | The Footnote</title>
+<meta name="description" content="The Footnote No. 6, building in public: how an AI agent researches and drafts this podiatry newsletter, how a physician verifies every line, and what it says about the AI-fluent podiatrist.">
+<meta name="keywords" content="podiatry news, podiatric surgery, foot and ankle surgery, DPM, podiatrist newsletter">
+<meta name="author" content="Andrew Lundquist, DPM">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://footnote.report/editions/006/">
+<meta name="theme-color" content="#EFF1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131B17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<!-- Open Graph (LinkedIn, Facebook, iMessage previews) -->
+<meta property="og:site_name" content="The Footnote">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://footnote.report/editions/006/">
+<meta property="og:title" content="The Footnote No. 6: Building in public">
+<meta property="og:description" content="The Footnote No. 6, building in public: how an AI agent researches and drafts this podiatry newsletter, how a physician verifies every line, and what it says about the AI-fluent podiatrist.">
+<meta property="og:image" content="https://footnote.report/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Footnote No. 6: Building in public">
+<meta property="article:published_time" content="2026-10-12T06:00:00-05:00">
+<meta property="article:modified_time" content="2026-10-12T06:00:00-05:00">
+<meta property="article:author" content="Andrew Lundquist, DPM">
+<meta property="article:section" content="Building in public">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Footnote No. 6: Building in public">
+<meta name="twitter:description" content="The Footnote No. 6, building in public: how an AI agent researches and drafts this podiatry newsletter, how a physician verifies every line, and what it says about the AI-fluent podiatrist.">
+<meta name="twitter:image" content="https://footnote.report/assets/og-default.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "I don't write the first draft. I own the last one.", "description": "The Footnote No. 6, building in public: how an AI agent researches and drafts this podiatry newsletter, how a physician verifies every line, and what it says about the AI-fluent podiatrist.", "image": ["https://footnote.report/assets/og-default.png"], "datePublished": "2026-10-12T06:00:00-05:00", "dateModified": "2026-10-12T06:00:00-05:00", "author": [{"@type": "Person", "name": "Andrew Lundquist, DPM"}], "publisher": {"@type": "Organization", "name": "The Footnote", "url": "https://footnote.report/", "logo": {"@type": "ImageObject", "url": "https://footnote.report/assets/apple-touch-icon.png", "width": 180, "height": 180}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://footnote.report/editions/006/"}, "articleSection": "Building in public", "inLanguage": "en-US", "isAccessibleForFree": true, "about": ["Podiatry", "Foot and ankle surgery"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Footnote", "item": "https://footnote.report/"}, {"@type": "ListItem", "position": 2, "name": "Editions", "item": "https://footnote.report/editions/"}, {"@type": "ListItem", "position": 3, "name": "The Footnote No. 6: Building in public", "item": "https://footnote.report/editions/006/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EFF1EA; --paper-raised:#F8F9F4; --ink:#172620; --ink-soft:#4B5750; --rule:#D6D2C1;
+    --clinical:#2F6E5B; --compliance:#35577A; --business:#A6742C; --products:#6B7A3F;
+    --community:#8C5A6B; --research:#5B4B8A; --alert:#B23A2E; --fill:#e2e6dc; --max:1180px;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+      --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+      --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+    --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+    --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:clamp(16px,3vw,28px);}
+  h1,h2,h3{font-family:var(--serif);margin:0;font-weight:600;text-wrap:balance;}
+
+  .masthead{border-bottom:1px solid var(--rule);}
+  .masthead-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap;}
+  .word{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:-0.01em;display:flex;align-items:center;gap:9px;}
+  .brand-mark{width:22px;height:auto;flex-shrink:0;}
+  .brand-mark .a{fill:var(--ink);} .brand-mark .b{fill:var(--ink-soft);}
+  .edition{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);}
+  .beat-nav{display:flex;gap:26px;padding-block:12px;overflow-x:auto;}
+  .beat-nav button{background:none;border:none;font-family:var(--sans);font-size:14px;color:var(--ink-soft);cursor:pointer;padding:4px 0;border-bottom:2px solid transparent;white-space:nowrap;}
+  .beat-nav button.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:500;}
+  .issue-strip{padding-block:11px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-soft);line-height:1.5;}
+  .prev-eds{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px;padding-block:10px;border-top:1px solid var(--rule);font-size:13px;}
+  .prev-eds .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+  .prev-eds a{border-bottom:1px solid var(--rule);}
+  .prev-eds b{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--ink-soft);margin-right:5px;}
+
+  .lead{padding-block:36px 40px;border-bottom:1px solid var(--rule);max-width:780px;}
+  .tag{display:inline-flex;align-items:center;font-size:12.5px;font-weight:500;padding-left:11px;position:relative;}
+  .tag::before{content:"";position:absolute;left:0;top:1px;bottom:1px;width:3px;background:currentColor;}
+  .tag.research{color:var(--research);} .tag.business{color:var(--business);} .tag.compliance{color:var(--compliance);} .tag.clinical{color:var(--clinical);}
+  .lead h1{font-size:clamp(27px,4vw,36px);line-height:1.15;margin:14px 0 18px;letter-spacing:-0.01em;}
+  .essay p{font-family:var(--serif);font-size:18px;line-height:1.65;margin:0 0 16px;max-width:66ch;}
+  .essay p.open::first-letter{float:left;font-size:54px;line-height:.9;padding:6px 8px 0 0;font-weight:700;}
+  .essay .close{font-style:italic;font-weight:600;margin-top:22px;}
+  .figs{display:flex;flex-wrap:wrap;gap:10px 28px;margin:6px 0 20px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .fig{display:flex;flex-direction:column;max-width:170px;}
+  .fig b{font-family:var(--serif);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .fig span{font-size:12px;color:var(--ink-soft);line-height:1.4;}
+  .why{background:var(--paper-raised);border:1px solid var(--rule);padding:12px 14px;font-size:14px;line-height:1.55;border-radius:2px;margin-top:14px;max-width:72ch;}
+  .why b{font-family:var(--serif);font-style:italic;font-weight:600;}
+  .byline,.meta{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-top:12px;}
+  .byline a,.meta a,.soft a{border-bottom:1px solid var(--rule);}
+  .byline a:hover,.meta a:hover{border-bottom-color:var(--ink-soft);}
+
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;padding-block:40px 60px;align-items:start;}
+  .section{margin-bottom:48px;}
+  .section-head{margin-bottom:6px;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+  .section-head h2{font-size:19px;}
+  .intro{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:14px 0 4px;max-width:68ch;}
+
+  /* Pipeline */
+  .pipe{margin:10px 0 0;padding:0;list-style:none;counter-reset:s;}
+  .pipe li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr) 92px;gap:16px;padding-block:16px;border-bottom:1px solid var(--rule);}
+  .pipe li:last-child{border-bottom:none;}
+  .pipe li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--ink-soft);padding-top:3px;}
+  .pipe b{font-family:var(--serif);font-weight:600;font-size:17px;display:block;margin-bottom:4px;}
+  .pipe p{font-size:14.5px;line-height:1.55;margin:0;color:var(--ink-soft);max-width:62ch;}
+  .who{justify-self:end;align-self:start;margin-top:3px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;border-radius:2px;white-space:nowrap;}
+  .who.agent{color:var(--research);} .who.me{color:var(--clinical);} .who.code{color:var(--compliance);}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0 0;font-size:12.5px;color:var(--ink-soft);align-items:center;}
+  .legend .who{margin:0;}
+
+  /* Rules */
+  .rulebook{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}
+  .rb{border:1px solid var(--rule);background:var(--paper-raised);padding:16px 18px;border-radius:2px;}
+  .rb .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;}
+  .rb ul{margin:0;padding:0;list-style:none;}
+  .rb li{font-size:14px;line-height:1.5;padding-block:7px;border-bottom:1px solid var(--rule);}
+  .rb li:last-child{border-bottom:none;}
+
+  /* Comparison */
+  .cmp-wrap{overflow-x:auto;margin-top:16px;}
+  .cmp{width:100%;border-collapse:collapse;min-width:560px;font-size:14px;line-height:1.5;}
+  .cmp th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);padding:10px 12px 10px 0;border-bottom:1px solid var(--ink-soft);}
+  .cmp td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;}
+  .cmp td:first-child{font-family:var(--serif);font-weight:600;font-size:15px;width:120px;}
+  .cmp td:nth-child(2){color:var(--ink-soft);}
+  .cmp th:last-child,.cmp td:last-child{padding-right:0;}
+
+  /* Label */
+  .test{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 18px;}
+  .test .rb h4{font-family:var(--serif);font-size:17px;margin:2px 0 6px;font-weight:600;}
+  .test .rb p{font-size:14px;line-height:1.5;margin:0;color:var(--ink-soft);}
+  .test .rb.yes{border-top:3px solid var(--clinical);}
+  .test .rb.no{border-top:3px solid var(--business);}
+  .loop{margin:4px 0 16px;padding:0;list-style:none;border-top:1px solid var(--rule);}
+  .loop li{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;padding-block:10px;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.5;}
+  .loop .k{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:2px;}
+
+  /* Gates */
+  .ai-gates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0 14px;}
+  .gate{border-top:3px solid var(--research);padding-top:10px;}
+  .gate b{font-family:var(--serif);font-size:17px;display:block;margin-bottom:4px;}
+  .gate span{font-size:13.5px;line-height:1.5;color:var(--ink-soft);display:block;}
+  .gate em{font-style:normal;display:block;margin-top:8px;font-size:13px;line-height:1.45;color:var(--ink);}
+  .disclose{font-size:12.5px;color:var(--ink-soft);line-height:1.55;border-top:1px solid var(--rule);padding-top:12px;margin-top:16px;max-width:72ch;}
+
+  /* Rail */
+  .rail-card{background:var(--paper-raised);border:1px solid var(--rule);padding:22px;margin-bottom:22px;border-radius:2px;}
+  .rail-card h3{font-size:16px;margin-bottom:12px;}
+  .rail-eyebrow{font-size:12px;color:var(--compliance);font-weight:500;margin-bottom:6px;}
+  .rail-card p{font-size:14px;line-height:1.55;margin:0 0 10px;}
+  .soft{color:var(--ink-soft);font-size:13px;}
+  .links{margin:0;padding:0;list-style:none;}
+  .links li{padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .links li:last-child{border-bottom:none;}
+  .links b{font-weight:500;}
+  .links span{display:block;color:var(--ink-soft);font-size:12.5px;}
+
+  footer{border-top:1px solid var(--rule);padding-block:36px;}
+  .foot-word{font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .foot-word .brand-mark{width:17px;}
+  .foot-tag{font-size:13px;color:var(--ink-soft);max-width:420px;line-height:1.55;margin:0 0 14px;}
+  .foot-bottom{font-size:12px;color:var(--ink-soft);padding-top:16px;border-top:1px solid var(--rule);}
+  .foot-eds{margin:0 0 22px;padding:0;list-style:none;max-width:640px;}
+  .foot-eds-head{font-family:var(--serif);font-weight:600;font-size:16px;margin:4px 0 6px;}
+  .foot-eds li{display:grid;grid-template-columns:52px minmax(0,1fr) 110px;gap:12px;padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .foot-eds li:last-child{border-bottom:none;}
+  .foot-eds .n,.foot-eds .d{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:1px;}
+  .foot-eds .d{text-align:right;}
+  .foot-eds a{border-bottom:1px solid var(--rule);justify-self:start;}
+
+  @media (max-width:920px){ .layout{grid-template-columns:1fr;gap:20px;} .ai-gates{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){
+    .essay p{font-size:17px;}
+    .pipe li{grid-template-columns:34px minmax(0,1fr);}
+    .pipe .who{grid-column:2;justify-self:start;margin-top:4px;}
+    .rulebook,.test{grid-template-columns:1fr;}
+    .loop li{grid-template-columns:1fr;gap:2px;}
+    .ai-gates{grid-template-columns:1fr;}
+    .foot-eds li{grid-template-columns:44px minmax(0,1fr);} .foot-eds .d{grid-column:2;text-align:left;padding-top:0;}
+  }
+  .foot-nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 18px;font-size:13.5px;}
+  .foot-nav a{border-bottom:1px solid var(--rule);font-weight:500;}
+  .foot-nav a:hover{border-bottom-color:var(--ink-soft);}
+  /* Newsletter signup (Kajabi form, restyled to match) */
+  .signup .rail-eyebrow{color:var(--clinical);}
+  .signup #kajabi-form{margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;max-width:none !important;}
+  .signup #kajabi-form .kajabi-form__title,.signup #kajabi-form .kajabi-form__subtitle{display:none !important;}
+  .signup #kajabi-form form{display:flex !important;flex-direction:column;gap:10px;margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form .kajabi-form__content,.signup #kajabi-form .kajabi-form__form-item{margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form input[type=email]{width:100% !important;box-sizing:border-box;height:auto !important;font:15px/1.4 var(--sans) !important;color:var(--ink) !important;background:var(--paper) !important;border:1px solid var(--rule) !important;border-radius:2px !important;padding:10px 12px !important;margin:0 !important;box-shadow:none !important;}
+  .signup #kajabi-form input[type=email]:focus{outline:2px solid var(--ink);outline-offset:1px;}
+  .signup #kajabi-form .kajabi-form__btn{width:100% !important;display:block;font:500 14px/1 var(--sans) !important;letter-spacing:0 !important;text-transform:none !important;color:var(--paper) !important;background:var(--ink) !important;border:1px solid var(--ink) !important;border-radius:2px !important;padding:12px 14px !important;margin:0 !important;cursor:pointer;box-shadow:none !important;}
+  .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
+  .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead-bar">
+    <div class="word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="edition">No. 6 · Building in public</div>
+  </div>
+  <div class="wrap">
+    <nav class="beat-nav" aria-label="Filter by section">
+      <button class="active" data-filter="all">Everything</button>
+      <button data-filter="process">The process</button>
+      <button data-filter="compare">The difference</button>
+      <button data-filter="label">The label</button>
+      <button data-filter="physician">The physician</button>
+    </nav>
+  </div>
+  <div class="wrap issue-strip">Monday, October 12, 2026. How this newsletter gets made, start to finish. The agent that does the research, the rules it writes under, the checks I do by hand, and what the whole thing says about the podiatrist our profession will need next.</div>
+  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/005/"><b>No. 5</b>The resident edition</a><a href="https://footnote.report/editions/004/"><b>No. 4</b>The profession edition</a><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
+</header>
+
+<div class="wrap">
+  <section class="lead story-item" data-cat="process">
+    <span class="tag research">Building in public · Essay</span>
+    <h1>I don't write the first draft. I own the last one.</h1>
+
+    <div class="essay">
+      <p class="open">Every edition of The Footnote so far began as a draft I did not write. An AI agent searched the journals and the trade press, read the sources, and wrote in a voice built from my own rules. Then I did the part that carries my name. I read every sentence, opened every link, and fixed what was wrong.</p>
+
+      <p>Most people who write with AI keep it quiet. I think quiet is the wrong instinct for physicians. We already sign notes that someone else drafted, first human scribes and now ambient ones. The signature has always meant the same thing: I checked this, and it is mine. A newsletter works the same way.</p>
+
+      <p>So this edition shows the whole machine. You will see the steps, the constraints I put on the agent, the places it still gets things wrong, and why I think this way of working is the clearest preview we have of the physician this profession will need next. Nothing here requires a computer science degree. It requires the same habits we learned in residency, applied to a new kind of assistant.</p>
+    </div>
+
+    <div class="figs">
+      <div class="fig"><b>5</b><span>editions written in the first three weeks, alongside a full-time job</span></div>
+      <div class="fig"><b>6</b><span>beats the agent researches on every run</span></div>
+      <div class="fig"><b>1</b><span>physician who reads every sentence before it ships</span></div>
+      <div class="fig"><b>0</b><span>figures published without a link to the source</span></div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <main>
+      <section class="section story-item" data-cat="process" id="pipeline">
+        <div class="section-head"><h2>The pipeline, step by step</h2></div>
+        <p class="intro">Six steps, in the order they happen. The tag on each one shows who does the work.</p>
+        <div class="legend"><span class="who agent">Agent</span> Claude, through the Anthropic API <span class="who code">Code</span> scripts and scheduled jobs <span class="who me">Me</span> the part I will not hand off</div>
+        <ol class="pipe">
+          <li><div><b>Pick the thesis</b><p>I choose what the edition argues and who it is for. The resident edition, the profession edition, this one. The agent never chooses the story. It serves one.</p></div><span class="who me">Me</span></li>
+          <li><div><b>Research six beats</b><p>The agent searches the web for each beat: clinical, surgical research, policy, practice business, products, and voices. It works from a brief that ranks ACFAS, the Journal of Foot &amp; Ankle Surgery, AOFAS, and Foot &amp; Ankle International ahead of everything else. It is told to skip press releases dressed as news, and to return nothing when nothing is worth running.</p></div><span class="who agent">Agent</span></li>
+          <li><div><b>Draft in my voice</b><p>Every summary is written from scratch, never copied from the source. The draft follows a written style guide, shown below, that the agent cannot negotiate with.</p></div><span class="who agent">Agent</span></li>
+          <li><div><b>Check the citations</b><p>Journal references run through PubMed and Crossref to confirm the paper exists and says what we claim. This pipeline started on my bunion patient education site, where a fabricated reference would reach a patient.</p></div><span class="who code">Code</span></li>
+          <li><div><b>Read, verify, correct</b><p>I open every link and read every line against its source. I have corrected follower counts, rankings, and a colleague's title. Some weeks the fix is a number. Some weeks it is a whole opening paragraph that said the right thing in the wrong tone.</p></div><span class="who me">Me</span></li>
+          <li><div><b>Build and publish</b><p>The edition renders into a fixed template. A script blocks any sponsor from running in an edition that covers its own product. The finished page waits in a queue, publishes itself Monday at 6 AM Central, and the email follows at 7 so the link is already live.</p></div><span class="who code">Code</span></li>
+        </ol>
+      </section>
+
+      <section class="section story-item" data-cat="process" id="rules">
+        <div class="section-head"><h2>The rules the agent writes under</h2></div>
+        <p class="intro">An AI draft sounds generic when nobody gave it a spine. These are the constraints written into every run. Several of them exist because I caught the agent breaking them once.</p>
+        <div class="rulebook">
+          <div class="rb">
+            <div class="k">Voice</div>
+            <ul>
+              <li>Start with an admission or an observation, then the insight</li>
+              <li>One thesis per piece</li>
+              <li>No questions aimed at the reader</li>
+              <li>No sales pitch in the body copy</li>
+              <li>No em-dashes and no emoji</li>
+              <li>Close on who the reader is, never on a question</li>
+            </ul>
+          </div>
+          <div class="rb">
+            <div class="k">Evidence and money</div>
+            <ul>
+              <li>Never invent a URL, a publication, or a statistic</li>
+              <li>Every figure links to where it came from</li>
+              <li>If a page blocks automated reading, flag the detail for me to confirm</li>
+              <li>Disclose my roles whenever a story touches them</li>
+              <li>One sponsor per edition, labeled, and it never sees a story before publication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-item" data-cat="compare" id="difference">
+        <div class="section-head"><h2>Why an AI-built newsletter can be better</h2></div>
+        <div class="essay" style="margin-top:18px;">
+          <p>The trade newsletters most of us open were built for a different era. Editorial hours were the scarce resource, so the format became a stack of links: a paragraph borrowed from the source, a Read More button, and a display ad between each item. One podiatry newsletter I read this week ran twelve display ads around roughly a dozen items. The people who make those newsletters work hard. The format limits them.</p>
+          <p>An agent changes what is scarce. Research that took a staff a day now takes minutes, so a single physician's time can go where it matters: judgment, verification, and a point of view.</p>
+        </div>
+        <div class="cmp-wrap">
+          <table class="cmp">
+            <thead><tr><th scope="col"></th><th scope="col">The link-stack format</th><th scope="col">The Footnote</th></tr></thead>
+            <tbody>
+              <tr><td>The story</td><td>A summary lifted from the source, then a link out</td><td>An original summary and a line on why it matters to a practice</td></tr>
+              <tr><td>The evidence</td><td>The source is a click away, if the link matches the credit</td><td>Every figure is linked, and journal citations are checked against PubMed and Crossref</td></tr>
+              <tr><td>The ads</td><td>A display ad between most items</td><td>One labeled sponsor, screened by code for conflicts</td></tr>
+              <tr><td>The voice</td><td>Unsigned, by design</td><td>One named physician who answers for every line</td></tr>
+              <tr><td>The depth</td><td>Limited by staff hours</td><td>Limited by how carefully I read</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="why"><b>Why it matters:</b> Readers can see how every claim was made. When I get something wrong, you know who got it wrong, and you know how it will be fixed.</div>
+      </section>
+
+      <section class="section story-item" data-cat="label" id="label">
+        <div class="section-head"><h2>The honest label</h2></div>
+        <div class="essay" style="margin-top:18px;">
+          <p>People have started calling this an AI startup. I checked that claim the way I would check any other. Investors now use a simple test to separate AI-native companies from AI-enabled ones: remove the AI and see what happens. If the work slows down, the company is AI-enabled. If the work stops, it is AI-native.</p>
+        </div>
+        <div class="test">
+          <div class="rb yes">
+            <div class="k">Passes</div>
+            <h4>AI-native</h4>
+            <p>Turn off the agent and the weekly edition stops. A surgeon with a clinic cannot research six beats every week by hand. The AI is the foundation of this newsletter, not a feature added to it.</p>
+          </div>
+          <div class="rb no">
+            <div class="k">Not yet</div>
+            <h4>Startup</h4>
+            <p>The Footnote has no investors and no staff. It is not a venture-backed company, and I will not call it one. What it shares with AI-native startups is how it is built.</p>
+          </div>
+        </div>
+        <div class="essay">
+          <p>Y Combinator partner Tom Blomfield describes an AI-native company as a loop, and this newsletter runs on the same one.</p>
+        </div>
+        <ul class="loop">
+          <li><span class="k">Data in</span><span>Journals, society news, CMS notices, trade press</span></li>
+          <li><span class="k">Policy</span><span>My voice rules and evidence rules</span></li>
+          <li><span class="k">Tools</span><span>Web search, the citation checker, the template, the scheduler</span></li>
+          <li><span class="k">Quality gate</span><span>My read, before anything publishes</span></li>
+          <li><span class="k">Learning loop</span><span>Each correction I make becomes a written rule for the next run</span></li>
+        </ul>
+        <div class="meta">Sources: <a href="https://www.crv.com/content/what-is-ai-native">CRV, What Is AI-Native? (July 2026)</a> · <a href="https://www.aibuilderclub.com/blog/ai-native-vs-ai-enabled">AI Builder Club, AI-Native vs AI-Enabled</a>, summarizing Blomfield's Aug 2026 Y Combinator talk</div>
+      </section>
+
+      <section class="section story-item" data-cat="physician" id="physician">
+        <div class="section-head"><h2>The physician this points to</h2></div>
+        <div class="essay" style="margin-top:18px;">
+          <p>Physicians have already adopted AI. The AMA found that 81% of physicians used it in practice in 2026, up from 38% in 2023. The same survey found that 85% want a say in how their organizations adopt it, and 88% worry about losing skills to it. Medical education is moving too. On September 8, ACGME proposed residency requirements that name artificial intelligence twice, under professionalism and under systems-based practice. Podiatric residencies answer to CPME rather than ACGME, but the direction is plain.</p>
+          <p>Using AI is no longer what sets a physician apart. What sets a physician apart is running it well: knowing what to hand off, checking what comes back, saying so out loud, and taking responsibility for the result. I teach that as four gates, and this newsletter passes through all four every week.</p>
+        </div>
+        <div class="ai-gates">
+          <div class="gate"><b>Delegate</b><span>Hand the volume to the tool.</span><em>Here: the agent does the research and the first draft.</em></div>
+          <div class="gate"><b>Verify</b><span>Check the output before it reaches anyone.</span><em>Here: code checks the citations, then I check everything.</em></div>
+          <div class="gate"><b>Disclose</b><span>Say when AI helped, in plain words.</span><em>Here: this edition, and a disclosure line on every one.</em></div>
+          <div class="gate"><b>Own</b><span>Your name means you answer for it.</span><em>Here: my byline, and my corrections in public.</em></div>
+        </div>
+        <div class="essay">
+          <p>A newsletter is a low-stakes place to practice. Nobody's foot depends on a headline. That is exactly why it makes a good proving ground. The habits carry straight to prior authorization letters, patient education, ambient notes, and whatever arrives next in the clinic. The podiatrists who build those habits now will run small teams of agents the way we already run a surgical team: clear roles, standard steps, and one person accountable at the end.</p>
+          <p class="close">The podiatrists who shape the next decade will be the ones who let the machine draft and never let it sign.</p>
+        </div>
+        <div class="disclosure disclose">Disclosure: This edition was researched and drafted with Claude, made by Anthropic, and edited and verified by the author. Andrew Lundquist, DPM, MBA, uses Claude personally and has no financial relationship with Anthropic. He is Chief Medical Officer of Mankato Clinic, Clinical Director at Nabla Technologies, which makes an ambient AI scribe, and Chief Innovation Officer at Stratum Med.</div>
+        <div class="meta">Sources: <a href="https://www.ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows">AMA press release, 2026 Physician Survey on Augmented Intelligence</a> · <a href="https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cprresidency_rc_09082026.pdf">ACGME proposed Common Program Requirements, sections 4.3 and 4.9</a> (comments due Oct 22, 2026)</div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="rail-card signup" id="subscribe">
+        <div class="rail-eyebrow">Free, every week</div>
+        <h3>Get The Footnote by email</h3>
+        <p class="soft">Surgical research, policy and practice news for podiatry, each with the line on why it matters. One email a week. Unsubscribe anytime.</p>
+        <script src="https://www.clinicianpreneur.com/forms/2149726324/embed.js"></script>
+      </div>
+
+      <div class="rail-card story-item" data-cat="process">
+        <div class="rail-eyebrow">Under the hood</div>
+        <h3>The stack</h3>
+        <ul class="links">
+          <li><b>Claude, through the Anthropic API</b><span>Research and first drafts</span></li>
+          <li><b>A Python agent</b><span>One brief per beat, structured output</span></li>
+          <li><b>PubMed and Crossref</b><span>Citation checks</span></li>
+          <li><b>GitHub Actions and GitHub Pages</b><span>Scheduled publishing at footnote.report</span></li>
+          <li><b>Substack</b><span>The email edition</span></li>
+        </ul>
+      </div>
+
+      <div class="rail-card story-item" data-cat="process">
+        <div class="rail-eyebrow">Still imperfect</div>
+        <h3>What the agent gets wrong</h3>
+        <p>It sometimes second-guesses a fact I have already confirmed. Several society and trade sites block automated reading, so some details arrive secondhand and need my check. Job listings expire between the draft and the send. It also cannot publish to LinkedIn, because LinkedIn offers no way to do that.</p>
+      </div>
+
+      <div class="rail-card story-item" data-cat="process">
+        <div class="rail-eyebrow">The line I hold</div>
+        <h3>What I will not automate</h3>
+        <p>The thesis of each edition. The final read. Any decision about a patient. The agent makes me faster at the work I would have done anyway. It does not do the part that requires a license.</p>
+      </div>
+
+      <div class="rail-card story-item" data-cat="process">
+        <div class="rail-eyebrow">Next in the build</div>
+        <h3>Coming editions</h3>
+        <ul class="links">
+          <li><b>No. 7</b><span>Emerging technology beyond AI</span></li>
+          <li><b>No. 8</b><span>The 2027 Physician Fee Schedule final rule and Modifier 25</span></li>
+          <li><b>No. 9</b><span>Year-end practice pearls for deductible season</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="foot-eds-head">Previous editions</div>
+    <ol class="foot-eds" reversed>
+      <li><span class="n">No. 5</span><a href="https://footnote.report/editions/005/">The resident edition</a><span class="d">Oct 5, 2026</span></li>
+      <li><span class="n">No. 4</span><a href="https://footnote.report/editions/004/">The profession edition</a><span class="d">Sept 28, 2026</span></li>
+      <li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li>
+      <li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li>
+      <li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li>
+    </ol>
+    <p class="foot-tag">A briefing on reimbursement, clinical evidence and practice management for podiatric physicians and surgeons. Every summary is original and every figure links to its source.</p>
+    <nav class="foot-nav" aria-label="Archive"><a href="../">Past editions</a><a href="../../">Latest edition</a></nav>
+    <div class="foot-bottom">© 2026 The Footnote. Edition No. 6, published October 12, 2026. By Andrew Lundquist, DPM, MBA.</div>
+  </div>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.beat-nav button');
+  const items = document.querySelectorAll('.story-item');
+  buttons.forEach(btn => btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(it => { it.hidden = !(f === 'all' || it.dataset.cat === f); });
+  }));
+</script>
+</body>
+</html>
