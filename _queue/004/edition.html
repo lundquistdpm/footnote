@@ -158,6 +158,20 @@
   .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
   .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
   .signup-band{max-width:780px;margin:0 0 56px;}
+
+  .prev-eds{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px;padding-block:10px;border-top:1px solid var(--rule);font-size:13px;}
+  .prev-eds .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+  .prev-eds a{border-bottom:1px solid var(--rule);}
+  .prev-eds a:hover{border-bottom-color:var(--ink-soft);}
+  .prev-eds b{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--ink-soft);margin-right:5px;}
+  .foot-eds{margin:0 0 22px;padding:0;list-style:none;max-width:640px;}
+  .foot-eds-head{font-family:var(--serif);font-weight:600;font-size:16px;margin:4px 0 6px;}
+  .foot-eds li{display:grid;grid-template-columns:52px minmax(0,1fr) 110px;gap:12px;padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .foot-eds li:last-child{border-bottom:none;}
+  .foot-eds .n,.foot-eds .d{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:1px;}
+  .foot-eds .d{text-align:right;}
+  .foot-eds a{border-bottom:1px solid var(--rule);justify-self:start;}
+  @media (max-width:560px){ .foot-eds li{grid-template-columns:44px minmax(0,1fr);} .foot-eds .d{grid-column:2;text-align:left;padding-top:0;} }
 </style>
 </head>
 <body>
@@ -177,6 +191,7 @@
     </nav>
   </div>
   <div class="wrap issue-strip">Monday, September 28, 2026. One essay on how podiatry recruits, a farewell to a founder, and the two dates every practice should have on the wall.</div>
+  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
 </header>
 
 <div class="wrap">
@@ -185,7 +200,7 @@
     <h1>Two classified ads, and a profession still hiring like it's 1998</h1>
 
     <div class="essay">
-      <p class="open">I laughed out loud at the classifieds in a trade newsletter this month. Then I pulled up the last job post my own group ran. It did not ask for a fax. It also did not list a salary, a call schedule, or a single reason a young surgeon should choose us over the group across town. My laugh aged badly.</p>
+      <p class="open">I laughed out loud at the classifieds in a trade newsletter this month. The laugh faded when I realized nobody else seemed to find them strange. An ad asking a surgeon to fax a résumé in 2026 ran without comment, beside another offering a department chair less than the typical podiatrist earns. Somewhere along the way, our profession decided this was normal.</p>
 
       <p>The two ads ran together on September 18, in the same issue that remembered Lowell Weil Sr. One was a college of podiatric medicine seeking a full-time chair for its Department of Podiatric Medicine and Surgery. The other was a Connecticut practice seeking an associate. Read side by side, they say more about where podiatry is headed than most of what we publish on purpose.</p>
     </div>
@@ -312,6 +327,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="foot-eds-head">Previous editions</div><ol class="foot-eds" reversed><li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li><li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li><li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li></ol>
     <p class="foot-tag">A briefing on reimbursement, clinical evidence and practice management for podiatric physicians and surgeons. Every summary is original and every figure links to its source.</p>
     <nav class="foot-nav" aria-label="Archive"><a href="../">Past editions</a><a href="../../">Latest edition</a></nav>
     <div class="foot-bottom">© 2026 The Footnote. Edition No. 4, published September 28, 2026.</div>
