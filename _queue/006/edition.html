@@ -233,9 +233,9 @@
     <h1>I don't write the first draft. I own the last one.</h1>
 
     <div class="essay">
-      <p class="open">Every edition of The Footnote so far began as a draft I did not write. An AI agent searched the journals and the trade press, read the sources, and wrote in a voice built from my own rules. Then I did the part that carries my name. I read every sentence, opened every link, and fixed what was wrong.</p>
+      <p class="open">I am the editor of this newsletter. I hired AI to do my research and first drafts. Every edition of The Footnote so far began as a draft I did not write. An AI agent searched the journals and the trade press, read the sources, and wrote in a voice built from my own rules. Then I did the part that carries my name. I read every sentence, opened every link, and fixed what was wrong.</p>
 
-      <p>Most people who write with AI keep it quiet. I think quiet is the wrong instinct for physicians. We already sign notes that someone else drafted, first human scribes and now ambient ones. The signature has always meant the same thing: I checked this, and it is mine. A newsletter works the same way.</p>
+      <p>Most people who write with AI keep it quiet, but most of us can tell. I think quiet is the wrong instinct for physicians. We already sign notes that someone else drafted, first human scribes and now ambient ones. We manage residents and staff, all of them act as an extension of us. We sign off on work that we review. The signature has always meant the same thing: I checked this, and it is mine. This newsletter works the same way, just with a new staff.</p>
 
       <p>So this edition shows the whole machine. You will see the steps, the constraints I put on the agent, the places it still gets things wrong, and why I think this way of working is the clearest preview we have of the physician this profession will need next. Nothing here requires a computer science degree. It requires the same habits we learned in residency, applied to a new kind of assistant.</p>
     </div>
@@ -255,12 +255,12 @@
         <p class="intro">Six steps, in the order they happen. The tag on each one shows who does the work.</p>
         <div class="legend"><span class="who agent">Agent</span> Claude, through the Anthropic API <span class="who code">Code</span> scripts and scheduled jobs <span class="who me">Me</span> the part I will not hand off</div>
         <ol class="pipe">
-          <li><div><b>Pick the thesis</b><p>I choose what the edition argues and who it is for. The resident edition, the profession edition, this one. The agent never chooses the story. It serves one.</p></div><span class="who me">Me</span></li>
-          <li><div><b>Research six beats</b><p>The agent searches the web for each beat: clinical, surgical research, policy, practice business, products, and voices. It works from a brief that ranks ACFAS, the Journal of Foot &amp; Ankle Surgery, AOFAS, and Foot &amp; Ankle International ahead of everything else. It is told to skip press releases dressed as news, and to return nothing when nothing is worth running.</p></div><span class="who agent">Agent</span></li>
+          <li><div><b>Pick the thesis</b><p>I choose the topics and what the edition argues and who it is for. The resident edition, the profession edition, this one. The agent never chooses the story. It serves up what I ask it to.</p></div><span class="who me">Me</span></li>
+          <li><div><b>Research six beats</b><p>The agent searches the web for each beat: clinical, surgical research, policy, practice business, products, and voices. It works from a brief that ranks journals like ACFAS, the Journal of Foot &amp; Ankle Surgery, AOFAS, and Foot &amp; Ankle International ahead of everything else. It is told to skip press releases dressed as news, and to return nothing when nothing is worth running.</p></div><span class="who agent">Agent</span></li>
           <li><div><b>Draft in my voice</b><p>Every summary is written from scratch, never copied from the source. The draft follows a written style guide, shown below, that the agent cannot negotiate with.</p></div><span class="who agent">Agent</span></li>
-          <li><div><b>Check the citations</b><p>Journal references run through PubMed and Crossref to confirm the paper exists and says what we claim. This pipeline started on my bunion patient education site, where a fabricated reference would reach a patient.</p></div><span class="who code">Code</span></li>
-          <li><div><b>Read, verify, correct</b><p>I open every link and read every line against its source. I have corrected follower counts, rankings, and a colleague's title. Some weeks the fix is a number. Some weeks it is a whole opening paragraph that said the right thing in the wrong tone.</p></div><span class="who me">Me</span></li>
-          <li><div><b>Build and publish</b><p>The edition renders into a fixed template. A script blocks any sponsor from running in an edition that covers its own product. The finished page waits in a queue, publishes itself Monday at 6 AM Central, and the email follows at 7 so the link is already live.</p></div><span class="who code">Code</span></li>
+          <li><div><b>Check the citations</b><p>Journal references run through PubMed and Crossref to confirm the paper exists and says what we claim. This pipeline started on my bunion patient education site, where I never wanted a fabricated reference to reach a patient.</p></div><span class="who code">Code</span></li>
+          <li><div><b>Read, verify, correct</b><p>I open every link and read every line against its source. I have corrected follower counts, rankings, and a colleague's title. Some weeks the fix is a number. Some weeks it is a whole opening paragraph that said the right thing in the wrong tone. Today it was nuances throughout.</p></div><span class="who me">Me</span></li>
+          <li><div><b>Build and publish</b><p>The edition renders into a fixed template. A script blocks any would-be sponsor from running in an edition that covers its own product. The finished page waits in a queue, publishes itself Monday at 6 AM Central, and the email follows at 7 so the link is already live.</p></div><span class="who code">Code</span></li>
         </ol>
       </section>
 
@@ -286,7 +286,7 @@
               <li>Every figure links to where it came from</li>
               <li>If a page blocks automated reading, flag the detail for me to confirm</li>
               <li>Disclose my roles whenever a story touches them</li>
-              <li>One sponsor per edition, labeled, and it never sees a story before publication</li>
+              <li>In time we may have one sponsor per edition, labeled, and it never sees a story before publication</li>
             </ul>
           </div>
         </div>
@@ -379,7 +379,7 @@
           <li><b>Claude, through the Anthropic API</b><span>Research and first drafts</span></li>
           <li><b>A Python agent</b><span>One brief per beat, structured output</span></li>
           <li><b>PubMed and Crossref</b><span>Citation checks</span></li>
-          <li><b>GitHub Actions and GitHub Pages</b><span>Scheduled publishing at footnote.report</span></li>
+          <li><b>GitHub Actions and GitHub Pages</b><span>Scheduled publishing</span></li>
           <li><b>Substack</b><span>The email edition</span></li>
         </ul>
       </div>
@@ -401,8 +401,6 @@
         <h3>Coming editions</h3>
         <ul class="links">
           <li><b>No. 7</b><span>Emerging technology beyond AI</span></li>
-          <li><b>No. 8</b><span>The 2027 Physician Fee Schedule final rule and Modifier 25</span></li>
-          <li><b>No. 9</b><span>Year-end practice pearls for deductible season</span></li>
         </ul>
       </div>
     </aside>
