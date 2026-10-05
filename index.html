@@ -169,6 +169,59 @@
   .foot-eds .d{text-align:right;}
   .foot-eds a{border-bottom:1px solid var(--rule);justify-self:start;}
   @media (max-width:560px){ .foot-eds li{grid-template-columns:44px minmax(0,1fr);} .foot-eds .d{grid-column:2;text-align:left;padding-top:0;} }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){color-scheme:dark;} }
+  :root[data-theme="dark"]{color-scheme:dark;}
+  .meta{font-size:12.5px;color:var(--ink-soft);margin-top:8px;line-height:1.55;}
+  .tag.jobs{color:var(--community);}
+  .decide{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 22px;}
+  .decide .ad h4{font-size:17px;}
+  .models{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px;}
+  .model{border:1px solid var(--rule);background:var(--paper-raised);padding:18px;border-radius:2px;display:flex;flex-direction:column;gap:12px;}
+  .model .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+  .model h3{font-size:19px;}
+  .model .avg{font-family:var(--serif);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1;}
+  .model .avg small{display:block;font-family:var(--sans);font-size:12px;font-weight:400;color:var(--ink-soft);margin-top:6px;line-height:1.4;}
+  .pc{display:grid;gap:8px;}
+  .pc div{font-size:14px;line-height:1.5;padding-top:8px;border-top:1px solid var(--rule);}
+  .pc b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;margin-bottom:3px;}
+  .pc .pro b{color:var(--clinical);} .pc .con b{color:var(--alert);} .pc .ask b{color:var(--compliance);}
+  .bars{margin:22px 0 6px;display:grid;gap:9px;}
+  .bars-head{font-family:var(--serif);font-weight:600;font-size:16px;margin-bottom:2px;}
+  .bar{display:grid;grid-template-columns:190px minmax(0,1fr) 76px;gap:12px;align-items:center;font-size:13.5px;}
+  .bar .track{height:14px;background:var(--fill);border-radius:1px;position:relative;}
+  .bar .fill{position:absolute;inset:0 auto 0 0;background:var(--ink-soft);border-radius:1px;}
+  .bar.hl .fill{background:var(--business);}
+  .bar .v{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums;}
+  .bars-note{font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:6px;}
+  .steps{margin:0;padding:0;list-style:none;}
+  .steps li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-block:13px;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.55;}
+  .steps li:last-child{border-bottom:none;}
+  .steps .when{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:3px;}
+  .steps b{font-family:var(--serif);font-weight:600;font-size:16px;display:block;margin-bottom:2px;}
+  .jobs{display:grid;gap:0;}
+  .job{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:6px 20px;padding-block:16px;border-bottom:1px solid var(--rule);}
+  .job:last-child{border-bottom:none;}
+  .job h3{font-size:17px;line-height:1.3;margin:6px 0 4px;}
+  .job .where{font-size:13px;color:var(--ink-soft);}
+  .job p{font-size:14px;line-height:1.5;margin:6px 0 0;color:var(--ink-soft);}
+  .job .pay{font-family:var(--mono);font-size:12.5px;text-align:right;align-self:start;padding-top:8px;line-height:1.5;}
+  .job .pay.none{color:var(--ink-soft);}
+  .chip{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;border-radius:2px;}
+  .chip.hs{color:var(--compliance);} .chip.grp{color:var(--clinical);} .chip.ortho{color:var(--business);}
+  .job .meta{grid-column:1 / -1;margin-top:0;}
+  .ai-gates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0 10px;}
+  .gate{border-top:3px solid var(--research);padding-top:10px;}
+  .gate b{font-family:var(--serif);font-size:17px;display:block;margin-bottom:4px;}
+  .gate span{font-size:13.5px;line-height:1.5;color:var(--ink-soft);}
+  .disclose{font-size:12.5px;color:var(--ink-soft);line-height:1.55;border-top:1px solid var(--rule);padding-top:12px;margin-top:14px;}
+  .links{margin:0;padding:0;list-style:none;}
+  .links li{padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .links li:last-child{border-bottom:none;}
+  .links a{font-weight:500;border-bottom:1px solid var(--rule);}
+  .links span{display:block;color:var(--ink-soft);font-size:12.5px;}
+  @media (max-width:920px){ .models{grid-template-columns:1fr;} .ai-gates{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .decide{grid-template-columns:1fr;} .bar{grid-template-columns:1fr 64px;} .bar .lab{grid-column:1 / -1;} .steps li{grid-template-columns:1fr;gap:2px;} .job{grid-template-columns:1fr;} .job .pay{text-align:left;padding-top:0;} .ai-gates{grid-template-columns:1fr;} }
+
 </style>
 </head>
 <body>
@@ -176,116 +229,214 @@
 
 <header class="masthead">
   <div class="wrap masthead-bar">
-    <a class="word" href="./"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</a>
-    <div class="edition">No. 4 · The profession edition</div>
+    <div class="word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="edition">No. 5 · The resident edition</div>
   </div>
   <div class="wrap">
-    <nav class="beat-nav" id="beatNav" aria-label="Filter by beat">
-      <button class="active" data-filter="all">All beats</button>
-      <button data-filter="business">Practice &amp; business</button>
-      <button data-filter="compliance">Policy &amp; compliance</button>
-      <button data-filter="community">Voices</button>
+    <nav class="beat-nav" id="beatNav" aria-label="Filter by section">
+      <button class="active" data-filter="all">Everything</button>
+      <button data-filter="business">Choosing a practice</button>
+      <button data-filter="jobs">Job board</button>
+      <button data-filter="research">AI fluency</button>
     </nav>
   </div>
-  <div class="wrap issue-strip">Monday, September 28, 2026. One essay on how podiatry recruits, a farewell to a founder, and the two dates every practice should have on the wall.</div>
-  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
+  <div class="wrap issue-strip">Monday, October 5, 2026. For PGY-2 and PGY-3 residents. Where to live, which model to join, eight open jobs with their sources, and the skill that will separate your CV from the stack.</div>
+  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/004/"><b>No. 4</b>The profession edition</a><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
 </header>
 
 <div class="wrap">
   <section class="lead story-item" data-cat="business">
-    <span class="tag business">Practice &amp; business · Essay</span>
-    <h1>Two classified ads, and a profession still hiring like it's 1998</h1>
+    <span class="tag business">Career · Essay</span>
+    <h1>Pick the town and the model before you pick the offer</h1>
 
     <div class="essay">
-      <p class="open">I laughed out loud at the classifieds in a trade newsletter this month. The laugh faded when I realized nobody else seemed to find them strange. An ad asking a surgeon to fax a résumé in 2026 ran without comment, beside another offering a department chair less than the typical podiatrist earns. Somewhere along the way, our profession decided this was normal.</p>
+      <p class="open">I have read a lot of offer letters as favors from friends, and I still catch myself asking them the wrong first question. I ask what the offer pays. The better question comes two steps earlier, and most residents skip it because the listings arrive before the thinking does.</p>
 
-      <p>The two ads ran together on September 18, in the same issue that remembered Lowell Weil Sr. One was a college of podiatric medicine seeking a full-time chair for its Department of Podiatric Medicine and Surgery. The other was a Connecticut practice seeking an associate. Read side by side, they say more about where podiatry is headed than most of what we publish on purpose.</p>
+      <p>Start with where you want to live. Your first job is usually your first mortgage, your kids' school district, and the referral network you will spend a decade building. Referral networks do not travel. A surgeon who leaves after three years starts over at zero patients in the new town. Choose the region you would be glad to stay in for ten years, then check its state rules. Licensure timelines differ, scope of practice differs, and the enforceability of the noncompete you are about to sign differs most of all.</p>
+
+      <p>Then decide what kind of practice you want to be inside. The three common models below reward different surgeons. None of them is the right answer for everyone. Each one is the wrong answer for someone.</p>
     </div>
 
-    <div class="ads" aria-label="The two ads">
+    <div class="decide" aria-label="The two decisions">
       <div class="ad">
-        <div class="k">Academic</div>
-        <h4>Full-time department chair</h4>
-        <p>Lead faculty, drive academic excellence, oversee clinical experiences. "Generous benefits."</p>
-        <span class="flag">$120K to $140K</span>
+        <div class="k">Decision one</div>
+        <h4>Where you will live for ten years</h4>
+        <p>Family, cost of living, license, and the state's noncompete law. At least 18 states now generally ban or void physician noncompetes, and there is no federal ban.</p>
       </div>
       <div class="ad">
-        <div class="k">Private practice</div>
-        <h4>Associate, Connecticut</h4>
-        <p>Owner will stay for transition. Full privileges available.</p>
-        <span class="flag">Fax résumé to apply</span>
+        <div class="k">Decision two</div>
+        <h4>Which model you want to grow inside</h4>
+        <p>Health system, podiatry group, or orthopedic practice. Each trades salary certainty, ownership, and surgical volume in a different mix.</p>
       </div>
-    </div>
-
-    <div class="essay">
-      <p>Start with the chair. The posted range sits below the $160,300 median wage the Bureau of Labor Statistics reports for all podiatrists, and well under half the $368,421 median total compensation in the ACFAS 2025 survey of board-certified fellows. The person asked to lead the department that trains our surgeons would earn less than the typical podiatrist in the country. The ad may not show the whole package, and many faculty add clinical income on top of a base. But the headline number is the first thing a candidate sees, and it tells the most accomplished people in our field that teaching is a financial sacrifice.</p>
     </div>
 
     <div class="figs">
-      <div class="fig"><b>$120–140K</b><span>posted range for a department chair</span></div>
-      <div class="fig"><b>$160,300</b><span>BLS median wage, all podiatrists, May 2025</span></div>
       <div class="fig"><b>$368,421</b><span>ACFAS 2025 median total compensation, board-certified fellows</span></div>
-      <div class="fig"><b>752 / 519</b><span>applicants for first-year seats, 2025–26</span></div>
+      <div class="fig"><b>$160,300</b><span>BLS median wage, all podiatrists, May 2025</span></div>
+      <div class="fig"><b>50.2%</b><span>of ACFAS fellows take ER call with no extra pay</span></div>
+      <div class="fig"><b>35%</b><span>have compensation tied to wRVUs</span></div>
     </div>
 
     <div class="essay">
-      <p>Now the associate ad. The frustrating part is that it describes a good job. An owner who stays through the transition and full hospital privileges are exactly what a new graduate should be looking for. That opportunity is sitting behind a machine most residents have never touched, with no pay range, no email and no link. In SHRM's research, 82% of workers said they were more likely to apply when a posting shows a pay range. This one asks candidates to find a fax machine first.</p>
-
-      <p>None of this would matter much if talent were plentiful. It isn't. AACPM counted 752 applicants for the 519 students who started podiatric medical school in fall 2025, across eleven colleges. We are a small profession competing with every other path a bright pre-med student could take, and every public signal we send either says modern surgical specialty or says something else. Job posts are public signals. So is what we pay the people who teach.</p>
-
-      <p>The fix is not expensive. It is a pay range, a named contact, an email address, and three honest sentences about call, privileges and what partnership actually looks like. For academic posts, it is a range that tells the truth about the whole package, and a profession willing to say out loud that educators are worth paying.</p>
-
-      <p class="close">A profession attracts the talent its job posts deserve.</p>
+      <p>Read those numbers carefully. The ACFAS survey covers board-certified fellows, so it describes where a career can go rather than what a first contract pays. The BLS median includes everyone and excludes self-employed owners. Your first offer will likely land between the two, and the model you choose decides how fast you climb.</p>
     </div>
 
-    <div class="watch" aria-label="What a 2026 job post includes">
-      <div class="watch-head">What a 2026 podiatry job post includes</div>
-      <div class="watch-row"><span class="when">Pay</span><span>A base range, the bonus or productivity formula, and whether there is a guarantee in year one.</span></div>
-      <div class="watch-row"><span class="when">Practice</span><span>Hospital and ASC privileges, call frequency and whether call is paid, and the surgical case mix.</span></div>
-      <div class="watch-row"><span class="when">Path</span><span>The partnership or buy-in track in plain terms, including timeline and how the price is set.</span></div>
-      <div class="watch-row"><span class="when">Apply</span><span>A named person, an email address or link, and a date you will respond by.</span></div>
-    </div>
-
-    <div class="byline">Sources: <a href="https://pmpulse.podiatrymanagement.com/p/remembering-dr-lowell-weil-sr-friday-9-18-26">PM Pulse classifieds, Sept 18, 2026</a> · <a href="https://www.bls.gov/ooh/healthcare/podiatrists.htm">BLS Occupational Outlook Handbook</a> (wage data excludes self-employed owners) · <a href="https://www.acfas.org/practice-career/compensation-survey/compensation-survey">ACFAS 2025 Compensation Report</a> (769 respondents, board-certified fellows) · <a href="https://www.shrm.org/about/press-room/new-shrm-research-shows-pay-transparency-makes-organizations-competitive-leads-to-increase-qualified-applicants">SHRM, 2023</a> · <a href="https://aacpm.org/statistics-2/">AACPM statistics</a></div>
+    <div class="byline">Sources: <a href="https://www.acfas.org/practice-career/compensation-survey/compensation-survey">ACFAS 2025 Compensation Report</a> (769 respondents) · <a href="https://www.bls.gov/ooh/healthcare/podiatrists.htm">BLS Occupational Outlook Handbook</a> · <a href="https://ramaonhealthcare.com/physician-noncompete-crackdown-a-50-state-guide/">Tucker Arensberg 50-state guide, via RamaOnHealthcare, Sept 2026</a></div>
   </section>
 
   <div class="layout">
     <main>
-      <section class="section">
-        <div class="section-head"><h2>Voices</h2></div>
+      <section class="section story-item" data-cat="business" id="models">
+        <div class="section-head"><h2>The three models</h2></div>
 
-        <article class="story story-item memoriam" data-cat="community">
-          <span class="tag community">In memoriam</span>
-          <h3><a href="https://www.legacy.com/us/obituaries/name/lowell-weil-obituary?id=62450310">Lowell Scott Weil Sr., DPM</a></h3>
-          <div class="years">1941 – 2026</div>
-          <p class="dek">Dr. Weil died September 17, one day after his 85th birthday. Most of us learned his name from the lesser metatarsal osteotomy that carries it. The rest of his résumé is a map of how podiatric surgery grew up: president of the Board of Podiatric Surgery from 1976 to 1978, president of the American College of Foot and Ankle Surgeons in 1993 and 1994, editor-in-chief of the Journal of Foot and Ankle Surgery, residency director at Northlake Community Hospital, and founder of the Weil Foot &amp; Ankle Institute. He launched one of the first podiatric surgical fellowships, served 25 years as team podiatrist for the Chicago Bears and White Sox, held several implant patents and lectured in 41 countries.</p>
-          <div class="why"><b>Why it matters.</b> Weil helped build the fellowship and residency model that trained a generation of podiatric surgeons. The best tribute this profession can pay is to keep investing in the people who teach.</div>
-          <div class="meta">Sources: <a href="https://www.legacy.com/us/obituaries/name/lowell-weil-obituary?id=62450310">Obituary via Legacy.com</a> · <a href="https://pmpulse.podiatrymanagement.com/p/remembering-dr-lowell-weil-sr-friday-9-18-26">PM Pulse remembrance</a></div>
-        </article>
+        <div class="models">
+          <article class="model">
+            <div class="k">Employed</div>
+            <h3>Health system</h3>
+            <div class="avg">$433,109<small>ACFAS average, hospital or health system employed</small></div>
+            <div class="pc">
+              <div class="pro"><b>Why it works</b>A guaranteed salary while you ramp, full benefits with retirement match and malpractice paid, and a referral engine you did not have to build. Primary care feeds you from day one, and signing bonuses are common. One Albany listing this month offers up to $50,000.</div>
+              <div class="con"><b>What it costs</b>A salary cap and no ownership. Health systems pay within fair market value limits, so the ceiling is set by a compensation survey you will never see. You will not own the ASC, the imaging, or the DME, and you will not build equity to sell later.</div>
+              <div class="ask"><b>Get in writing</b>The wRVU conversion rate, whether a higher tier exists, how call is paid, and what happens when the guarantee ends.</div>
+            </div>
+          </article>
+
+          <article class="model">
+            <div class="k">Private</div>
+            <h3>Podiatry group</h3>
+            <div class="avg">$416,616<small>ACFAS average, podiatric group practice. Owners average $483,690 across settings.</small></div>
+            <div class="pc">
+              <div class="pro"><b>Why it works</b>A path to ownership. Partners share in profits and ancillaries. Among ACFAS fellows who earn more than 10% from ancillaries, an ASC stake was the top driver. You learn the business of medicine from people who run one, and you have the most say in how the clinic runs.</div>
+              <div class="con"><b>What it costs</b>A lower start and more risk. Associate pay is often below a hospital guarantee for the first years, referrals come from marketing and reputation rather than a system, and the buy-in math can be opaque.</div>
+              <div class="ask"><b>Get in writing</b>The partnership timeline, how the buy-in price is set, and what share of ancillaries partners receive.</div>
+            </div>
+          </article>
+
+          <article class="model">
+            <div class="k">Usually employed</div>
+            <h3>Orthopedic practice</h3>
+            <div class="avg">$484,613<small>ACFAS average, multispecialty or orthopedic group, the highest outside academia</small></div>
+            <div class="pc">
+              <div class="pro"><b>Why it works</b>Potentially high salary and real volume. Orthopedic groups bring imaging, therapy, and a patient stream already looking for a foot and ankle surgeon. Pay usually tracks production, and production can come fast.</div>
+              <div class="con"><b>What it costs</b>You are usually employed. Partnership, ASC shares, and the reconstructive cases may be reserved for orthopedic surgeons, and some groups hire a DPM to take the nail, wound, and nonoperative load off the schedule.</div>
+              <div class="ask"><b>Get in writing</b>Your expected case mix, whether DPMs can become partners, and your ASC block time.</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="bars" role="img" aria-label="ACFAS 2025 average total compensation by practice setting">
+          <div class="bars-head">Average total compensation by setting</div><div class="bars-note" style="margin:0 0 4px;">The three models in this edition are highlighted.</div>
+          <div class="bar"><span class="lab">Veterans Administration</span><span class="track"><span class="fill" style="width:43.85%"></span></span><span class="v">$263,115</span></div>
+          <div class="bar hl"><span class="lab">Podiatric group practice</span><span class="track"><span class="fill" style="width:69.44%"></span></span><span class="v">$416,616</span></div>
+          <div class="bar hl"><span class="lab">Hospital or health system</span><span class="track"><span class="fill" style="width:72.18%"></span></span><span class="v">$433,109</span></div>
+          <div class="bar"><span class="lab">Solo practice</span><span class="track"><span class="fill" style="width:78.33%"></span></span><span class="v">$470,004</span></div>
+          <div class="bar hl"><span class="lab">Orthopedic or multispecialty</span><span class="track"><span class="fill" style="width:80.77%"></span></span><span class="v">$484,613</span></div>
+          <div class="bar"><span class="lab">Academic faculty</span><span class="track"><span class="fill" style="width:92.53%"></span></span><span class="v">$555,159</span></div>
+          <div class="bars-note">Bars drawn from $0 to $600,000. Averages for board-certified ACFAS fellows at all career stages, not starting salaries. Volume moves pay more than setting: surgeons doing 0 to 49 cases a year averaged $341,739, and those doing more than 500 averaged $1,017,122.</div>
+        </div>
+        <div class="meta">Source: <a href="https://www.acfas.org/getattachment/71c98ccf-9c8f-4a03-9060-1fdcaaa274bd/Compensation-Report-PDF-10-23.pdf">ACFAS 2025 Member Compensation &amp; Practice Report (PDF)</a></div>
       </section>
 
-      <section class="section">
-        <div class="section-head"><h2>Practice &amp; business</h2></div>
-
-        <article class="story story-item" data-cat="business">
-          <span class="tag business">Practice &amp; business</span>
-          <h3><a href="https://www.uwhealth.org/news/uw-health-acquires-university-podiatry-associates">A Madison podiatry group joins UW Health</a></h3>
-          <p class="dek">UW Health acquired University Podiatry Associates in Madison, Wisconsin, effective July 1. The practice now operates as UW Health Yellowstone Dr Podiatry Clinic and continues to treat diabetic foot ulcers, arthritis, bunions and hammertoes.</p>
-          <div class="why"><b>Why it matters.</b> Independent groups without a clear succession plan have two exits: recruit the next generation or sell to someone who can. The Connecticut ad in this week's essay is the first path. Madison is the second.</div>
-          <div class="meta">Sources: <a href="https://www.uwhealth.org/news/uw-health-acquires-university-podiatry-associates">UW Health</a> · <a href="https://www.wisbusiness.com/2026/uw-health-acquires-university-podiatry-associates/">WisBusiness</a></div>
-        </article>
+      <section class="section story-item" data-cat="business" id="keys">
+        <div class="section-head"><h2>Keys to finding the job</h2></div>
+        <ol class="steps">
+          <li><span class="when">PGY-1 to PGY-2</span><span><b>Decide place and model first</b>Write down the region and the model before you open a job board. It turns a search of 800 listings into a search of twenty.</span></li>
+          <li><span class="when">PGY-2</span><span><b>Start the license early</b>State licensure and hospital credentialing each take months. A job you cannot start on time is a job that goes to someone else.</span></li>
+          <li><span class="when">PGY-2</span><span><b>Search where the listings actually are</b>Many good jobs are never posted. Tell your attendings, your program director, and every rep in the OR which town you want. Use the society job boards for the rest. Call a surgeon in the area and get the local perspective. People will help you if you ask.</span></li>
+          <li><span class="when">PGY-2 to PGY-3</span><span><b>Visit and talk to the last associate</b>Ask the practice for the name of the surgeon who held the job before you. Their answer tells you more than the offer letter.</span></li>
+          <li><span class="when">PGY-3</span><span><b>Read the contract with a lawyer</b>Have a physician contract attorney in your state review the noncompete, tail coverage, termination terms, and the productivity formula before you sign.</span></li>
+        </ol>
       </section>
 
-      <section class="section">
-        <div class="section-head"><h2>Policy &amp; compliance</h2></div>
+      <section class="section story-item" data-cat="jobs" id="board">
+        <div class="section-head"><h2>Job board: eight openings</h2></div>
+        <p class="dek" style="font-size:14px;color:var(--ink-soft);line-height:1.55;margin:12px 0 0;">Checked October 2, 2026. Recruiter listings close without notice, so confirm with the source before you apply. Pay is shown only where the posting states it.</p>
+        <div class="jobs">
+          <article class="job">
+            <div><span class="chip hs">Health system</span>
+              <h3>Podiatrist, established hospital group</h3>
+              <div class="where">Albany, New York · via Curare Physician Recruiting</div>
+              <p>Join two general podiatrists and four podiatric surgeons at a 180-bed Level III trauma hospital affiliated with Columbia. Call 1 in 5.</p></div>
+            <div class="pay">Up to $50K sign-on</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/907665/upstate-new-york-podiatry-opening-with-up-to-50k-sign-on/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip hs">Health system</span>
+              <h3>Surgicalist, minimal call</h3>
+              <div class="where">Bloomington, Indiana · via Curare Physician Recruiting</div>
+              <p>Hospital employed and clinic based, with outpatient surgery Monday through Friday at a 25-bed critical access hospital across the street. Surgical fellowship and board certified or eligible required. Close to Indianapolis.</p></div>
+            <div class="pay none">Sign-on and relocation bonus, amounts not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/915185/minimal-call-for-surgicalist-near-bloomington-in/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip hs">Health system</span>
+              <h3>Reconstructive foot and ankle fellowship, 2027 to 2028</h3>
+              <div class="where">San Antonio, Texas · Methodist Hospital (HCA Healthcare)</div>
+              <p>A one-year reconstructive fellowship for this year's PGY-3s, August 2027 through July 2028, under fellowship director Thomas Zgonis, DPM. Requires a CPME-approved residency, ABFAS board eligibility, and a Texas license.</p></div>
+            <div class="pay none">Salary, not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/883447/podiatry-foot-ankle-fellowship-physician/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip hs">Health system</span>
+              <h3>Build a new podiatry service line</h3>
+              <div class="where">Near Fayetteville, North Carolina · via Curare Physician Recruiting</div>
+              <p>Hospital-owned practice across from the hospital, inpatient and outpatient access, broad scope, and the chance to shape the program. Easy reach to Raleigh and Durham.</p></div>
+            <div class="pay none">Not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/893147/28-miles-from-fayetteville-nc/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip grp">Podiatry group</span>
+              <h3>Associate with partnership track</h3>
+              <div class="where">Hudson Valley, New York · via Inspire Healthcare</div>
+              <p>Established group with Orange and Sullivan County offices, about 30 patients a day, ankle privileges at the local health system hospital, malpractice covered.</p></div>
+            <div class="pay none">Base plus bonus, not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/858308/podiatry-physician-opportunity-with-partnership-hudson-valley-new-york/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip grp">Podiatry group</span>
+              <h3>Podiatrist and foot and ankle surgeon</h3>
+              <div class="where">Indiana · Foot and Ankle Centers of Indiana</div>
+              <p>Full-time, on-site, one year of experience minimum, 10 to 25% travel between offices. Indiana bars noncompetes only for hospital-affiliated employers, so read this contract closely.</p></div>
+            <div class="pay">$150K–$165K</div>
+            <div class="meta">Source: <a href="https://careers.aofas.org/jobs/function/podiatry/">AOFAS Career Center, podiatry listings</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip grp">Podiatry group</span>
+              <h3>Surgical podiatrist, community hospital</h3>
+              <div class="where">Clinton, North Carolina · via Inspire Healthcare</div>
+              <p>Multi-county patient base and an independent hospital. Wants an experienced surgeon who can build a surgical practice, so it suits a resident with a fellowship or strong case logs.</p></div>
+            <div class="pay none">Not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/792569/experienced-surgical-podiatrist-in-north-carolina-between-raleigh-and-the-coast/">HospitalRecruiting listing</a></div>
+          </article>
+          <article class="job">
+            <div><span class="chip grp">Podiatry group</span>
+              <h3>Part-time podiatrist, private practice</h3>
+              <div class="where">The Woodlands, Texas · via Inspire Healthcare</div>
+              <p>An established practice with a large patient panel and steady primary care referrals wants 12 to 20 hours a week. Private insurance only, malpractice provided, schedule and pay negotiable.</p></div>
+            <div class="pay none">Not posted</div>
+            <div class="meta">Source: <a href="https://www.hospitalrecruiting.com/job/915143/part-time-podiatrist-opportunity-north-of-houston-in-woodlands-texas/">HospitalRecruiting listing</a></div>
+          </article>
+        </div>
+      </section>
 
-        <article class="story story-item" data-cat="compliance">
-          <span class="tag compliance">Policy &amp; compliance · Countdown</span>
-          <h3><a href="https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule">About five weeks until the Modifier 25 decision</a></h3>
-          <p class="dek">CMS typically publishes the final physician fee schedule around November 1. The 2027 proposal would pay the highest-valued service at 100% and other same-day E/M or procedure services at 50% when an E/M is billed with a global procedure, and would set the non-APM conversion factor at $32.84. Comments closed September 14.</p>
-          <div class="why"><b>Why it matters.</b> The practices that react best in November will be the ones that priced their exposure in October. Pull last year's Modifier 25 claims by payer now, while there is still time to plan scheduling around the answer.</div>
-          <div class="meta">Sources: <a href="https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule">CMS fact sheet</a> · <a href="https://www.cokergroup.com/insights/cms-2027-modifier-25-payment-cuts">Coker analysis</a></div>
-        </article>
+      <section class="section story-item" data-cat="research" id="ai">
+        <div class="section-head"><h2>AI fluency sets you apart</h2></div>
+        <div class="essay" style="margin-top:18px;">
+          <p>Every applicant in the stack finished a residency, logged the cases, and sat the boards. The line on a CV that still stands out is proof that you can use AI well in a clinic. Employers are starting to ask for it. Adtalem's chief digital officer told PracticeMatch that health systems now prioritize AI-fluent clinicians who work alongside the technology instead of resisting it, and a Burning Glass Institute analysis found healthcare job postings mentioning AI skills grew 42% in a year.</p>
+          <p>Fluency does not mean writing code. It means you can hand the right work to a tool and stay accountable for the result. I teach it as four gates.</p>
+        </div>
+        <div class="ai-gates">
+          <div class="gate"><b>Delegate</b><span>Know which tasks to hand off: the note draft, the prior authorization letter, the patient handout.</span></div>
+          <div class="gate"><b>Verify</b><span>Check every output against the chart and the literature before it touches a patient.</span></div>
+          <div class="gate"><b>Disclose</b><span>Tell patients and colleagues when AI helped, in plain language.</span></div>
+          <div class="gate"><b>Own</b><span>Your signature means you own the result, whatever drafted it.</span></div>
+        </div>
+        <div class="essay">
+          <p>Show it in the interview. Name the ambient scribe you used in residency and what it changed about your clinic day. Bring a patient education piece you built with AI and verified yourself. Ask how the practice plans to use AI in documentation and prior authorization. A practice weighing two equal surgeons will hire the one who makes the whole clinic faster.</p>
+          <p class="close">The surgeons who build the career they want chose the place and the practice before they chose the number.</p>
+        </div>
+        <div class="disclose">Disclosure: Andrew Lundquist, DPM, MBA, is Chief Medical Officer of Mankato Clinic, an independent multispecialty group, and Clinical Director at Nabla Technologies, which makes an ambient AI scribe.</div>
+        <div class="meta">Sources: <a href="https://www.practicematch.com/healthcare/articles/the-future-of-healthcare-jobs-how-ai-is-reshaping-skill-requirements">PracticeMatch, Jan 2026</a> · <a href="https://www.hirecruiting.com/newsroom/how-ai-is-changing-healthcare-jobs/">Hunter Recruiting, citing Burning Glass Institute</a></div>
       </section>
     </main>
 
@@ -297,25 +448,30 @@
         <script src="https://www.clinicianpreneur.com/forms/2149726324/embed.js"></script>
       </div>
 
-      <div class="rail-card">
-        <div class="rail-eyebrow">A question for readers</div>
-        <h3>Does podiatry need another job board?</h3>
-        <p>If so, would you want it here, built on three rules?</p>
-        <ol class="rules">
-          <li>Every listing shows a pay range.</li>
-          <li>Every listing applies by email or link.</li>
-          <li>No fax numbers.</li>
-        </ol>
-        <p class="soft">Reply to this edition with a yes, a no, or what you would change.</p>
+      <div class="rail-card story-item" data-cat="jobs">
+        <div class="rail-eyebrow">Where to look</div>
+        <h3>Job boards that list podiatrists</h3>
+        <ul class="links">
+          <li><a href="https://apma.careerwebsite.com/">APMA Career Center</a><span>The largest podiatry-specific board</span></li>
+          <li><a href="https://careers.aofas.org/jobs/function/podiatry/">AOFAS Career Center</a><span>Strong for orthopedic groups hiring DPMs</span></li>
+          <li><a href="https://www.acfas.org/practice-career/career-center">ACFAS Career Center</a><span>Surgical and fellowship-level roles</span></li>
+          <li><a href="https://www.usajobs.gov/search/results/?j=0668">USAJOBS series 0668</a><span>VA podiatrist openings, with posted pay</span></li>
+          <li><a href="https://www.hospitalrecruiting.com/jobs/Podiatry-Jobs/">HospitalRecruiting</a><span>Hospital and recruiter listings</span></li>
+        </ul>
       </div>
 
-      <div class="rail-card">
-        <div class="rail-eyebrow">On the wall</div>
-        <h3>Dates that matter this fall</h3>
-        <ul class="cal">
-          <li><span class="d">~Nov 1</span><span>CMS expected to publish the 2027 physician fee schedule final rule, including the Modifier 25 decision.</span></li>
-          <li><span class="d">Jan 1</span><span>2027 fee schedule and any Modifier 25 change take effect.</span></li>
-        </ul>
+      <div class="rail-card story-item" data-cat="business">
+        <div class="rail-eyebrow">State law</div>
+        <h3>Noncompetes depend on the state</h3>
+        <p>The FTC's 2024 ban never took effect, so state law decides. California, Minnesota, North Dakota, and Montana broadly ban noncompetes for physicians. Arkansas bans them for employed physicians, and Indiana bars them for hospital-affiliated employers. Texas and Florida remain the friendliest states for enforcing them.</p>
+        <p class="soft">Laws are changing quickly. Confirm your state's rule with a contract attorney. Sources: <a href="https://www.beckersasc.com/asc-news/noncompete-laws-in-2026-state-by-state-breakdown/" style="border-bottom:1px solid var(--rule)">Becker's ASC</a>, <a href="https://medmoneyguide.com/guides/physician-non-compete" style="border-bottom:1px solid var(--rule)">MedMoneyGuide</a>, <a href="https://loio.com/guides/non-compete-tracker-state-by-state/" style="border-bottom:1px solid var(--rule)">Loio tracker</a></p>
+      </div>
+
+      <div class="rail-card story-item" data-cat="business">
+        <div class="rail-eyebrow">Benchmark</div>
+        <h3>What the VA posts</h3>
+        <p>VA listings publish pay, which makes them a useful yardstick. A forefoot surgery podiatrist role in Pensacola and Biloxi posted $210,000 to $245,000 this spring. ACFAS fellows at the VA averaged $263,115.</p>
+        <p class="soft">Source: <a href="https://www.usajobs.gov/job/861726000" style="border-bottom:1px solid var(--rule)">USAJOBS, closed April 30, 2026</a></p>
       </div>
     </aside>
   </div>
@@ -324,10 +480,10 @@
 <footer>
   <div class="wrap">
     <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
-    <div class="foot-eds-head">Previous editions</div><ol class="foot-eds" reversed><li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li><li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li><li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li></ol>
+    <div class="foot-eds-head">Previous editions</div><ol class="foot-eds" reversed><li><span class="n">No. 4</span><a href="https://footnote.report/editions/004/">The profession edition</a><span class="d">Sept 28, 2026</span></li><li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li><li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li><li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li></ol>
     <p class="foot-tag">A briefing on reimbursement, clinical evidence and practice management for podiatric physicians and surgeons. Every summary is original and every figure links to its source.</p>
     <nav class="foot-nav" aria-label="Archive"><a href="editions/">Past editions</a></nav>
-    <div class="foot-bottom">© 2026 The Footnote. Edition No. 4, published September 28, 2026.</div>
+    <div class="foot-bottom">© 2026 The Footnote. Edition No. 5, published October 5, 2026. By Andrew Lundquist, DPM, MBA.</div>
   </div>
 </footer>
 
@@ -341,6 +497,5 @@
     items.forEach(it => { it.hidden = !(f === 'all' || it.dataset.cat === f); });
   }));
 </script>
-
 </body>
 </html>
