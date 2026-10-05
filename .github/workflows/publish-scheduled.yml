@@ -2,10 +2,12 @@ name: Publish scheduled editions
 
 on:
   schedule:
-    # 6:00 AM Central Daylight Time every Monday, with hourly retries until 9 AM
-    # in case GitHub's scheduler runs late. After Nov 1 (Standard Time) these
-    # fire an hour earlier locally; change 11-14 to 12-15 then.
-    - cron: '0 11-14 * * 1'
+    # Every Monday from 6:07 AM to 6:37 PM Central Daylight Time, twice an hour.
+    # GitHub's scheduler often runs late or skips runs at the top of the hour
+    # (Oct 5, 2026: the 6 AM run fired at 2:25 PM), so runs sit off the hour and
+    # repeat all day. The script is safe to rerun; it does nothing once published.
+    # After Nov 1 (Standard Time) change 11-23 to 12-23 to keep the 6 AM start.
+    - cron: '7,37 11-23 * * 1'
   workflow_dispatch: {}
 
 permissions:
