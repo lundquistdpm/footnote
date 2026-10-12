@@ -138,6 +138,9 @@
   @media (max-width:920px){ .layout{grid-template-columns:1fr;gap:20px;} }
   @media (max-width:560px){ .watch-row{grid-template-columns:1fr;gap:2px;} }
 
+  /* Newsletter signup: button to Substack subscribe page */
+  .signup .signup-btn{display:block;text-align:center;font:500 14px/1 'IBM Plex Sans',sans-serif;color:var(--paper);background:var(--ink);border:1px solid var(--ink);border-radius:2px;padding:13px 14px;margin-top:4px;text-decoration:none;}
+  .signup .signup-btn:hover{opacity:.88;}
   /* Newsletter signup (Kajabi form, restyled to match) */
   .signup .rail-eyebrow{color:var(--clinical);}
   .signup #kajabi-form{margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;max-width:none !important;}
@@ -300,7 +303,7 @@
         <div class="rail-eyebrow">Free, every week</div>
         <h3>Get The Footnote by email</h3>
         <p class="soft">Surgical research, policy and practice news for podiatry, each with the line on why it matters. One email a week. Unsubscribe anytime.</p>
-        <script src="https://www.clinicianpreneur.com/forms/2149726324/embed.js"></script>
+        <a class="signup-btn" href="https://footnotespodiatry.substack.com/subscribe" target="_blank" rel="noopener">Subscribe free on Substack</a>
       </div>
 
       <div class="rail-card">
