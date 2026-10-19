@@ -106,53 +106,18 @@
   .section-head h2{font-size:19px;}
   .intro{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:14px 0 4px;max-width:68ch;}
 
-  /* Pipeline */
-  .pipe{margin:10px 0 0;padding:0;list-style:none;counter-reset:s;}
-  .pipe li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr) 92px;gap:16px;padding-block:16px;border-bottom:1px solid var(--rule);}
-  .pipe li:last-child{border-bottom:none;}
-  .pipe li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--ink-soft);padding-top:3px;}
-  .pipe b{font-family:var(--serif);font-weight:600;font-size:17px;display:block;margin-bottom:4px;}
-  .pipe p{font-size:14.5px;line-height:1.55;margin:0;color:var(--ink-soft);max-width:62ch;}
-  .who{justify-self:end;align-self:start;margin-top:3px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;border-radius:2px;white-space:nowrap;}
-  .who.agent{color:var(--research);} .who.me{color:var(--clinical);} .who.code{color:var(--compliance);}
-  .legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0 0;font-size:12.5px;color:var(--ink-soft);align-items:center;}
-  .legend .who{margin:0;}
-
-  /* Rules */
-  .rulebook{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;}
-  .rb{border:1px solid var(--rule);background:var(--paper-raised);padding:16px 18px;border-radius:2px;}
-  .rb .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;}
-  .rb ul{margin:0;padding:0;list-style:none;}
-  .rb li{font-size:14px;line-height:1.5;padding-block:7px;border-bottom:1px solid var(--rule);}
-  .rb li:last-child{border-bottom:none;}
-
-  /* Comparison */
-  .cmp-wrap{overflow-x:auto;margin-top:16px;}
-  .cmp{width:100%;border-collapse:collapse;min-width:560px;font-size:14px;line-height:1.5;}
-  .cmp th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);padding:10px 12px 10px 0;border-bottom:1px solid var(--ink-soft);}
-  .cmp td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;}
-  .cmp td:first-child{font-family:var(--serif);font-weight:600;font-size:15px;width:120px;}
-  .cmp td:nth-child(2){color:var(--ink-soft);}
-  .cmp th:last-child,.cmp td:last-child{padding-right:0;}
-
-  /* Label */
-  .test{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 18px;}
-  .test .rb h4{font-family:var(--serif);font-size:17px;margin:2px 0 6px;font-weight:600;}
-  .test .rb p{font-size:14px;line-height:1.5;margin:0;color:var(--ink-soft);}
-  .test .rb.yes{border-top:3px solid var(--clinical);}
-  .test .rb.no{border-top:3px solid var(--business);}
-  .loop{margin:4px 0 16px;padding:0;list-style:none;border-top:1px solid var(--rule);}
-  .loop li{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;padding-block:10px;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.5;}
-  .loop .k{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:2px;}
-
-  /* Gates */
-  .ai-gates{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0 14px;}
-  .gate{border-top:3px solid var(--research);padding-top:10px;}
-  .gate b{font-family:var(--serif);font-size:17px;display:block;margin-bottom:4px;}
-  .gate span{font-size:13.5px;line-height:1.5;color:var(--ink-soft);display:block;}
-  .gate em{font-style:normal;display:block;margin-top:8px;font-size:13px;line-height:1.45;color:var(--ink);}
+  .dek{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.55;color:var(--ink-soft);margin:0 0 20px;max-width:62ch;}
+  .story{padding-block:22px;border-bottom:1px solid var(--rule);}
+  .story:last-child{border-bottom:none;}
+  .story h3{font-size:21px;line-height:1.3;margin:10px 0 10px;}
+  .story p{font-size:15.5px;line-height:1.62;margin:0 0 12px;max-width:68ch;}
+  .tbl-wrap{overflow-x:auto;margin:14px 0 18px;}
+  .tbl{width:100%;border-collapse:collapse;min-width:520px;font-size:14px;line-height:1.5;}
+  .tbl th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);padding:10px 12px 10px 0;border-bottom:1px solid var(--ink-soft);}
+  .tbl td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;}
+  .tbl td:first-child{font-family:var(--serif);font-weight:600;font-size:15px;width:38%;}
+  .tbl td:last-child,.tbl th:last-child{padding-right:0;}
   .disclose{font-size:12.5px;color:var(--ink-soft);line-height:1.55;border-top:1px solid var(--rule);padding-top:12px;margin-top:16px;max-width:72ch;}
-
   /* Rail */
   .rail-card{background:var(--paper-raised);border:1px solid var(--rule);padding:22px;margin-bottom:22px;border-radius:2px;}
   .rail-card h3{font-size:16px;margin-bottom:12px;}
@@ -212,155 +177,116 @@
 <header class="masthead">
   <div class="wrap masthead-bar">
     <div class="word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
-    <div class="edition">No. 6 · Building in public</div>
+    <div class="edition">No. 7 · Beyond AI</div>
   </div>
   <div class="wrap">
     <nav class="beat-nav" aria-label="Filter by section">
       <button class="active" data-filter="all">Everything</button>
-      <button data-filter="process">The process</button>
-      <button data-filter="compare">The difference</button>
-      <button data-filter="label">The label</button>
-      <button data-filter="physician">The physician</button>
+      <button data-filter="essay">The essay</button>
+      <button data-filter="compliance">Policy</button>
+      <button data-filter="business">Business</button>
+      <button data-filter="clinical">Clinical</button>
     </nav>
   </div>
-  <div class="wrap issue-strip">Monday, October 12, 2026. How this newsletter gets made, start to finish. The agent that does the research, the rules it writes under, the checks I do by hand, and what the whole thing says about the podiatrist our profession will need next.</div>
-  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/005/"><b>No. 5</b>The resident edition</a><a href="https://footnote.report/editions/004/"><b>No. 4</b>The profession edition</a><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
+  <div class="wrap issue-strip">Monday, October 19, 2026. The innovation moving podiatry forward is mostly not AI. What it takes to bring an idea to market, what CMS proposes to pay for in 2027, and what new equipment and techniques really cost a practice.</div>
+  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/006/"><b>No. 6</b>Building in public</a><a href="https://footnote.report/editions/005/"><b>No. 5</b>The resident edition</a><a href="https://footnote.report/editions/004/"><b>No. 4</b>The profession edition</a><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
 </header>
 
 <div class="wrap">
-  <section class="lead story-item" data-cat="process">
-    <span class="tag research">Building in public · Essay</span>
-    <h1>I don't write the first draft. I own the last one.</h1>
-
+  <section class="lead story-item" data-cat="essay">
+    <span class="tag research">Innovation · Essay</span>
+    <h1>Non-AI technology is still leading innovation</h1>
+    <p class="dek">The technology that changes your practice in 2027 may not be the newest device on the exhibit floor. It could be the one that just got a payment code, or a regular plate and screw construct. It might be something only you see.</p>
     <div class="essay">
-      <p class="open">I am the editor of this newsletter. I hired AI to do my research and first drafts. Every edition of The Footnote so far began as a draft I did not write. An AI agent searched the journals and the trade press, read the sources, and wrote in a voice built from my own rules. Then I did the part that carries my name. I read every sentence, opened every link, and fixed what was wrong.</p>
-
-      <p>Most people who write with AI keep it quiet, but most of us can tell. I think quiet is the wrong instinct for physicians. We already sign notes that someone else drafted, first human scribes and now ambient ones. We manage residents and staff, all of them act as an extension of us. We sign off on work that we review. The signature has always meant the same thing: I checked this, and it is mine. This newsletter works the same way, just with a new staff.</p>
-
-      <p>So this edition shows the whole machine. You will see the steps, the constraints I put on the agent, the places it still gets things wrong, and why I think this way of working is the clearest preview we have of the physician this profession will need next. Nothing here requires a computer science degree. It requires the same habits we learned in residency, applied to a new kind of assistant.</p>
+      <p class="open">When I see a need in the market, I act. This weekly practice briefing is a good example. We founded Sky Surgical to fill a void we found in practice. We weren't looking to start a company. A company was needed to bring it to market.</p>
+      <p>Every exhibit hall tells the same story. The device is FDA cleared, the rep has case photos, and a surgeon you respect gave the podium talk. None of that tells you whether your practice needs it.</p>
+      <p>Most useful ideas start smaller than a booth. A step in the OR that wastes ten minutes. An instrument that fights the anatomy. A patient problem no product on the shelf solves. Many of us notice these, adapt, and move on. The surgeons who act on them find the road from idea to patient runs through the same few questions.</p>
+      <p>What are you seeing that needs a solution? Here are some things to think about when working on an idea.</p>
     </div>
-
-    <div class="figs">
-      <div class="fig"><b>5</b><span>editions written in the first three weeks, alongside a full-time job</span></div>
-      <div class="fig"><b>6</b><span>beats the agent researches on every run</span></div>
-      <div class="fig"><b>1</b><span>physician who reads every sentence before it ships</span></div>
-      <div class="fig"><b>0</b><span>figures published without a link to the source</span></div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th scope="col">Question</th><th scope="col">What to look for</th></tr></thead>
+        <tbody>
+          <tr><td>Is the need real outside your own clinic?</td><td>Ask ten surgeons who don't work with you. Note how often the problem shows up and what it costs in time, complications or money.</td></tr>
+          <tr><td>Is there a code, and what does it pay? This is important for devices that require a code for reimbursement.</td><td>A device used inside an existing procedure, like a plate and screw construct in a fusion, rides on codes that already pay. A new kind of service needs its own CPT code, and a temporary Category III code means each payer decides.</td></tr>
+          <tr><td>What will the FDA ask for?</td><td>A 510(k) shows your device is substantially equivalent to one already on the market. A device with no predicate goes through De Novo. Know which before you spend on prototypes.</td></tr>
+          <tr><td>What evidence will a skeptical colleague want?</td><td>Results from surgeons outside your company, a comparison group, and follow-up longer than a year.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="essay">
+      <p>The payment question moved most this fall, and the sharpest reading of it came from Scott Nelson, founder of Below The Knee, in his analysis "Five Moves, One Bet" for <i>WOUNDS</i>. His argument is that CMS's 2027 proposals are one strategy, not five separate changes: pay for evidence, stop paying twice for the same work, and move care to the cheapest appropriate setting. Three of the stories below come from his reading of the proposed rule. One shows a manufacturer's own invoices setting the value of a new code, which is what happens when an innovator builds the payment case alongside the device.</p>
+      <p>The other two stories show adoption from the buyer's side: what a weight-bearing CT scanner takes to pay for itself, and what minimally invasive bunion surgery costs a surgeon in the first cases. Anyone bringing an idea to market should know the math their colleagues will run.</p>
+      <p class="close">The podiatrists who move this specialty forward will be the ones who trust what only they can see and decide to build it.</p>
     </div>
   </section>
 
   <div class="layout">
     <main>
-      <section class="section story-item" data-cat="process" id="pipeline">
-        <div class="section-head"><h2>The pipeline, step by step</h2></div>
-        <p class="intro">Six steps, in the order they happen. The tag on each one shows who does the work.</p>
-        <div class="legend"><span class="who agent">Agent</span> Claude, through the Anthropic API <span class="who code">Code</span> scripts and scheduled jobs <span class="who me">Me</span> the part I will not hand off</div>
-        <ol class="pipe">
-          <li><div><b>Pick the thesis</b><p>I choose the topics and what the edition argues and who it is for. The resident edition, the profession edition, this one. The agent never chooses the story. It serves up what I ask it to.</p></div><span class="who me">Me</span></li>
-          <li><div><b>Research six beats</b><p>The agent searches the web for each beat: clinical, surgical research, policy, practice business, products, and voices. It works from a brief that ranks journals like ACFAS, the Journal of Foot &amp; Ankle Surgery, AOFAS, and Foot &amp; Ankle International ahead of everything else. It is told to skip press releases dressed as news, and to return nothing when nothing is worth running.</p></div><span class="who agent">Agent</span></li>
-          <li><div><b>Draft in my voice</b><p>Every summary is written from scratch, never copied from the source. The draft follows a written style guide, shown below, that the agent cannot negotiate with.</p></div><span class="who agent">Agent</span></li>
-          <li><div><b>Check the citations</b><p>Journal references run through PubMed and Crossref to confirm the paper exists and says what we claim. This pipeline started on my bunion patient education site, where I never wanted a fabricated reference to reach a patient.</p></div><span class="who code">Code</span></li>
-          <li><div><b>Read, verify, correct</b><p>I open every link and read every line against its source. I have corrected follower counts, rankings, and a colleague's title. Some weeks the fix is a number. Some weeks it is a whole opening paragraph that said the right thing in the wrong tone. Today it was nuances throughout.</p></div><span class="who me">Me</span></li>
-          <li><div><b>Build and publish</b><p>The edition renders into a fixed template. A script blocks any would-be sponsor from running in an edition that covers its own product. The finished page waits in a queue, publishes itself Monday at 6 AM Central, and the email follows at 7 so the link is already live.</p></div><span class="who code">Code</span></li>
-        </ol>
+      <section class="section story-item" data-cat="compliance">
+        <div class="section-head"><h2>Policy</h2></div>
+        <article class="story">
+          <span class="tag compliance">Policy · Proposed rule</span>
+          <h3>Fluorescence wound imaging gets a permanent code, priced on the maker's numbers</h3>
+          <p>Fluorescence imaging for wound bacteria is moving from temporary codes 0598T and 0599T to a permanent Category I code with the 2027 CPT set. The 2027 proposed physician fee schedule assigns it a value. As Scott Nelson reported, the CMS fact sheets skipped this; the rule text did not.</p>
+          <p>How it got its value is the story. The specialty society could not collect enough survey responses to meet the RUC threshold, so CMS priced the code from figures the manufacturer supplied: a work RVU of 0.80 and 26 minutes of physician time. Practice expense is crosswalked to ultrasonic wound assessment (CPT 97610) plus 10 minutes for cleaning the instrument pack. The equipment cost comes from MolecuLight's own invoices: $21,500 over a five-year life.</p>
+          <p>CMS is also watching for double payment. The temporary codes were billed alongside debridement 35.1% and 46.6% of the time, and the proposal asks whether some supply costs already sit inside debridement. A dollar payment cannot be calculated until the full practice-expense and malpractice values are published. Four companies sell this kind of imaging, and two are in litigation over an International Trade Commission complaint filed in January.</p>
+          <div class="why"><b>Why it matters:</b> If you image wounds, document a clinical reason for the imaging that stands apart from the debridement. A payer already asking whether it paid twice will audit the visits that look like it did.</div>
+          <div class="meta">Source: <a href="https://www.hmpgloballearningnetwork.com/site/wounds/news/five-moves-one-bet-what-cms-really-telling-wound-care-industry">Scott Nelson, <i>WOUNDS</i>, July 24, 2026</a>, citing the <a href="https://www.federalregister.gov/documents/2026/07/16/2026-14327/medicare-and-medicaid-programs-cy-2027-payment-policies-under-the-physician-fee-schedule-and-other">CY2027 proposed rule</a>.</div>
+        </article>
+        <article class="story">
+          <span class="tag compliance">Policy · Proposed rule</span>
+          <h3>The skin substitute rate holds for 2027, and the clock keeps running</h3>
+          <p>CMS proposes to keep a single flat rate for skin substitutes in 2027: $127.14 per square centimeter across all three sites of care, against $127.28 in 2026. The industry spent a year expecting separate rates by FDA category. CMS now says it lacks enough 2026 claims data to set them and has pushed that decision to 2028.</p>
+          <p>One change hides under the unchanged number. Pastes, powders and other non-sheet products have been priced at each Medicare contractor's discretion since January. The proposal folds them into the same national per-square-centimeter pricing, which ends any favorable local rate a product enjoys today.</p>
+          <p>Nelson's read is that 2027 is not a quiet year. It is the last year to build the clinical, coding and utilization record that decides where each product lands when differentiated rates arrive.</p>
+          <div class="why"><b>Why it matters:</b> The same applies inside your practice. Standard of care before application, wound measurements, and the reason for each product choice are what an auditor reads first. Build that file now, while the rate is stable.</div>
+          <div class="meta">Sources: <a href="https://www.hmpgloballearningnetwork.com/site/wounds/news/five-moves-one-bet-what-cms-really-telling-wound-care-industry">Scott Nelson, <i>WOUNDS</i>, July 24, 2026</a> · <a href="https://www.polsinelli.com/publications/cms-finalizes-reforms-skin-substitute-payments-rising-costs-enforcement-activity">Polsinelli on the 2026 final rule</a></div>
+        </article>
       </section>
 
-      <section class="section story-item" data-cat="process" id="rules">
-        <div class="section-head"><h2>The rules the agent writes under</h2></div>
-        <p class="intro">An AI draft sounds generic when nobody gave it a spine. These are the constraints written into every run. Several of them exist because I caught the agent breaking them once.</p>
-        <div class="rulebook">
-          <div class="rb">
-            <div class="k">Voice</div>
-            <ul>
-              <li>Start with an admission or an observation, then the insight</li>
-              <li>One thesis per piece</li>
-              <li>No questions aimed at the reader</li>
-              <li>No sales pitch in the body copy</li>
-              <li>No em-dashes and no emoji</li>
-              <li>Close on who the reader is, never on a question</li>
-            </ul>
+      <section class="section story-item" data-cat="business">
+        <div class="section-head"><h2>Practice and business</h2></div>
+        <article class="story">
+          <span class="tag business">Business · Proposed rule</span>
+          <h3>Remote monitoring may need your own staff, and telehealth has a runway</h3>
+          <p>The 2027 proposal rewrites how remote patient monitoring and remote therapeutic monitoring get delivered. Both would need a separately billed initiating visit, and RTM would follow RPM's established-patient rule. The change with teeth: only staff employed by the billing practice could deliver the treatment-management time. Contracted staff would not count.</p>
+          <p>Nelson points out that a large share of remote monitoring runs through outsourced vendors. If this is finalized, that model stops being billable. CMS is also signaling a lower value for the device-supply codes.</p>
+          <p>Telehealth is the steadier news. The Consolidated Appropriations Act, 2026, signed February 3, extends the Medicare telehealth flexibilities through December 31, 2027. That is a two-year window after years of three-month extensions.</p>
+          <div class="why"><b>Why it matters:</b> If your practice bills RPM or RTM, find out today whose payroll the monitoring staff sit on. Use the telehealth window to build follow-up and wound-check visits you could keep running if the flexibilities lapse in 2028.</div>
+          <div class="meta">Source: <a href="https://www.hmpgloballearningnetwork.com/site/wounds/news/five-moves-one-bet-what-cms-really-telling-wound-care-industry">Scott Nelson, <i>WOUNDS</i>, July 24, 2026</a>, citing the <a href="https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule">CY2027 PFS proposed rule fact sheet</a> and <a href="https://telehealth.hhs.gov/providers/telehealth-policy/telehealth-policy-updates">HHS telehealth policy updates</a>.</div>
+        </article>
+        <article class="story">
+          <span class="tag business">Business · Equipment</span>
+          <h3>Weight-bearing CT pays for itself on volume, not on the demo</h3>
+          <p>Two published analyses give the honest math, and both are a few years old.</p>
+          <div class="tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th scope="col">Setting</th><th scope="col">Payback</th><th scope="col">What drove it</th></tr></thead>
+              <tbody>
+                <tr><td>Tertiary referral center, 55 months of scans (2016 to 2021)</td><td>44.2 months at Medicare rates; about 29.9 months at its actual payer mix</td><td>Foot and ankle fellowship-trained surgeons ordered 75.5% of scans</td></tr>
+                <tr><td>Private orthopedic group, scanner bought in 2016</td><td>1,284 scans, about 3 years</td><td>$3,318 a month in device cost, so 20 scans a month at a Medicare rate of $163.50 per scan</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="rb">
-            <div class="k">Evidence and money</div>
-            <ul>
-              <li>Never invent a URL, a publication, or a statistic</li>
-              <li>Every figure links to where it came from</li>
-              <li>If a page blocks automated reading, flag the detail for me to confirm</li>
-              <li>Disclose my roles whenever a story touches them</li>
-              <li>In time we may have one sponsor per edition, labeled, and it never sees a story before publication</li>
-            </ul>
-          </div>
-        </div>
+          <p>Neither study says the scanner was a bad buy. Both say it pays back only when enough surgeons share it and keep ordering it. Reimbursement has moved since these numbers were gathered, so treat them as the shape of the answer, not the answer.</p>
+          <div class="why"><b>Why it matters:</b> Ask the vendor for the scans per month your own payer mix needs to break even, in writing, before you discuss price. A single-surgeon practice should run that number twice.</div>
+          <div class="meta">Sources: <a href="https://pubmed.ncbi.nlm.nih.gov/37009418/">Foot &amp; Ankle Orthopaedics, 2023</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8793528">Foot &amp; Ankle Orthopaedics cost and utilization analysis</a></div>
+        </article>
       </section>
 
-      <section class="section story-item" data-cat="compare" id="difference">
-        <div class="section-head"><h2>Why an AI-built newsletter can be better</h2></div>
-        <div class="essay" style="margin-top:18px;">
-          <p>The trade newsletters most of us open were built for a different era. Editorial hours were the scarce resource, so the format became a stack of links: a paragraph borrowed from the source, a Read More button, and a display ad between each item. One podiatry newsletter I read this week ran twelve display ads around roughly a dozen items. The people who make those newsletters work hard. The format limits them.</p>
-          <p>An agent changes what is scarce. Research that took a staff a day now takes minutes, so a single physician's time can go where it matters: judgment, verification, and a point of view.</p>
-        </div>
-        <div class="cmp-wrap">
-          <table class="cmp">
-            <thead><tr><th scope="col"></th><th scope="col">The link-stack format</th><th scope="col">The Footnote</th></tr></thead>
-            <tbody>
-              <tr><td>The story</td><td>A summary lifted from the source, then a link out</td><td>An original summary and a line on why it matters to a practice</td></tr>
-              <tr><td>The evidence</td><td>The source is a click away, if the link matches the credit</td><td>Every figure is linked, and journal citations are checked against PubMed and Crossref</td></tr>
-              <tr><td>The ads</td><td>A display ad between most items</td><td>One labeled sponsor, screened by code for conflicts</td></tr>
-              <tr><td>The voice</td><td>Unsigned, by design</td><td>One named physician who answers for every line</td></tr>
-              <tr><td>The depth</td><td>Limited by staff hours</td><td>Limited by how carefully I read</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="why"><b>Why it matters:</b> Readers can see how every claim was made. When I get something wrong, you know who got it wrong, and you know how it will be fixed.</div>
-      </section>
-
-      <section class="section story-item" data-cat="label" id="label">
-        <div class="section-head"><h2>The honest label</h2></div>
-        <div class="essay" style="margin-top:18px;">
-          <p>You might be tempted to call this an AI startup. I checked that label the way I would check any other claim. Investors now use a simple test to separate AI-native companies from AI-enabled ones: remove the AI and see what happens. If the work slows down, the company is AI-enabled. If the work stops, it is AI-native.</p>
-        </div>
-        <div class="test">
-          <div class="rb yes">
-            <div class="k">Passes</div>
-            <h4>AI-native</h4>
-            <p>Turn off the agent and the weekly edition stops. A surgeon with a clinic cannot research six beats every week by hand. The AI is the foundation of this newsletter, not a feature added to it.</p>
-          </div>
-          <div class="rb no">
-            <div class="k">Not yet</div>
-            <h4>Startup</h4>
-            <p>The Footnote has no investors and no staff. It is not a venture-backed company, and I will not call it one. What it shares with AI-native startups is how it is built.</p>
-          </div>
-        </div>
-        <div class="essay">
-          <p>Y Combinator partner Tom Blomfield describes an AI-native company as a loop, and this newsletter runs on the same one.</p>
-        </div>
-        <ul class="loop">
-          <li><span class="k">Data in</span><span>Journals, society news, CMS notices, trade press</span></li>
-          <li><span class="k">Policy</span><span>My voice rules and evidence rules</span></li>
-          <li><span class="k">Tools</span><span>Web search, the citation checker, the template, the scheduler</span></li>
-          <li><span class="k">Quality gate</span><span>My read, before anything publishes</span></li>
-          <li><span class="k">Learning loop</span><span>Each correction I make becomes a written rule for the next run</span></li>
-        </ul>
-        <div class="meta">Sources: <a href="https://www.crv.com/content/what-is-ai-native">CRV, What Is AI-Native? (July 2026)</a> · <a href="https://www.aibuilderclub.com/blog/ai-native-vs-ai-enabled">AI Builder Club, AI-Native vs AI-Enabled</a>, summarizing Blomfield's Aug 2026 Y Combinator talk</div>
-      </section>
-
-      <section class="section story-item" data-cat="physician" id="physician">
-        <div class="section-head"><h2>The physician this points to</h2></div>
-        <div class="essay" style="margin-top:18px;">
-          <p>Physicians have already adopted AI. The AMA found that 81% of physicians used it in practice in 2026, up from 38% in 2023. The same survey found that 85% want a say in how their organizations adopt it, and 88% worry about losing skills to it. Medical education is moving too. On September 8, ACGME proposed residency requirements that name artificial intelligence twice, under professionalism and under systems-based practice. Podiatric residencies answer to CPME rather than ACGME, but the direction is plain.</p>
-          <p>Using AI is no longer what sets a physician apart. What sets a physician apart is running it well: knowing what to hand off, checking what comes back, saying so out loud, and taking responsibility for the result. I teach that as four gates, and this newsletter passes through all four every week.</p>
-        </div>
-        <div class="ai-gates">
-          <div class="gate"><b>Delegate</b><span>Hand the volume to the tool.</span><em>Here: the agent does the research and the first draft.</em></div>
-          <div class="gate"><b>Verify</b><span>Check the output before it reaches anyone.</span><em>Here: code checks the citations, then I check everything.</em></div>
-          <div class="gate"><b>Disclose</b><span>Say when AI helped, in plain words.</span><em>Here: this edition, and a disclosure line on every one.</em></div>
-          <div class="gate"><b>Own</b><span>Your name means you answer for it.</span><em>Here: my byline, and my corrections in public.</em></div>
-        </div>
-        <div class="essay">
-          <p>A newsletter is a low-stakes place to practice. Nobody's foot depends on a headline. That is exactly why it makes a good proving ground. The habits carry straight to prior authorization letters, patient education, ambient notes, and whatever arrives next in the clinic. The podiatrists who build those habits now will run small teams of agents the way we already run a surgical team: clear roles, standard steps, and one person accountable at the end.</p>
-          <p class="close">The podiatrists who shape the next decade will be the ones who let the machine draft and never let it sign.</p>
-        </div>
-        <div class="disclosure disclose">Disclosure: This edition was researched and drafted with Claude, made by Anthropic, and edited and verified by the author. Andrew Lundquist, DPM, MBA, uses Claude personally and has no financial relationship with Anthropic. He is Chief Medical Officer of Mankato Clinic, Clinical Director at Nabla Technologies, which makes an ambient AI scribe, and Chief Innovation Officer at Stratum Med.</div>
-        <div class="meta">Sources: <a href="https://www.ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows">AMA press release, 2026 Physician Survey on Augmented Intelligence</a> · <a href="https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cprresidency_rc_09082026.pdf">ACGME proposed Common Program Requirements, sections 4.3 and 4.9</a> (comments due Oct 22, 2026)</div>
+      <section class="section story-item" data-cat="clinical">
+        <div class="section-head"><h2>Clinical and surgical</h2></div>
+        <article class="story">
+          <span class="tag clinical">Clinical · Technique</span>
+          <h3>What minimally invasive bunion surgery costs in the first 35 cases</h3>
+          <p>A systematic review of the minimally invasive hallux valgus learning curve put the plateau at a weighted mean of 35.5 cases, with a range of 27 to 40. During that phase, OR time and fluoroscopy shots rose significantly. Complications did not.</p>
+          <p>The case literature is less tidy. A March 2026 <i>Podiatry Today</i> review of single-screw technique ties many complications to surgical execution and reports that they fall as experience grows. Stiffness and recurrence lead the list, followed by transfer metatarsalgia, nonunion, malunion, first metatarsal shortening and hardware problems. The failures with one screw make me think a plate and screw construct could lower the complication rate. Nobody has tested that head to head in minimally invasive bunion surgery. The closest evidence compares one screw with two: a November 2025 systematic review found only two clinical studies, 162 feet in all. Correction and patient-reported outcomes were similar. One screw meant shorter cases, less fluoroscopy and fewer hardware removals; two screws held up better against rotation in the lab. The authors called the evidence too thin to recommend either. Plates have mostly been studied in open osteotomies, in small retrospective series. The plate question is open, and it is a study worth running.</p>
+          <p>No. 2 covered the HSS trial of 140 patients, which found minimally invasive and open Lapidus equivalent on PROMIS scores at one year. The question for most surgeons is no longer whether the technique works. It is what the first three dozen cases cost in time, radiation and patient selection.</p>
+          <div class="why"><b>Why it matters:</b> Pick moderate deformities for the early cases, track your own OR and fluoroscopy times, and plan the schedule for slower days until the numbers flatten.</div>
+          <div class="meta">Sources: <a href="https://index.mirasmart.com/AAOS2024/PDFfiles/AAOS2024-005202.PDF">Learning curve systematic review, AAOS 2024</a> · <a href="https://www.hmpgloballearningnetwork.com/site/podiatry/case-report/complications-minimally-invasive-bunion-surgery-using-single-screw">Podiatry Today, March 2026</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12743283/">One vs two screws systematic review, Cureus, 2025</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42473753/">HSS trial, Foot &amp; Ankle International, 2026</a></div>
+        </article>
+        <div class="disclose">Disclosure: This edition was researched and drafted with Claude, made by Anthropic, and edited and verified by the author, who has no financial relationship with Anthropic. Andrew Lundquist, DPM, is Chief Medical Officer at Mankato Clinic and Clinical Director at Nabla. He is a founder of Sky Surgical. He has no financial relationship with any other company named in this edition.</div>
       </section>
     </main>
 
@@ -372,36 +298,17 @@
         <a class="signup-btn" href="https://footnotespodiatry.substack.com/subscribe" target="_blank" rel="noopener">Subscribe free on Substack</a>
       </div>
 
-      <div class="rail-card story-item" data-cat="process">
-        <div class="rail-eyebrow">Under the hood</div>
-        <h3>The stack</h3>
-        <ul class="links">
-          <li><b>Claude, through the Anthropic API</b><span>Research and first drafts</span></li>
-          <li><b>A Python agent</b><span>One brief per beat, structured output</span></li>
-          <li><b>PubMed and Crossref</b><span>Citation checks</span></li>
-          <li><b>GitHub Actions and GitHub Pages</b><span>Scheduled publishing</span></li>
-          <li><b>Substack</b><span>The email edition</span></li>
-        </ul>
+      <div class="rail-card">
+        <div class="rail-eyebrow">Key read</div>
+        <h3>Scott Nelson, "Five Moves, One Bet: What CMS Is Really Telling the Wound Care Industry"</h3>
+        <p class="soft"><i>WOUNDS</i>, HMP Global Wound Care Policy News Desk, July 24, 2026. <a href="https://www.hmpgloballearningnetwork.com/site/wounds/news/five-moves-one-bet-what-cms-really-telling-wound-care-industry">Read it here</a>.</p>
+        <p>Nelson founded Below The Knee, an independent market intelligence service covering wound care, limb salvage and vascular care. He read the 2027 proposed rules as one strategy instead of five line items, and he pulled the fluorescence imaging valuation out of the rule text when the fact sheets left it out. Three of this edition's stories rest on his work. HMP labels the piece as analysis, not peer reviewed.</p>
       </div>
 
-      <div class="rail-card story-item" data-cat="process">
-        <div class="rail-eyebrow">Still imperfect</div>
-        <h3>What the agent gets wrong</h3>
-        <p>It sometimes second-guesses a fact I have already confirmed. Several society and trade sites block automated reading, so some details arrive secondhand and need my check. Job listings expire between the draft and the send. It also cannot publish to LinkedIn, because LinkedIn offers no way to do that.</p>
-      </div>
-
-      <div class="rail-card story-item" data-cat="process">
-        <div class="rail-eyebrow">The line I hold</div>
-        <h3>What I will not automate</h3>
-        <p>The thesis of each edition. The final read. Any decision about a patient. The agent makes me faster at the work I would have done anyway. It does not do the part that requires a license.</p>
-      </div>
-
-      <div class="rail-card story-item" data-cat="process">
-        <div class="rail-eyebrow">Next in the build</div>
-        <h3>Coming editions</h3>
-        <ul class="links">
-          <li><b>No. 7</b><span>Emerging technology beyond AI</span></li>
-        </ul>
+      <div class="rail-card">
+        <div class="rail-eyebrow">Next edition</div>
+        <h3>No. 8</h3>
+        <p>Reporting from inside an AI in healthcare conference.</p>
       </div>
     </aside>
   </div>
@@ -412,15 +319,16 @@
     <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
     <div class="foot-eds-head">Previous editions</div>
     <ol class="foot-eds" reversed>
+      <li><span class="n">No. 6</span><a href="https://footnote.report/editions/006/">Building in public</a><span class="d">Oct 12, 2026</span></li>
       <li><span class="n">No. 5</span><a href="https://footnote.report/editions/005/">The resident edition</a><span class="d">Oct 5, 2026</span></li>
       <li><span class="n">No. 4</span><a href="https://footnote.report/editions/004/">The profession edition</a><span class="d">Sept 28, 2026</span></li>
       <li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li>
       <li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li>
       <li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li>
     </ol>
-    <p class="foot-tag">A briefing on reimbursement, clinical evidence and practice management for podiatric physicians and surgeons. Every summary is original and every figure links to its source.</p>
+    <p class="foot-tag">A weekly edition on podiatric medicine, surgery, and leadership. Researched with AI, read and signed by a practicing podiatric surgeon.</p>
     <nav class="foot-nav" aria-label="Archive"><a href="editions/">Past editions</a></nav>
-    <div class="foot-bottom">© 2026 The Footnote. Edition No. 6, published October 12, 2026. By Andrew Lundquist, DPM, MBA.</div>
+    <div class="foot-bottom">© 2026 The Footnote. Edition No. 7, published October 19, 2026. By Andrew Lundquist, DPM, MBA.</div>
   </div>
 </footer>
 
