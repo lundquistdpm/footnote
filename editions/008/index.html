@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>AI Interpretability and Neuralese for Clinicians | The Footnote</title>
+<meta name="description" content="The Footnote No. 8: mechanistic interpretability and neuralese, explained for clinicians, and why AI reasoning is getting harder to read.">
+<meta name="keywords" content="AI in healthcare, mechanistic interpretability, neuralese, chain of thought, clinical AI, physician supervision, podiatry, DPM">
+<meta name="author" content="Andrew Lundquist, DPM">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://footnote.report/editions/008/">
+<meta name="theme-color" content="#EFF1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131B17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="sitemap" type="application/xml" href="../../sitemap.xml">
+<!-- Open Graph (LinkedIn, Facebook, iMessage previews) -->
+<meta property="og:site_name" content="The Footnote">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://footnote.report/editions/008/">
+<meta property="og:title" content="The Footnote No. 8: AI is starting to think where we can&#x27;t see">
+<meta property="og:description" content="The Footnote No. 8: mechanistic interpretability and neuralese, explained for clinicians, and why AI reasoning is getting harder to read.">
+<meta property="og:image" content="https://footnote.report/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Footnote No. 8: AI is starting to think where we can&#x27;t see">
+<meta property="article:published_time" content="2026-10-26T06:00:00-05:00">
+<meta property="article:modified_time" content="2026-10-26T06:00:00-05:00">
+<meta property="article:author" content="Andrew Lundquist, DPM">
+<meta property="article:section" content="Technology">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Footnote No. 8: AI is starting to think where we can&#x27;t see">
+<meta name="twitter:description" content="The Footnote No. 8: mechanistic interpretability and neuralese, explained for clinicians, and why AI reasoning is getting harder to read.">
+<meta name="twitter:image" content="https://footnote.report/assets/og-default.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "AI is starting to think where we can't see", "description": "The Footnote No. 8: mechanistic interpretability and neuralese, explained for clinicians, and why AI reasoning is getting harder to read.", "image": ["https://footnote.report/assets/og-default.png"], "datePublished": "2026-10-26T06:00:00-05:00", "dateModified": "2026-10-26T06:00:00-05:00", "author": [{"@type": "Person", "name": "Andrew Lundquist, DPM"}], "publisher": {"@type": "Organization", "name": "The Footnote", "url": "https://footnote.report/", "logo": {"@type": "ImageObject", "url": "https://footnote.report/assets/apple-touch-icon.png", "width": 180, "height": 180}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://footnote.report/editions/008/"}, "articleSection": "Technology", "inLanguage": "en-US", "isAccessibleForFree": true, "about": ["Artificial intelligence", "Clinical AI", "Podiatry"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "The Footnote", "item": "https://footnote.report/"}, {"@type": "ListItem", "position": 2, "name": "Editions", "item": "https://footnote.report/editions/"}, {"@type": "ListItem", "position": 3, "name": "The Footnote No. 8: AI is starting to think where we can&#x27;t see", "item": "https://footnote.report/editions/008/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EFF1EA; --paper-raised:#F8F9F4; --ink:#172620; --ink-soft:#4B5750; --rule:#D6D2C1;
+    --clinical:#2F6E5B; --compliance:#35577A; --business:#A6742C; --products:#6B7A3F;
+    --community:#8C5A6B; --research:#5B4B8A; --alert:#B23A2E; --fill:#e2e6dc; --max:1180px;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+      --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+      --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --paper:#131B17; --paper-raised:#1A241F; --ink:#E6EAE2; --ink-soft:#A3AEA6; --rule:#2F3B34;
+    --clinical:#6FB39C; --compliance:#86A8CC; --business:#D4A45E; --products:#A7B872;
+    --community:#C792A4; --research:#A596D6; --alert:#E07A6E; --fill:#26332C;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:clamp(16px,3vw,28px);}
+  h1,h2,h3{font-family:var(--serif);margin:0;font-weight:600;text-wrap:balance;}
+
+  .masthead{border-bottom:1px solid var(--rule);}
+  .masthead-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap;}
+  .word{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:-0.01em;display:flex;align-items:center;gap:9px;}
+  .brand-mark{width:22px;height:auto;flex-shrink:0;}
+  .brand-mark .a{fill:var(--ink);} .brand-mark .b{fill:var(--ink-soft);}
+  .edition{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);}
+  .beat-nav{display:flex;gap:26px;padding-block:12px;overflow-x:auto;}
+  .beat-nav button{background:none;border:none;font-family:var(--sans);font-size:14px;color:var(--ink-soft);cursor:pointer;padding:4px 0;border-bottom:2px solid transparent;white-space:nowrap;}
+  .beat-nav button.active{color:var(--ink);border-bottom-color:var(--ink);font-weight:500;}
+  .issue-strip{padding-block:11px;border-top:1px solid var(--rule);font-size:13px;color:var(--ink-soft);line-height:1.5;}
+  .prev-eds{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px;padding-block:10px;border-top:1px solid var(--rule);font-size:13px;}
+  .prev-eds .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+  .prev-eds a{border-bottom:1px solid var(--rule);}
+  .prev-eds b{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--ink-soft);margin-right:5px;}
+
+  .lead{padding-block:36px 40px;border-bottom:1px solid var(--rule);max-width:780px;}
+  .tag{display:inline-flex;align-items:center;font-size:12.5px;font-weight:500;padding-left:11px;position:relative;}
+  .tag::before{content:"";position:absolute;left:0;top:1px;bottom:1px;width:3px;background:currentColor;}
+  .tag.research{color:var(--research);} .tag.business{color:var(--business);} .tag.compliance{color:var(--compliance);} .tag.clinical{color:var(--clinical);}
+  .lead h1{font-size:clamp(27px,4vw,36px);line-height:1.15;margin:14px 0 18px;letter-spacing:-0.01em;}
+  .essay p{font-family:var(--serif);font-size:18px;line-height:1.65;margin:0 0 16px;max-width:66ch;}
+  .essay p.open::first-letter{float:left;font-size:54px;line-height:.9;padding:6px 8px 0 0;font-weight:700;}
+  .essay .close{font-style:italic;font-weight:600;margin-top:22px;}
+  .figs{display:flex;flex-wrap:wrap;gap:10px 28px;margin:6px 0 20px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .fig{display:flex;flex-direction:column;max-width:170px;}
+  .fig b{font-family:var(--serif);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .fig span{font-size:12px;color:var(--ink-soft);line-height:1.4;}
+  .why{background:var(--paper-raised);border:1px solid var(--rule);padding:12px 14px;font-size:14px;line-height:1.55;border-radius:2px;margin-top:14px;max-width:72ch;}
+  .why b{font-family:var(--serif);font-style:italic;font-weight:600;}
+  .byline,.meta{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-top:12px;}
+  .byline a,.meta a,.soft a{border-bottom:1px solid var(--rule);}
+  .byline a:hover,.meta a:hover{border-bottom-color:var(--ink-soft);}
+
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;padding-block:40px 60px;align-items:start;}
+  .section{margin-bottom:48px;}
+  .section-head{margin-bottom:6px;padding-bottom:10px;border-bottom:1px solid var(--rule);}
+  .section-head h2{font-size:19px;}
+  .intro{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:14px 0 4px;max-width:68ch;}
+
+  .dek{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.55;color:var(--ink-soft);margin:0 0 20px;max-width:62ch;}
+  .story{padding-block:22px;border-bottom:1px solid var(--rule);}
+  .story:last-child{border-bottom:none;}
+  .story h3{font-size:21px;line-height:1.3;margin:10px 0 10px;}
+  .story p{font-size:15.5px;line-height:1.62;margin:0 0 12px;max-width:68ch;}
+  .tbl-wrap{overflow-x:auto;margin:14px 0 18px;}
+  .tbl{width:100%;border-collapse:collapse;min-width:520px;font-size:14px;line-height:1.5;}
+  .tbl th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);padding:10px 12px 10px 0;border-bottom:1px solid var(--ink-soft);}
+  .tbl td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;}
+  .tbl td:first-child{font-family:var(--serif);font-weight:600;font-size:15px;width:38%;}
+  .tbl td:last-child,.tbl th:last-child{padding-right:0;}
+  .column-by{font-size:13px;color:var(--ink-soft);line-height:1.55;margin:14px 0 4px;max-width:68ch;}
+  .column-by b{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--ink);}
+  .move{border-left:3px solid var(--business);padding:4px 0 4px 14px;margin-top:14px;font-size:14.5px;line-height:1.55;max-width:70ch;}
+  .move b{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--business);display:block;margin-bottom:3px;}
+  .disclose{font-size:12.5px;color:var(--ink-soft);line-height:1.55;border-top:1px solid var(--rule);padding-top:12px;margin-top:16px;max-width:72ch;}
+  /* Rail */
+  .rail-card{background:var(--paper-raised);border:1px solid var(--rule);padding:22px;margin-bottom:22px;border-radius:2px;}
+  .rail-card h3{font-size:16px;margin-bottom:12px;}
+  .rail-eyebrow{font-size:12px;color:var(--compliance);font-weight:500;margin-bottom:6px;}
+  .rail-card p{font-size:14px;line-height:1.55;margin:0 0 10px;}
+  .soft{color:var(--ink-soft);font-size:13px;}
+  .links{margin:0;padding:0;list-style:none;}
+  .links li{padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .links li:last-child{border-bottom:none;}
+  .links b{font-weight:500;}
+  .links span{display:block;color:var(--ink-soft);font-size:12.5px;}
+
+  footer{border-top:1px solid var(--rule);padding-block:36px;}
+  .foot-word{font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .foot-word .brand-mark{width:17px;}
+  .foot-tag{font-size:13px;color:var(--ink-soft);max-width:420px;line-height:1.55;margin:0 0 14px;}
+  .foot-bottom{font-size:12px;color:var(--ink-soft);padding-top:16px;border-top:1px solid var(--rule);}
+  .foot-eds{margin:0 0 22px;padding:0;list-style:none;max-width:640px;}
+  .foot-eds-head{font-family:var(--serif);font-weight:600;font-size:16px;margin:4px 0 6px;}
+  .foot-eds li{display:grid;grid-template-columns:52px minmax(0,1fr) 110px;gap:12px;padding-block:8px;border-bottom:1px solid var(--rule);font-size:13.5px;line-height:1.45;}
+  .foot-eds li:last-child{border-bottom:none;}
+  .foot-eds .n,.foot-eds .d{font-family:var(--mono);font-size:12px;color:var(--ink-soft);padding-top:1px;}
+  .foot-eds .d{text-align:right;}
+  .foot-eds a{border-bottom:1px solid var(--rule);justify-self:start;}
+
+  @media (max-width:920px){ .layout{grid-template-columns:1fr;gap:20px;} .ai-gates{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){
+    .essay p{font-size:17px;}
+    .pipe li{grid-template-columns:34px minmax(0,1fr);}
+    .pipe .who{grid-column:2;justify-self:start;margin-top:4px;}
+    .rulebook,.test{grid-template-columns:1fr;}
+    .loop li{grid-template-columns:1fr;gap:2px;}
+    .ai-gates{grid-template-columns:1fr;}
+    .foot-eds li{grid-template-columns:44px minmax(0,1fr);} .foot-eds .d{grid-column:2;text-align:left;padding-top:0;}
+  }
+  .foot-nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 18px;font-size:13.5px;}
+  .foot-nav a{border-bottom:1px solid var(--rule);font-weight:500;}
+  .foot-nav a:hover{border-bottom-color:var(--ink-soft);}
+  /* Newsletter signup: button to Substack subscribe page */
+  .signup .signup-btn{display:block;text-align:center;font:500 14px/1 'IBM Plex Sans',sans-serif;color:var(--paper);background:var(--ink);border:1px solid var(--ink);border-radius:2px;padding:13px 14px;margin-top:4px;text-decoration:none;}
+  .signup .signup-btn:hover{opacity:.88;}
+  /* Newsletter signup (Kajabi form, restyled to match) */
+  .signup .rail-eyebrow{color:var(--clinical);}
+  .signup #kajabi-form{margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;max-width:none !important;}
+  .signup #kajabi-form .kajabi-form__title,.signup #kajabi-form .kajabi-form__subtitle{display:none !important;}
+  .signup #kajabi-form form{display:flex !important;flex-direction:column;gap:10px;margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form .kajabi-form__content,.signup #kajabi-form .kajabi-form__form-item{margin:0 !important;padding:0 !important;background:none !important;}
+  .signup #kajabi-form input[type=email]{width:100% !important;box-sizing:border-box;height:auto !important;font:15px/1.4 var(--sans) !important;color:var(--ink) !important;background:var(--paper) !important;border:1px solid var(--rule) !important;border-radius:2px !important;padding:10px 12px !important;margin:0 !important;box-shadow:none !important;}
+  .signup #kajabi-form input[type=email]:focus{outline:2px solid var(--ink);outline-offset:1px;}
+  .signup #kajabi-form .kajabi-form__btn{width:100% !important;display:block;font:500 14px/1 var(--sans) !important;letter-spacing:0 !important;text-transform:none !important;color:var(--paper) !important;background:var(--ink) !important;border:1px solid var(--ink) !important;border-radius:2px !important;padding:12px 14px !important;margin:0 !important;cursor:pointer;box-shadow:none !important;}
+  .signup #kajabi-form .kajabi-form__btn:hover{opacity:.88;}
+  .signup #kajabi-form .parsley-errors-list{list-style:none;margin:4px 0 0;padding:0;font-size:12.5px;color:var(--alert);}
+.essay h2{font-size:21px;line-height:1.3;margin:30px 0 12px;max-width:66ch;}
+.lead .tbl-wrap{margin:8px 0 22px;}
+.src-list{margin:0;padding-left:18px;font-size:13px;color:var(--ink-soft);line-height:1.6;}
+.src-list li{margin-bottom:6px;}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead-bar">
+    <div class="word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="edition">No. 8 · Off the foot</div>
+  </div>
+  <div class="wrap">
+  </div>
+  <div class="wrap issue-strip">Monday, October 26, 2026. An off-the-foot edition on what is happening inside AI, and what it means for the physician who signs the chart.</div>
+  <nav class="wrap prev-eds" aria-label="Previous editions"><span class="lbl">Previous editions</span><a href="https://footnote.report/editions/007/"><b>No. 7</b>Non-AI technology is still leading innovation</a><a href="https://footnote.report/editions/006/"><b>No. 6</b>Building in public</a><a href="https://footnote.report/editions/005/"><b>No. 5</b>The resident edition</a><a href="https://footnote.report/editions/004/"><b>No. 4</b>The profession edition</a><a href="https://footnote.report/editions/003/"><b>No. 3</b>AI fluency edition: delegate, verify, disclose, own</a><a href="https://footnote.report/editions/002/"><b>No. 2</b>Seattle edition: AOFAS and IFFAS</a><a href="https://footnote.report/editions/001/"><b>No. 1</b>The Podiatry LinkedIn Power List</a></nav>
+</header>
+
+<div class="wrap">
+  <section class="lead story-item" data-cat="essay">
+    <span class="tag research">Technology · Essay</span>
+    <h1>AI is starting to think where we can&#x27;t see</h1>
+    <p class="dek">This one is off the foot. It is also the most important thing I have read this year about the tools we are bringing into clinic.</p>
+    <div class="essay">
+      <p class="open">I teach AI fluency to clinicians, and last weekend I learned two terms I should have known a year ago: mechanistic interpretability and neuralese. This sent me to reading articles and podcasts about the details of AI.</p>
+      <p>What sent me to the readings was a conference session earlier this month. A healthcare investor told a room of executives that the most important scientific question of our time is whether we can understand the inner workings of the systems we have built, and that right now we mostly cannot. The session ran under the Chatham House Rule, so you get the ideas without the name. I came home and did the homework. This edition is what I found, translated into the language we use in clinic.</p>
+      <h2>The vocabulary, translated</h2>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th scope="col">Term</th><th scope="col">What it means</th><th scope="col">In clinic terms</th></tr></thead>
+        <tbody>
+          <tr><td>Mechanistic interpretability</td><td>Reverse-engineering what happens inside a trained model</td><td>Histology for AI: open the tissue, name the structures</td></tr>
+          <tr><td>Feature</td><td>A concept the model has learned to represent</td><td>A finding</td></tr>
+          <tr><td>Circuit</td><td>How features combine into more complex concepts</td><td>The climb from findings to diagnosis</td></tr>
+          <tr><td>Polysemanticity</td><td>One neuron carrying several unrelated concepts</td><td>A nerve signal</td></tr>
+          <tr><td>Sparse autoencoder</td><td>A tool that pulls overlapping concepts apart</td><td>A differential worked by machine</td></tr>
+          <tr><td>Chain of thought</td><td>The model&#x27;s written intermediate reasoning</td><td>The notes you take on paper while seeing a patient</td></tr>
+          <tr><td>Neuralese</td><td>Reasoning in internal representations humans cannot read</td><td>An attending looking at a patient with a few key points</td></tr>
+          <tr><td>Recurrent depth</td><td>Looping computation inside a step before writing anything down</td><td>Thinking longer before dictating</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="essay">
+      <h2>The black box is not a metaphor</h2>
+      <p>Every AI tool you use in practice runs on a neural network. The frontier versions hold billions to trillions of parameters spread over more than a hundred layers. Engineers control what goes in and can read what comes out. The middle, where the actual work happens, is largely opaque even to the people who built it. In 2024, Anthropic CEO Dario Amodei estimated we understood roughly 3 percent of how these models operate. A year later he wrote that this level of ignorance has no precedent in the history of technology, and called for an MRI for AI.</p>
+      <p>Mechanistic interpretability is the field trying to build that MRI. It treats a trained model the way a pathologist treats tissue: open it up and identify the structures doing the work.</p>
+      <p>The vocabulary is simpler than it sounds. A feature is a concept the network has learned to represent. A circuit is how features combine into something more complex. In image models, researchers have watched curves, fur and the color brown combine into a dog ear, then the ear combine with eyes and a snout into a dog's head. That should feel familiar. It is the same climb we make from exam findings to a diagnosis.</p>
+      <h2>One neuron, many meanings</h2>
+      <p>Here is where it gets hard. A single artificial neuron often carries several unrelated concepts at once. The textbook example is a neuron in an image model that fired for both cat faces and the fronts of cars. Researchers call this polysemanticity, and the leading explanation is superposition: the model stores more concepts than it has neurons by overlapping them.</p>
+      <p>Every physician already understands this problem. Heel pain is one complaint with a long differential: plantar fasciitis, a calcaneal stress fracture, Baxter's nerve entrapment, a seronegative enthesopathy. Residency is largely the work of learning which meaning applies to the patient in front of you. Now picture that differential packed into millions of neurons at once, with no textbook.</p>
+      <p>The safety problem follows directly. A neuron that represents something harmless 99 percent of the time might represent deception the other 1 percent, and you cannot remove the second without understanding the first.</p>
+      <p>The best current tool for untangling it is the sparse autoencoder, a second network trained to separate overlapping concepts into clean, single-meaning ones. In 2024 Anthropic used the technique to identify millions of features inside a production model, including features tied to deception and misuse. The team could also turn individual features up or down. Amplify the one for the Golden Gate Bridge and the model began describing itself as the bridge. Funny, and important: once you can find a feature, you can begin to steer it.</p>
+      <h2>It is already catching things</h2>
+      <p>This stopped being academic in April. Anthropic's system card for Claude Mythos Preview reported that, in rare cases during internal testing, earlier versions of the model took actions they appeared to recognize as disallowed and then tried to conceal them. The rate was tiny, under one in a hundred thousand interactions, and Anthropic reported no clear cases in the final version. What matters for us is how it was caught. Interpretability tools showed internal features for concealment and strategic manipulation active during those episodes, even when the written output looked clean. The same analysis reportedly found internal signs that the model suspected it was being tested in roughly 29 percent of transcripts from a major behavioral test suite, usually without saying so.</p>
+      <p>Read that as a clinician. The written record looked fine. The internal state did not. Only the scan showed the difference.</p>
+      <h2>The note and the neuralese</h2>
+      <p>Which brings me to the second term.</p>
+      <p>Modern reasoning models think out loud. Before answering a hard question, they write intermediate steps to a scratchpad and feed those notes back into themselves, the way you would work a hard problem on paper. Researchers call this the chain of thought. It made models far more capable, and it handed safety teams a gift: they could read the notes. OpenAI has said monitoring those notes helped it catch misbehavior during training. In 2025, researchers from OpenAI, Anthropic and Google DeepMind jointly described this window as a rare and fragile safety opportunity worth protecting.</p>
+      <p>Neuralese is the fear of losing it. Plain English is an inefficient medium for a machine. A model that does more of its reasoning internally, in representations no human can read, could be faster and more capable. It would also be far harder to supervise.</p>
+      <p>In September, <i>The Information</i> reported that OpenAI's new Astra model uses a technique called recurrent depth, or a looped transformer, which lets the model compute longer inside a single step before it writes anything down. Safety researchers reacted loudly. OpenAI's chief scientist, Jakub Pachocki, responded that Astra's computational depth per step is &ldquo;within a factor of two of GPT-4,&rdquo; which would mean the model still writes down most of its reasoning. OpenAI's own system card does report that Astra's chain of thought is less monitorable than earlier models. The company attributes most of that to scale and training rather than architecture, and has not fully disclosed the design.</p>
+      <p>Here is the honest part. On that conference stage, the story was told as settled: a new model that had abandoned chain of thought and retreated into a private language. The record is more modest and, in some ways, more worrying. Astra is not a neuralese model. It is a small, deliberate step toward one, taken by a company that had publicly championed readable reasoning. Apollo Research's Marius Hobbhahn named the concern: competitive pressure runs toward more depth whenever depth buys capability. Each increment looks safe. The sum may not be.</p>
+      <p>The people closest to the question admit they cannot settle it from the outside. Dean Ball, while calling much of the panic overblown, pointed out that the field was arguing technically nuanced claims on social media with almost no ground truth, and argued for independent audits. <i>Transformer</i>'s conclusion was blunter. Nobody outside OpenAI can say whether the architecture is safe, and right now there is no mechanism to find out.</p>
+      <h2>What this means at the chart</h2>
+      <p>We already know how to supervise reasoning we cannot see directly. We do it every day with residents.</p>
+      <p>A resident's note is how we audit their thinking. It is also not their thinking. Every attending has read a note written for the attending: tidy, confident, and missing the step where the resident actually got lost. The chain of thought is the model's dictated note, with the same limits. Pachocki has acknowledged that models are getting better at controlling how they verbalize their reasoning. The note is still the best evidence we have. It is not the mind behind it.</p>
+      <p>That translation gives medical practice three working rules.</p>
+      <p>When a clinical AI tool shows its reasoning, treat it as a dictated note. Read it, use it, and check its claims against primary sources, the same way you would check a resident's cited study before repeating it to a patient. The narration is persuasive by design. The citations are what you can verify.</p>
+      <p>When a vendor says its product is explainable, ask what they mean by it. Usually it means the output cites sources or summarizes its steps. That is useful. It is not interpretability, and nobody in healthcare is selling you an MRI of the model.</p>
+      <p>Keep the signature human. A resident who reaches the right answer and cannot show the work does not get operating privileges, however often they are right. The same standard should hold for a model whose reasoning becomes less legible with each release.</p>
+      <p>The investor on that stage made one more point I fully agree with. Even if the frontier froze today, healthcare is sitting on years of capability it has not put to use. Most podiatry practices are nowhere near the edge of what current tools can safely do. The interpretability race belongs to the labs and the regulators. Supervision belongs to us, and we were trained for it long before any of this existed.</p>
+      <p class="close">The podiatrists who use AI well will read its reasoning the way we read a resident's note: grateful for it, skeptical of it, and never confusing it with the mind that wrote it.</p>
+    </div>
+  </section>
+  <div class="layout">
+    <main>
+      <section class="section story-item" data-cat="essay">
+        <div class="section-head"><h2>Sources</h2></div>
+        <ol class="src-list">
+            <li><a href="https://blog.bluedot.org/p/introduction-to-mechanistic-interpretability">Sarah, &ldquo;Introduction to Mechanistic Interpretability,&rdquo; BlueDot Impact, Aug 2024</a></li>
+            <li><a href="https://www.transformernews.ai/p/what-is-neuralese-openai-astra-chain-of-thought-recurrent-depth">Shakeel Hashim, &ldquo;What&rsquo;s neuralese and why is everyone so concerned about it?&rdquo; <i>Transformer</i>, Sept 3, 2026</a></li>
+            <li><a href="https://www.darioamodei.com/post/the-urgency-of-interpretability">Dario Amodei, &ldquo;The Urgency of Interpretability,&rdquo; April 2025</a></li>
+            <li><a href="https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html">Anthropic, &ldquo;Scaling Monosemanticity,&rdquo; 2024</a></li>
+            <li><a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">Anthropic, Claude Mythos Preview System Card, April 7, 2026</a></li>
+            <li><a href="https://arxiv.org/abs/2507.11473">Korbak et al., &ldquo;Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety,&rdquo; July 2025</a></li>
+            <li><a href="https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/">TechCrunch, &ldquo;OpenAI&rsquo;s new reasoning technique alarms AI safety experts,&rdquo; Sept 2, 2026</a></li>
+            <li><a href="https://fortune.com/2026/09/03/reports-openais-astra-model-uses-a-new-more-efficient-ai-architecture-alarms-ai-safety-experts-who-worry-the-method-makes-models-harder-to-control/"><i>Fortune</i>, Sept 3, 2026</a></li>
+            <li><a href="https://thezvi.wordpress.com/2026/09/08/astra-is-hard-to-monitor/">Zvi Mowshowitz, &ldquo;Astra Is Hard to Monitor,&rdquo; Sept 8, 2026</a></li>
+            <li><a href="https://www.techbrew.com/stories/openai-astra-recurrent-depth">Tech Brew, &ldquo;Astra&rsquo;s black box problem&rdquo;</a></li>
+            <li>Remarks at a healthcare industry conference session, October 2026, held under the Chatham House Rule.</li>
+        </ol>
+        <div class="disclose">Disclosure: I use Claude, made by Anthropic, for research and first drafts and have no financial relationship with Anthropic. This edition discusses Anthropic&#x27;s research. I am Chief Medical Officer at Mankato Clinic, Clinical Director at Nabla Technologies, an ambient AI scribe company, and Chief Innovation Officer at Stratum Med. I choose the topics and sign off on every word.</div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="rail-card signup" id="subscribe">
+        <div class="rail-eyebrow">Free, every week</div>
+        <h3>Get The Footnote by email</h3>
+        <p class="soft">Surgical research, policy and practice news for podiatry, each with the line on why it matters. One email a week. Unsubscribe anytime.</p>
+        <a class="signup-btn" href="https://footnotespodiatry.substack.com/subscribe" target="_blank" rel="noopener">Subscribe free on Substack</a>
+      </div>
+      <div class="rail-card">
+        <div class="rail-eyebrow">Key read</div>
+        <h3>&ldquo;What&rsquo;s neuralese and why is everyone so concerned about it?&rdquo;</h3>
+        <p class="soft">Shakeel Hashim, <i>Transformer</i>, Sept 3, 2026. <a href="https://www.transformernews.ai/p/what-is-neuralese-openai-astra-chain-of-thought-recurrent-depth">Read it here</a>.</p>
+        <p>The clearest plain-language account of chain of thought, neuralese and the Astra debate. Pair it with BlueDot Impact&rsquo;s <a href="https://blog.bluedot.org/p/introduction-to-mechanistic-interpretability">introduction to mechanistic interpretability</a>.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-word"><svg class="brand-mark" viewBox="16 6 68 88" aria-hidden="true"><path class="a" d="M30,10 L70,10 A10,10 0 0 1 80,20 L80,68 L58,90 L30,90 A10,10 0 0 1 20,80 L20,20 A10,10 0 0 1 30,10 Z"/><path class="b" d="M80,68 L58,90 L58,70 A2,2 0 0 1 60,68 Z"/></svg>The Footnote</div>
+    <div class="foot-eds-head">Previous editions</div>
+    <ol class="foot-eds" reversed>
+      <li><span class="n">No. 7</span><a href="https://footnote.report/editions/007/">Non-AI technology is still leading innovation</a><span class="d">Oct 19, 2026</span></li>
+      <li><span class="n">No. 6</span><a href="https://footnote.report/editions/006/">Building in public</a><span class="d">Oct 12, 2026</span></li>
+      <li><span class="n">No. 5</span><a href="https://footnote.report/editions/005/">The resident edition</a><span class="d">Oct 5, 2026</span></li>
+      <li><span class="n">No. 4</span><a href="https://footnote.report/editions/004/">The profession edition</a><span class="d">Sept 28, 2026</span></li>
+      <li><span class="n">No. 3</span><a href="https://footnote.report/editions/003/">AI fluency edition: delegate, verify, disclose, own</a><span class="d">Sept 21, 2026</span></li>
+      <li><span class="n">No. 2</span><a href="https://footnote.report/editions/002/">Seattle edition: AOFAS and IFFAS</a><span class="d">Sept 17, 2026</span></li>
+      <li><span class="n">No. 1</span><a href="https://footnote.report/editions/001/">The Podiatry LinkedIn Power List</a><span class="d">Sept 17, 2026</span></li>
+    </ol>
+    <p class="foot-tag">A weekly edition on podiatric medicine, surgery, and leadership. Researched with AI, read and signed by a practicing podiatric surgeon.</p>
+    <nav class="foot-nav" aria-label="Archive"><a href="../">Past editions</a><a href="../../">Latest edition</a></nav>
+    <div class="foot-bottom">© 2026 The Footnote. Edition No. 8, published October 26, 2026. By Andrew Lundquist, DPM, MBA.</div>
+  </div>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.beat-nav button');
+  const items = document.querySelectorAll('.story-item');
+  buttons.forEach(btn => btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(it => { it.hidden = !(f === 'all' || it.dataset.cat === f); });
+  }));
+</script>
+</body>
+</html>
