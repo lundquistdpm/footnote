@@ -18,13 +18,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://footnote.report/"
 MARKER = "<!-- Add each new edition at the top of this list -->"
+# Page-view counter (GoatCounter). Added to every page that lacks it.
+ANALYTICS = ('<script data-goatcounter="https://footnote.goatcounter.com/count" '
+             'async src="//gc.zgo.at/count.js"></script>')
+
+
+def add_analytics(html: str) -> str:
+    if "goatcounter" in html:
+        return html
+    i = html.rindex("</body>")
+    return html[:i] + ANALYTICS + "\n" + html[i:]
 
 
 def publish(qdir: Path) -> None:
     meta = json.loads((qdir / "meta.json").read_text())
     n = f"{meta['number']:03d}"
     day = meta["publish_at"][:10]
-    edition = (qdir / "edition.html").read_text()
+    edition = add_analytics((qdir / "edition.html").read_text())
 
     # 1. edition page
     out = ROOT / "editions" / n
@@ -58,6 +68,7 @@ def publish(qdir: Path) -> None:
             f'    </article>'
         )
         arch = arch.replace(MARKER, entry, 1)
+        arch = add_analytics(arch)
         arch_path.write_text(arch)
 
     # 4. sitemap
